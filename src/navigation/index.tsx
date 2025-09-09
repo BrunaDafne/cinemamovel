@@ -10,6 +10,7 @@ import AppNavigator from '../components/AppNavigator';
 export type RootStackParamList = {
   Login: undefined;
   App: undefined;
+  Dashboard: undefined;
 };
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
