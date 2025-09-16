@@ -1,5 +1,12 @@
 {
+  "compilerOptions": {
+    "strict": true,
+    "baseUrl": "./",
+    "paths": {
+      "@env": ["env.d.ts"]
+    }
+  },
   "extends": "@react-native/typescript-config",
-  "include": ["**/*.ts", "**/*.tsx"],
+  "include": ["**/*.ts", "**/*.tsx", "env.d.ts", "src", "App.tsx"],
   "exclude": ["**/node_modules", "**/Pods"]
 }
