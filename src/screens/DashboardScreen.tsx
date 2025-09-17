@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useEffect, useState, useMemo } from 'react';
 import {
   View,
   Text,
@@ -7,102 +7,145 @@ import {
   Image,
   TouchableOpacity,
   StyleSheet,
+  ActivityIndicator,
 } from 'react-native';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { RootStackParamList } from '../navigation';
+import { API_KEY, BASE_URL } from '@env';
+import { imageUrl, genreMap, filtrosGeneros } from '../constants/api';
 
 type Props = NativeStackScreenProps<RootStackParamList, 'Dashboard'>;
 
-const movies = [
-  {
-    id: '1',
-    title: 'Interestelar',
-    genre: 'Ficção Científica',
-    rating: 8.6,
-    poster: 'https://image.tmdb.org/t/p/w500/nCbkOyOMTeP9sE1VOE6bDuw7Pbj.jpg',
-  },
-  {
-    id: '2',
-    title: 'Oppenheimer',
-    genre: 'Drama',
-    rating: 8.3,
-    poster: 'https://image.tmdb.org/t/p/w500/bvYjhsbxOBwpm8xLE5BhdA3a8CZ.jpg',
-  },
-  {
-    id: '3',
-    title: 'Batman: O Cavaleiro das Trevas',
-    genre: 'Ação',
-    rating: 9.0,
-    poster: 'https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg',
-  },
-  {
-    id: '4',
-    title: 'A Origem',
-    genre: 'Suspense',
-    rating: 8.8,
-    poster: 'https://image.tmdb.org/t/p/w500/aej3LRUga5rhgkmRP6XMFw3ejbl.jpg',
-  },
-  // depois podemos gerar +50 mockados ou puxar da API
-];
-
 export default function DashboardScreen({ navigation }: Props) {
+  const [movies, setMovies] = useState<any[]>([]);
+  const [loading, setLoading] = useState(true);
   const [search, setSearch] = useState('');
-  const [filter, setFilter] = useState<'Todos' | 'Ação' | 'Drama' | 'Ficção Científica' | 'Suspense'>('Todos');
+  const [filter, setFilter] = useState<
+    'Todos' | 'Ação' | 'Drama' | 'Ficção Científica' | 'Suspense'
+  >('Todos');
+
+  async function fetchPopularMovies(pages = 5) {
+    try {
+      setLoading(true);
+      let allMovies: any[] = [];
+
+      for (let page = 1; page <= pages; page++) {
+        const response = await fetch(
+          `${BASE_URL}/movie/popular?api_key=${API_KEY}&language=pt-BR&page=${page}`,
+        );
+        const data = await response.json();
+
+        allMovies = [...allMovies, ...data.results];
+      }
+      setMovies(allMovies || []);
+    } catch (err) {
+      console.error('Erro ao carregar filmes:', err);
+    } finally {
+      setLoading(false);
+    }
+  }
+
+  async function searchMovies(query: string) {
+    try {
+      if (!query) return fetchPopularMovies();
+      setLoading(true);
+      const res = await fetch(
+        `${BASE_URL}/search/movie?api_key=${API_KEY}&language=pt-BR&query=${query}`,
+      );
+      const data = await res.json();
+      setMovies(data.results || []);
+    } catch (err) {
+      console.error('Erro ao pesquisar filmes:', err);
+    } finally {
+      setLoading(false);
+    }
+  }
 
   const filteredMovies = useMemo(() => {
-    return movies.filter((m) => {
-      const matchSearch = m.title.toLowerCase().includes(search.toLowerCase());
-      const matchFilter = filter === 'Todos' || m.genre === filter;
+    return movies.filter(m => {
+      const title = m.title || m.name || '';
+      const matchSearch = title.toLowerCase().includes(search.toLowerCase());
+      const genreName = m.genre_ids?.length
+        ? genreMap[m.genre_ids[0]]
+        : 'Outros';
+      const matchFilter = filter === 'Todos' || genreName === filter;
       return matchSearch && matchFilter;
     });
-  }, [search, filter]);
+  }, [search, filter, movies]);
+
+  useEffect(() => {
+    fetchPopularMovies();
+  }, []);
 
   return (
     <View style={styles.container}>
       <Text style={styles.header}>🎬 Catálogo de Filmes</Text>
-
-      {/* Barra de pesquisa */}
       <TextInput
         placeholder="Pesquisar filmes..."
         style={styles.search}
         value={search}
-        onChangeText={setSearch}
+        onChangeText={text => {
+          setSearch(text);
+          searchMovies(text);
+        }}
       />
-
-      {/* Filtros */}
       <View style={styles.filters}>
-        {['Todos', 'Ação', 'Drama', 'Ficção Científica', 'Suspense'].map((g) => (
+        {filtrosGeneros.map(g => (
           <TouchableOpacity
             key={g}
             style={[styles.filterBtn, filter === g && styles.filterBtnActive]}
             onPress={() => setFilter(g as any)}
           >
-            <Text style={filter === g ? styles.filterTextActive : styles.filterText}>
+            <Text
+              style={filter === g ? styles.filterTextActive : styles.filterText}
+            >
               {g}
             </Text>
           </TouchableOpacity>
         ))}
       </View>
-
-      {/* Lista */}
-      <FlatList
-        data={filteredMovies}
-        keyExtractor={(item) => item.id}
-        numColumns={2}
-        columnWrapperStyle={{ justifyContent: 'space-between' }}
-        renderItem={({ item }) => (
-          <TouchableOpacity
-            style={styles.card}
-            // navigation.navigate('MovieDetails', { movieId: item.id })
-            onPress={() => console.log('teste')}
-          >
-            <Image source={{ uri: item.poster }} style={styles.poster} />
-            <Text style={styles.title}>{item.title}</Text>
-            <Text style={styles.genre}>{item.genre}</Text>
-            <Text style={styles.rating}>⭐ {item.rating}</Text>
-          </TouchableOpacity>
-        )}
-      />
+      {loading ? (
+        <ActivityIndicator
+          size="large"
+          color="#000"
+          style={{ marginTop: 50 }}
+        />
+      ) : (
+        <FlatList
+          data={filteredMovies}
+          keyExtractor={item => String(item.id)}
+          numColumns={2}
+          columnWrapperStyle={{ justifyContent: 'space-between' }}
+          renderItem={({ item }) => {
+            const title = item.title || item.name;
+            const genreName = item.genre_ids?.length
+              ? genreMap[item.genre_ids[0]]
+              : 'Outros';
+            return (
+              <TouchableOpacity
+                style={styles.card}
+                onPress={() => console.log('teste')}
+              >
+                <Image
+                  source={{
+                    uri: item.poster_path
+                      ? `${imageUrl}${item.poster_path}`
+                      : 'https://via.placeholder.com/200x300',
+                  }}
+                  style={styles.poster}
+                />
+                <Text style={styles.title} numberOfLines={1}>
+                  {title}
+                </Text>
+                <Text style={styles.genre}>{genreName}</Text>
+                <Text style={styles.rating}>
+                  ⭐ {item.vote_average.toFixed(1)}
+                </Text>
+              </TouchableOpacity>
+            );
+          }}
+        />
+      )}
     </View>
   );
 }

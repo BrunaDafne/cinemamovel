@@ -1,6 +1,12 @@
 import React, { useState, useCallback, useRef } from 'react';
 import {
-  View, Text, TextInput, Button, StyleSheet, ActivityIndicator, Alert
+  View,
+  Text,
+  TextInput,
+  Button,
+  StyleSheet,
+  ActivityIndicator,
+  Alert,
 } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useRenderCount } from '../utils/renderCount';
@@ -37,7 +43,10 @@ export default function LoginScreen({ navigation }: Props) {
       const t0_store = now();
       if (EXPERIMENTS.storeTokenSecurely) {
         // aqui você colocaria uma rotina "mais custosa" (ex.: criptografar antes de salvar)
-        await AsyncStorage.setItem('secure_token', JSON.stringify({token, ts: Date.now()}));
+        await AsyncStorage.setItem(
+          'secure_token',
+          JSON.stringify({ token, ts: Date.now() }),
+        );
       } else {
         await AsyncStorage.setItem('token', token);
       }
@@ -51,16 +60,15 @@ export default function LoginScreen({ navigation }: Props) {
       // 6) Navegar e medir até a tela Home ficar "visible" (aqui medimos até chamar navigation.replace)
       const t0_nav = now();
       //if (EXPERIMENTS.lazyLoadHomeScreen) {
-        // Se Home for importado dinamicamente (import()), isso aumentará o tempo de navegação
-        //const Home = await import('../screens/Home'); // exemplo de code-splitting
-        // opcional: fazer algo com Home
+      // Se Home for importado dinamicamente (import()), isso aumentará o tempo de navegação
+      //const Home = await import('../screens/Home'); // exemplo de code-splitting
+      // opcional: fazer algo com Home
       //}
       //navigation.replace('Dashboard');
       navigation.reset({
         index: 0,
         routes: [{ name: 'App' }],
       });
-      
 
       const totalStart = submitStartRef.current!;
       const totalEnd = now();
@@ -100,14 +108,22 @@ export default function LoginScreen({ navigation }: Props) {
       ) : (
         <Button title="Entrar" onPress={onLogin} />
       )}
-      <Text style={s.hint}>Modo de experimento: {JSON.stringify(EXPERIMENTS)}</Text>
+      <Text style={s.hint}>
+        Modo de experimento: {JSON.stringify(EXPERIMENTS)}
+      </Text>
     </View>
   );
 }
 
 const s = StyleSheet.create({
-  container: { flex:1, justifyContent:'center', padding:20 },
-  title: { fontSize:22, marginBottom:12 },
-  input: { borderWidth:1, borderColor:'#ccc', padding:10, borderRadius:8, marginBottom:10 },
-  hint: { marginTop:12, color:'#666', fontSize:12 }
+  container: { flex: 1, justifyContent: 'center', padding: 20 },
+  title: { fontSize: 22, marginBottom: 12 },
+  input: {
+    borderWidth: 1,
+    borderColor: '#ccc',
+    padding: 10,
+    borderRadius: 8,
+    marginBottom: 10,
+  },
+  hint: { marginTop: 12, color: '#666', fontSize: 12 },
 });
