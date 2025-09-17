@@ -4,13 +4,16 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 import LoginScreen from '../screens/LoginScreen';
-import DashboardScreen from '../screens/DashboardScreen';
 import AppNavigator from '../components/AppNavigator';
+import MovieDetailsScreen from '../screens/MovieDetailsScreen';
 
 export type RootStackParamList = {
   Login: undefined;
   App: undefined;
   Dashboard: undefined;
+  MovieDetails: {
+    movieId: number;
+  };
 };
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
@@ -22,7 +25,6 @@ export function Navigation() {
   useEffect(() => {
     const checkAuth = async () => {
       const token = await AsyncStorage.getItem('token');
-      console.log('token: ', token)
       setInitialRoute(token ? 'App' : 'Login');
       setLoading(false);
     };
@@ -33,9 +35,16 @@ export function Navigation() {
 
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName={initialRoute} screenOptions={{ headerShown: false }}>
+      <Stack.Navigator
+        initialRouteName={initialRoute}
+        screenOptions={{ headerShown: false }}
+      >
         <Stack.Screen name="Login" component={LoginScreen} />
         <Stack.Screen name="App" component={AppNavigator} />
+        <Stack.Screen
+          name="MovieDetails"
+          component={MovieDetailsScreen}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );

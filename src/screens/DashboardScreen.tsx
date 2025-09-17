@@ -124,7 +124,7 @@ export default function DashboardScreen({ navigation }: Props) {
             return (
               <TouchableOpacity
                 style={styles.card}
-                onPress={() => console.log('teste')}
+                onPress={() => navigation.navigate("MovieDetails", { movieId: item.id })}
               >
                 <Image
                   source={{
