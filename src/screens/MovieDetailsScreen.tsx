@@ -51,34 +51,42 @@ export default function MovieDetailsScreen({ route }: Props) {
     );
   }
 
+  const formatDate = (date: string): string => {
+    const [year, month, day] = date.split('-');
+    return `${day}-${month}-${year}`;
+  };
+
   return (
     <ScrollView style={styles.container}>
       <Image
         source={{ uri: `https://image.tmdb.org/t/p/w500${movie.poster_path}` }}
         style={styles.poster}
       />
-      <Text style={styles.title}>{movie.title}</Text>
-      <Text style={styles.info}>
-        ⭐ {movie.vote_average.toFixed(1)} | {movie.release_date}
-      </Text>
+      <View style={styles.containerInfo}>
+        <Text style={styles.title}>{movie.title}</Text>
+        <Text style={styles.info}>
+          ⭐ {movie.vote_average.toFixed(1)} | Data de lançamento:{' '}
+          {formatDate(movie.release_date)}
+        </Text>
 
-      <Text style={styles.sectionTitle}>Sinopse</Text>
-      <Text style={styles.overview}>
-        {movie.overview || 'Sem descrição disponível.'}
-      </Text>
+        <Text style={styles.sectionTitle}>Sinopse</Text>
+        <Text style={styles.overview}>
+          {movie.overview || 'Sem descrição disponível.'}
+        </Text>
 
-      <Text style={styles.sectionTitle}>Gêneros</Text>
-      <Text style={styles.info}>
-        {movie.genres?.map((g: any) => g.name).join(', ')}
-      </Text>
+        <Text style={styles.sectionTitle}>Gêneros</Text>
+        <Text style={styles.info}>
+          {movie.genres?.map((g: any) => g.name).join(', ')}
+        </Text>
 
-      <Text style={styles.sectionTitle}>Duração</Text>
-      <Text style={styles.info}>{movie.runtime} min</Text>
+        <Text style={styles.sectionTitle}>Duração</Text>
+        <Text style={styles.info}>{movie.runtime} min</Text>
 
-      <Text style={styles.sectionTitle}>Produção</Text>
-      <Text style={styles.info}>
-        {movie.production_companies?.map((c: any) => c.name).join(', ')}
-      </Text>
+        <Text style={styles.sectionTitle}>Produção</Text>
+        <Text style={styles.info}>
+          {movie.production_companies?.map((c: any) => c.name).join(', ')}
+        </Text>
+      </View>
     </ScrollView>
   );
 }
@@ -99,6 +107,9 @@ const styles = StyleSheet.create({
     height: 400,
     borderRadius: 12,
     marginBottom: 16,
+  },
+  containerInfo: {
+    marginBottom: 20,
   },
   title: {
     fontSize: 24,

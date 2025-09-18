@@ -20,6 +20,7 @@ type RootStackParamList = {
 const Drawer = createDrawerNavigator();
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
+// Pilha das telas autenticadas
 function DashboardStack() {
   return (
     <Stack.Navigator screenOptions={{ headerShown: false }}>
@@ -37,6 +38,7 @@ function DashboardStack() {
   );
 }
 
+// Menu
 function CustomDrawerContent(props: any) {
   const logout = async () => {
     await AsyncStorage.removeItem('token');
@@ -53,13 +55,16 @@ function CustomDrawerContent(props: any) {
       </View>
       <DrawerItem
         label="Dashboard"
-        onPress={() => props.navigation.navigate('DashboardStack')}
+        onPress={() =>
+          props.navigation.navigate('DashboardStack', { screen: 'Dashboard' })
+        }
       />
       <DrawerItem label="Sair" onPress={logout} />
     </DrawerContentScrollView>
   );
 }
 
+// Header
 export default function AppNavigator() {
   return (
     <Drawer.Navigator

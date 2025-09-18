@@ -5,7 +5,6 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 
 import LoginScreen from '../screens/LoginScreen';
 import AppNavigator from '../components/AppNavigator';
-import MovieDetailsScreen from '../screens/MovieDetailsScreen';
 
 export type RootStackParamList = {
   Login: undefined;
@@ -31,7 +30,7 @@ export function Navigation() {
     checkAuth();
   }, []);
 
-  if (loading) return null; 
+  if (loading) return null;
 
   return (
     <NavigationContainer>
