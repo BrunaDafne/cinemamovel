@@ -8,11 +8,10 @@ import {
   ActivityIndicator,
 } from 'react-native';
 import { API_KEY } from '@env';
-import { RouteProp } from '@react-navigation/native';
+import { RootStackParamList } from 'src/navigation';
+import { NativeStackScreenProps } from '@react-navigation/native-stack';
 
-type Props = {
-  route: RouteProp<{ params: { movieId: number } }, 'params'>;
-};
+type Props = NativeStackScreenProps<RootStackParamList, 'MovieDetails'>;
 
 export default function MovieDetailsScreen({ route }: Props) {
   const { movieId } = route.params;

@@ -31,7 +31,7 @@ export function Navigation() {
     checkAuth();
   }, []);
 
-  if (loading) return null; // pode trocar por SplashScreen
+  if (loading) return null; 
 
   return (
     <NavigationContainer>
@@ -41,10 +41,6 @@ export function Navigation() {
       >
         <Stack.Screen name="Login" component={LoginScreen} />
         <Stack.Screen name="App" component={AppNavigator} />
-        <Stack.Screen
-          name="MovieDetails"
-          component={MovieDetailsScreen}
-        />
       </Stack.Navigator>
     </NavigationContainer>
   );

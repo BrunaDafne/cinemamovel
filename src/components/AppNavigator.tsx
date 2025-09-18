@@ -1,21 +1,48 @@
 import React from 'react';
-import { createDrawerNavigator, DrawerContentScrollView, DrawerItem } from '@react-navigation/drawer';
+import {
+  createDrawerNavigator,
+  DrawerContentScrollView,
+  DrawerItem,
+} from '@react-navigation/drawer';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import DashboardScreen from '../screens/DashboardScreen';
 import { View, Text, StyleSheet } from 'react-native';
 
-type Props = {
-  navigation: any;
+import DashboardScreen from '../screens/DashboardScreen';
+import MovieDetailsScreen from '../screens/MovieDetailsScreen';
+import { getFocusedRouteNameFromRoute } from '@react-navigation/native';
+
+type RootStackParamList = {
+  Dashboard: undefined;
+  MovieDetails: { movieId: number };
 };
 
 const Drawer = createDrawerNavigator();
+const Stack = createNativeStackNavigator<RootStackParamList>();
 
-function CustomDrawerContent(props: Props) {
+function DashboardStack() {
+  return (
+    <Stack.Navigator screenOptions={{ headerShown: false }}>
+      <Stack.Screen
+        name="Dashboard"
+        component={DashboardScreen}
+        options={{ title: 'Dashboard' }}
+      />
+      <Stack.Screen
+        name="MovieDetails"
+        component={MovieDetailsScreen}
+        options={{ title: 'Detalhes do Filme' }}
+      />
+    </Stack.Navigator>
+  );
+}
+
+function CustomDrawerContent(props: any) {
   const logout = async () => {
-    await AsyncStorage.removeItem('token'); // limpa o token salvo
+    await AsyncStorage.removeItem('token');
     props.navigation.reset({
       index: 0,
-      routes: [{ name: 'Login' }], // volta para login
+      routes: [{ name: 'Login' }],
     });
   };
 
@@ -26,12 +53,9 @@ function CustomDrawerContent(props: Props) {
       </View>
       <DrawerItem
         label="Dashboard"
-        onPress={() => props.navigation.navigate('Dashboard')}
+        onPress={() => props.navigation.navigate('DashboardStack')}
       />
-      <DrawerItem
-        label="Sair"
-        onPress={logout}
-      />
+      <DrawerItem label="Sair" onPress={logout} />
     </DrawerContentScrollView>
   );
 }
@@ -39,13 +63,20 @@ function CustomDrawerContent(props: Props) {
 export default function AppNavigator() {
   return (
     <Drawer.Navigator
-      initialRouteName="Dashboard"
-      drawerContent={(props) => <CustomDrawerContent {...props} />}
+      initialRouteName="DashboardStack"
+      drawerContent={props => <CustomDrawerContent {...props} />}
     >
       <Drawer.Screen
-        name="Dashboard"
-        component={DashboardScreen}
-        options={{ title: 'Dashboard' }}
+        name="DashboardStack"
+        component={DashboardStack}
+        options={({ route }) => {
+          const routeName = getFocusedRouteNameFromRoute(route) ?? 'Dashboard';
+
+          let title = 'Dashboard';
+          if (routeName === 'MovieDetails') title = 'Detalhes do Filme';
+
+          return { title };
+        }}
       />
     </Drawer.Navigator>
   );
