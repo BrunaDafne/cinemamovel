@@ -3,7 +3,6 @@ import {
   View,
   Text,
   TextInput,
-  FlatList,
   Image,
   TouchableOpacity,
   StyleSheet,
@@ -13,6 +12,8 @@ import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { RootStackParamList } from '../navigation';
 import { API_KEY, BASE_URL } from '@env';
 import { imageUrl, genreMap, filtrosGeneros } from '../constants/api';
+import { FlatList } from 'react-native';
+import { FlashList } from '@shopify/flash-list';
 
 type Props = NativeStackScreenProps<RootStackParamList, 'Dashboard'>;
 
@@ -24,7 +25,10 @@ export default function DashboardScreen({ navigation }: Props) {
     'Todos' | 'Ação' | 'Drama' | 'Ficção Científica' | 'Suspense'
   >('Todos');
 
-  async function fetchPopularMovies(pages = 5) {
+  const USE_FLASHLIST = true;
+  const ListComponent = USE_FLASHLIST ? FlashList : FlatList;
+
+  async function fetchPopularMovies(pages = 10) {
     try {
       setLoading(true);
       let allMovies: any[] = [];
@@ -34,7 +38,6 @@ export default function DashboardScreen({ navigation }: Props) {
           `${BASE_URL}/movie/popular?api_key=${API_KEY}&language=pt-BR&page=${page}`,
         );
         const data = await response.json();
-
         allMovies = [...allMovies, ...data.results];
       }
       setMovies(allMovies || []);
@@ -77,6 +80,35 @@ export default function DashboardScreen({ navigation }: Props) {
     fetchPopularMovies();
   }, []);
 
+  const renderItem = ({ item }: any) => {
+    const title = item.title || item.name;
+    const genreName = item.genre_ids?.length
+      ? genreMap[item.genre_ids[0]]
+      : 'Outros';
+    return (
+      <TouchableOpacity
+        style={styles.card}
+        onPress={() =>
+          navigation.navigate('MovieDetails', { movieId: item.id })
+        }
+      >
+        <Image
+          source={{
+            uri: item.poster_path
+              ? `${imageUrl}${item.poster_path}`
+              : 'https://via.placeholder.com/200x300',
+          }}
+          style={styles.poster}
+        />
+        <Text style={styles.title} numberOfLines={1}>
+          {title}
+        </Text>
+        <Text style={styles.genre}>{genreName}</Text>
+        <Text style={styles.rating}>⭐ {item.vote_average.toFixed(1)}</Text>
+      </TouchableOpacity>
+    );
+  };
+
   return (
     <View style={styles.container}>
       <Text style={styles.header}>🎬 Catálogo de Filmes</Text>
@@ -111,39 +143,20 @@ export default function DashboardScreen({ navigation }: Props) {
           style={{ marginTop: 50 }}
         />
       ) : (
-        <FlatList
+        <ListComponent
           data={filteredMovies}
           keyExtractor={item => String(item.id)}
           numColumns={2}
-          columnWrapperStyle={{ justifyContent: 'space-between' }}
-          renderItem={({ item }) => {
-            const title = item.title || item.name;
-            const genreName = item.genre_ids?.length
-              ? genreMap[item.genre_ids[0]]
-              : 'Outros';
-            return (
-              <TouchableOpacity
-                style={styles.card}
-                onPress={() => navigation.navigate("MovieDetails", { movieId: item.id })}
-              >
-                <Image
-                  source={{
-                    uri: item.poster_path
-                      ? `${imageUrl}${item.poster_path}`
-                      : 'https://via.placeholder.com/200x300',
-                  }}
-                  style={styles.poster}
-                />
-                <Text style={styles.title} numberOfLines={1}>
-                  {title}
-                </Text>
-                <Text style={styles.genre}>{genreName}</Text>
-                <Text style={styles.rating}>
-                  ⭐ {item.vote_average.toFixed(1)}
-                </Text>
-              </TouchableOpacity>
-            );
-          }}
+          renderItem={renderItem}
+          contentContainerStyle={{ paddingBottom: 20 }}
+          {...(USE_FLASHLIST
+            ? { estimatedItemSize: 250 }
+            : {
+                initialNumToRender: 10,
+                windowSize: 10,
+                maxToRenderPerBatch: 10,
+                removeClippedSubviews: true,
+              })}
         />
       )}
     </View>
@@ -170,20 +183,22 @@ const styles = StyleSheet.create({
     marginRight: 8,
     marginBottom: 6,
   },
-  filterBtnActive: {
-    backgroundColor: '#333',
-    borderColor: '#333',
-  },
+  filterBtnActive: { backgroundColor: '#333', borderColor: '#333' },
   filterText: { color: '#333' },
   filterTextActive: { color: '#fff' },
   card: {
-    width: '48%',
+    flex: 1,
     backgroundColor: '#f9f9f9',
     borderRadius: 10,
-    marginBottom: 12,
+    margin: 6, 
     padding: 8,
   },
-  poster: { width: '100%', height: 200, borderRadius: 10, marginBottom: 8 },
+  poster: {
+    width: '100%',
+    height: 200,
+    borderRadius: 10,
+    marginBottom: 8,
+  },
   title: { fontSize: 14, fontWeight: 'bold' },
   genre: { fontSize: 12, color: '#555' },
   rating: { fontSize: 12, marginTop: 4 },
