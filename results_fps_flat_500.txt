@@ -1,0 +1,61 @@
+Applications Graphics Acceleration Info:
+Uptime: 889886694 Realtime: 1282190495
+
+** Graphics info for pid 22694 [com.cinemamovel] **
+
+Stats since: 889870114627188ns
+Total frames rendered: 604
+Janky frames: 107 (17.72%)
+Janky frames (legacy): 305 (50.50%)
+50th percentile: 22ms
+90th percentile: 38ms
+95th percentile: 48ms
+99th percentile: 105ms
+Number Missed Vsync: 9
+Number High input latency: 886
+Number Slow UI thread: 79
+Number Slow bitmap uploads: 8
+Number Slow issue draw commands: 91
+Number Frame deadline missed: 107
+Number Frame deadline missed (legacy): 27
+HISTOGRAM: 5ms=0 6ms=0 7ms=0 8ms=2 9ms=5 10ms=3 11ms=5 12ms=1 13ms=26 14ms=29 15ms=8 16ms=7 17ms=46 18ms=9 19ms=4 20ms=4 21ms=65 22ms=149 23ms=47 24ms=29 25ms=22 26ms=16 27ms=9 28ms=10 29ms=5 30ms=2 31ms=6 32ms=6 34ms=7 36ms=4 38ms=24 40ms=6 42ms=1 44ms=11 46ms=2 48ms=7 53ms=6 57ms=2 61ms=5 65ms=3 69ms=1 73ms=2 77ms=0 81ms=0 85ms=1 89ms=0 93ms=0 97ms=0 101ms=0 105ms=2 109ms=0 113ms=0 117ms=1 121ms=0 125ms=0 129ms=0 133ms=0 150ms=3 200ms=0 250ms=1 300ms=0 350ms=0 400ms=0 450ms=0 500ms=0 550ms=0 600ms=0 650ms=0 700ms=0 750ms=0 800ms=0 850ms=0 900ms=0 950ms=0 1000ms=0 1050ms=0 1100ms=0 1150ms=0 1200ms=0 1250ms=0 1300ms=0 1350ms=0 1400ms=0 1450ms=0 1500ms=0 1550ms=0 1600ms=0 1650ms=0 1700ms=0 1750ms=0 1800ms=0 1850ms=0 1900ms=0 1950ms=0 2000ms=0 2050ms=0 2100ms=0 2150ms=0 2200ms=0 2250ms=0 2300ms=0 2350ms=0 2400ms=0 2450ms=0 2500ms=0 2550ms=0 2600ms=0 2650ms=0 2700ms=0 2750ms=0 2800ms=0 2850ms=0 2900ms=0 2950ms=0 3000ms=0 3050ms=0 3100ms=0 3150ms=0 3200ms=0 3250ms=0 3300ms=0 3350ms=0 3400ms=0 3450ms=0 3500ms=0 3550ms=0 3600ms=0 3650ms=0 3700ms=0 3750ms=0 3800ms=0 3850ms=0 3900ms=0 3950ms=0 4000ms=0 4050ms=0 4100ms=0 4150ms=0 4200ms=0 4250ms=0 4300ms=0 4350ms=0 4400ms=0 4450ms=0 4500ms=0 4550ms=0 4600ms=0 4650ms=0 4700ms=0 4750ms=0 4800ms=0 4850ms=0 4900ms=0 4950ms=0
+50th gpu percentile: 9ms
+90th gpu percentile: 14ms
+95th gpu percentile: 4950ms
+99th gpu percentile: 4950ms
+GPU HISTOGRAM: 1ms=0 2ms=13 3ms=1 4ms=1 5ms=6 6ms=2 7ms=83 8ms=192 9ms=80 10ms=59 11ms=65 12ms=25 13ms=8 14ms=9 15ms=7 16ms=2 17ms=2 18ms=2 19ms=1 20ms=1 21ms=1 22ms=0 23ms=3 24ms=5 25ms=5 4950ms=31
+
+Pipeline=Skia (OpenGL)
+CPU Caches:
+  Glyph Cache: 145.05 KB (1 entry)
+  skia/sk_resource_cache/mipmap_0xb40000784f8296e0: 15.45 KB (1 entry)
+  Glyph Count: 17 
+Total CPU memory usage:
+  164351 bytes, 160.50 KB (0.00 bytes is purgeable)
+GPU Caches:
+  Other:
+    Other: 21.29 KB (1 entry)
+    Buffer Object: 2.05 KB (2 entries)
+  Image:
+    Texture: 31.39 MB (24 entries)
+  Scratch:
+    Texture: 4.00 MB (3 entries)
+    Buffer Object: 78.00 KB (2 entries)
+Total GPU memory usage:
+  37209620 bytes, 35.49 MB (22.89 MB is purgeable)
+
+Profile data in ms:
+
+	com.cinemamovel/com.cinemamovel.MainActivity/android.view.ViewRootImpl@d6058cd (visibility=0)
+View hierarchy:
+
+  com.cinemamovel/com.cinemamovel.MainActivity/android.view.ViewRootImpl@d6058cd
+  102 views, 214,89 kB of render nodes
+
+
+Total ViewRootImpl   : 1
+Total attached Views : 102
+Total RenderNode     : 214,89 kB (used) / 699,64 kB (capacity)
+
+  ProcessConfig={1.0 724mcc5mnc [pt_BR] ldltr sw384dp w384dp h781dp 300dpi nrml long port night finger -keyb/v/h -nav/h winConfig={ mBounds=Rect(0, 0 - 720, 1600) mAppBounds=Rect(0, 45 - 720, 1510) mMaxBounds=Rect(0, 0 - 720, 1600) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0 mPopOver=off mStageConfig=undefined mFreeformTaskPinningState=unpinned mFreeformStashState=undefined} s.8862 fontWeightAdjustment=0 ff=0 bf=0 bts=0 themeSeq=0 nightDim=-1}
+  Application ResourcesConfig={1.0 724mcc5mnc [pt_BR] ldltr sw384dp w384dp h781dp 300dpi nrml long port night finger -keyb/v/h -nav/h winConfig={ mBounds=Rect(0, 0 - 720, 1600) mAppBounds=Rect(0, 45 - 720, 1510) mMaxBounds=Rect(0, 0 - 720, 1600) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0 mPopOver=off mStageConfig=undefined mFreeformTaskPinningState=unpinned mFreeformStashState=undefined} s.8862 fontWeightAdjustment=0 ff=0 bf=0 bts=0 themeSeq=0 nightDim=-1}

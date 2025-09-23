@@ -14,21 +14,23 @@ import { API_KEY, BASE_URL } from '@env';
 import { imageUrl, genreMap, filtrosGeneros } from '../constants/api';
 import { FlatList } from 'react-native';
 import { FlashList } from '@shopify/flash-list';
+import moviesJson from '../data/movies.json';
+import moviespreJson from '../data/moviespre.json';
 
 type Props = NativeStackScreenProps<RootStackParamList, 'Dashboard'>;
 
 export default function DashboardScreen({ navigation }: Props) {
-  const [movies, setMovies] = useState<any[]>([]);
-  const [loading, setLoading] = useState(true);
+  const [movies, setMovies] = useState<any[]>(moviespreJson);
+  const [loading, setLoading] = useState(false);
   const [search, setSearch] = useState('');
   const [filter, setFilter] = useState<
     'Todos' | 'Ação' | 'Drama' | 'Ficção Científica' | 'Suspense'
   >('Todos');
 
-  const USE_FLASHLIST = true;
+  const USE_FLASHLIST = false;
   const ListComponent = USE_FLASHLIST ? FlashList : FlatList;
 
-  async function fetchPopularMovies(pages = 10) {
+  async function fetchPopularMovies(pages = 25) {
     try {
       setLoading(true);
       let allMovies: any[] = [];
@@ -77,7 +79,7 @@ export default function DashboardScreen({ navigation }: Props) {
   }, [search, filter, movies]);
 
   useEffect(() => {
-    fetchPopularMovies();
+    //fetchPopularMovies();
   }, []);
 
   const renderItem = ({ item }: any) => {
