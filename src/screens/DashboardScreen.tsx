@@ -16,18 +16,19 @@ import { FlatList } from 'react-native';
 import { FlashList } from '@shopify/flash-list';
 import moviesJson from '../data/movies.json';
 import moviespreJson from '../data/moviespre.json';
+import movieproJson from '../data/moviespro.json'
 
 type Props = NativeStackScreenProps<RootStackParamList, 'Dashboard'>;
 
 export default function DashboardScreen({ navigation }: Props) {
-  const [movies, setMovies] = useState<any[]>(moviespreJson);
+  const [movies, setMovies] = useState<any[]>(movieproJson);
   const [loading, setLoading] = useState(false);
   const [search, setSearch] = useState('');
   const [filter, setFilter] = useState<
     'Todos' | 'Ação' | 'Drama' | 'Ficção Científica' | 'Suspense'
   >('Todos');
 
-  const USE_FLASHLIST = false;
+  const USE_FLASHLIST = true;
   const ListComponent = USE_FLASHLIST ? FlashList : FlatList;
 
   async function fetchPopularMovies(pages = 25) {
