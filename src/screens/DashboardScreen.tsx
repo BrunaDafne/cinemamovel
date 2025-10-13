@@ -14,24 +14,24 @@ import { API_KEY, BASE_URL } from '@env';
 import { imageUrl, genreMap, filtrosGeneros } from '../constants/api';
 import { FlatList } from 'react-native';
 import { FlashList } from '@shopify/flash-list';
-import moviesJson from '../data/movies.json';
+//import moviesJson from '../data/movies.json';
 import moviespreJson from '../data/moviespre.json';
-import movieproJson from '../data/moviespro.json'
+//import movieproJson from '../data/moviespro.json'
 
 type Props = NativeStackScreenProps<RootStackParamList, 'Dashboard'>;
 
 export default function DashboardScreen({ navigation }: Props) {
-  const [movies, setMovies] = useState<any[]>(movieproJson);
+  const [movies, setMovies] = useState<any[]>(moviespreJson);
   const [loading, setLoading] = useState(false);
   const [search, setSearch] = useState('');
   const [filter, setFilter] = useState<
     'Todos' | 'Ação' | 'Drama' | 'Ficção Científica' | 'Suspense'
   >('Todos');
 
-  const USE_FLASHLIST = true;
-  const ListComponent = USE_FLASHLIST ? FlashList : FlatList;
+  // const USE_FLASHLIST = false;
+  // const ListComponent = USE_FLASHLIST ? FlashList : FlatList;
 
-  async function fetchPopularMovies(pages = 25) {
+  async function fetchPopularMovies(pages = 1) {
     try {
       setLoading(true);
       let allMovies: any[] = [];
@@ -68,7 +68,7 @@ export default function DashboardScreen({ navigation }: Props) {
   }
 
   const filteredMovies = useMemo(() => {
-    return movies.filter(m => {
+    return movies?.filter(m => {
       const title = m.title || m.name || '';
       const matchSearch = title.toLowerCase().includes(search.toLowerCase());
       const genreName = m.genre_ids?.length
@@ -146,20 +146,18 @@ export default function DashboardScreen({ navigation }: Props) {
           style={{ marginTop: 50 }}
         />
       ) : (
-        <ListComponent
+        <FlatList
           data={filteredMovies}
           keyExtractor={item => String(item.id)}
           numColumns={2}
           renderItem={renderItem}
           contentContainerStyle={{ paddingBottom: 20 }}
-          {...(USE_FLASHLIST
-            ? { estimatedItemSize: 250 }
-            : {
-                initialNumToRender: 10,
-                windowSize: 10,
-                maxToRenderPerBatch: 10,
-                removeClippedSubviews: true,
-              })}
+          {...{
+            initialNumToRender: 10,
+            windowSize: 10,
+            maxToRenderPerBatch: 10,
+            removeClippedSubviews: true,
+          }}
         />
       )}
     </View>
@@ -193,7 +191,7 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#f9f9f9',
     borderRadius: 10,
-    margin: 6, 
+    margin: 6,
     padding: 8,
   },
   poster: {
