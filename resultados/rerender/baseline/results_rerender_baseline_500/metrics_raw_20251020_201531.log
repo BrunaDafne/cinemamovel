@@ -1,0 +1,1556 @@
+--------- beginning of main
+10-20 20:15:41.089  1483  6407 D InputDispatcher: Inject motion (19941/2000): action=0x0, time=2551538388000000, f=0x0, d=0 dsdx=1.000000 dtdx=0.000000
+10-20 20:15:41.090  1483  1796 I InputDispatcher: Delivering touch to (2521): action: 0x4, f=0x0, d=0, 'a9cce9e', t=1 
+10-20 20:15:41.091  1483  1796 I InputDispatcher: Delivering touch to (19138): action: 0x0, f=0x0, d=0, '1eb0182', t=1 
+--------- beginning of system
+10-20 20:15:41.091  1483  1796 D PowerManagerService: [api] userActivityFromNative :  (event: 2 flags: 0 displayId: 0) eventTime = 2551538388
+10-20 20:15:41.091 19138 19138 I ViewRootImpl@52e2b1c[MainActivity]: ViewPostIme pointer 0
+10-20 20:15:41.093  1483  1796 D PowerManagerService: UserActivityStateListenerState: 1
+10-20 20:15:41.094  1483  1528 I GestureDetector: obtain mCurrentDownEvent. id: -933333817 caller: com.android.server.wm.SystemGesturesPointerEventListener.onPointerEvent:203 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:285 
+10-20 20:15:41.094  1483  1528 I GestureDetector: obtain mCurrentDownEvent. id: -933333817 caller: com.android.server.wm.SystemPerformancePointerEventListener.onPointerEvent:89 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:285 
+10-20 20:15:41.103  1483  6407 D InputDispatcher: Inject motion (19941/2000): action=0x1, time=2551538388000000, f=0x0, d=0 dsdx=1.000000 dtdx=0.000000
+10-20 20:15:41.103  1483  1796 I InputDispatcher: Delivering touch to (19138): action: 0x1, f=0x0, d=0, '1eb0182', t=1 
+10-20 20:15:41.105  1483  1528 I GestureDetector: obtain mCurrentMotionEventRaw. action: 1 id: -1040373535
+10-20 20:15:41.105 19138 19138 I ViewRootImpl@52e2b1c[MainActivity]: ViewPostIme pointer 1
+10-20 20:15:41.105  1483  1528 I GestureDetector: obtain mCurrentMotionEventRaw. action: 1 id: -1040373535
+10-20 20:15:41.158  1483  2425 I ChimeraAggressivePolicyHandler: executePolicy() - triggerSource: TRIGGER_SOURCE_LMKD
+10-20 20:15:41.160  1483  2425 I ChimeraAggressivePolicyHandler: available memory: 1099496, free memory target: 747520, quit chimera
+10-20 20:15:41.289 30047 30047 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.mainline.primary.libs' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+10-20 20:15:41.292  1205  1205 I thermal_repeater: socket -1
+10-20 20:15:41.394  1483  1528 I GestureDetector: handleMessage TAP
+10-20 20:15:41.395  1483  1483 I GestureDetector: handleMessage TAP
+10-20 20:15:41.559  2486  2486 I WifiHAL : Get link layer stats
+10-20 20:15:41.559  2486  2486 I WifiHAL : GetLinkStatsCommand::create
+10-20 20:15:41.559  2486  2486 D android.hardware.wifi@1.0-service-lazy: WifiRequest::create vendor command to iface 38, vendor_id=0x1a11, subcmd=0x1200, res=0
+10-20 20:15:41.559  2486  2486 I android.hardware.wifi@1.0-service-lazy: WifiCommand::requestResponse err=-95
+10-20 20:15:41.559  2486  2486 I WifiHAL : wifi_get_link_stats: result=-3
+10-20 20:15:41.560  1483  2363 E WifiVendorHal: getWifiLinkLayerStats_1_5_Internal(l.1179) failed {.code = ERROR_NOT_SUPPORTED, .description = }
+10-20 20:15:41.573  1483  3390 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 543554, isSameBssidAndFreq true
+10-20 20:15:41.574  1483  2437 I SemWifiLinkQualityMonitor: Link Qos query: inf. ms / 0 Mbps
+10-20 20:15:41.612 19484 19709 I incfs   : Initial API level of the device: 30
+10-20 20:15:41.612 19484 19709 W libc    : Access denied finding property "ro.incremental.enable"
+10-20 20:15:41.612 19484 19709 I incfs   : ro.incremental.enable: 
+10-20 20:15:41.612   963   963 E audit   : type=1400 audit(1761002141.608:1251154): avc:  denied  { read } for  pid=19484 comm="pool-22-thread-" name="u:object_r:incremental_prop:s0" dev="tmpfs" ino=106 scontext=u:r:untrusted_app:s0:c23,c256,c512,c768 tcontext=u:object_r:incremental_prop:s0 tclass=file permissive=0 SEPF_SM-A037M_12_0001 unfiltered
+10-20 20:15:41.612 19484 19709 I incfs   : IncFs_Features: v1
+10-20 20:15:41.613   963   963 E audit   : type=1400 audit(1761002141.608:1251155): avc:  denied  { ioctl } for  pid=19484 comm="pool-22-thread-" path="/data/app/~~6g4Af6nJrq4Aozq2uzHGJg==/br.com.brainweb.ifood-3yBxb9jTdwsztzon3TXkFQ==/base.apk" dev="incremental-fs" ino=2138491 ioctlcmd=0x6722 scontext=u:r:untrusted_app:s0:c23,c256,c512,c768 tcontext=u:object_r:apk_data_file:s0 tclass=file permissive=0 SEPF_SM-A037M_12_0001 unfiltered
+10-20 20:15:41.615   963   963 E audit   : type=1400 audit(1761002141.612:1251156): avc:  denied  { ioctl } for  pid=19484 comm="pool-22-thread-" path="/data/app/~~6g4Af6nJrq4Aozq2uzHGJg==/br.com.brainweb.ifood-3yBxb9jTdwsztzon3TXkFQ==/split_config.pt.apk" dev="incremental-fs" ino=2142055 ioctlcmd=0x6722 scontext=u:r:untrusted_app:s0:c23,c256,c512,c768 tcontext=u:object_r:apk_data_file:s0 tclass=file permissive=0 SEPF_SM-A037M_12_0001 unfiltered
+10-20 20:15:41.657   571   571 W keymaster_tee: [WRN]begin req PARAMS: A32 B2 P64 
+10-20 20:15:41.662   570   580 I keystore2: keystore2::security_level: In create_operation. Success to create IKeystoreOperation. 10252, None
+10-20 20:15:41.706  1483  1554 I ActivityManager: Changes in 10079 5 to 15, 8 to 0
+10-20 20:15:41.933 14401 14401 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.feedback.internal.IFeedbackService dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsBoundBrokerService }
+10-20 20:15:42.196  1483  2597 D InputDispatcher: Inject key (19949/2000): action=0, f=0x0, d=-1, time=2551539498791068
+10-20 20:15:42.224  1483  2597 D WindowManager: interceptKeyTq interceptKeyResult=1
+10-20 20:15:42.226  1483  1796 D PowerManagerService: [api] userActivityFromNative :  (event: 1 flags: 0 displayId: 0) eventTime = 2551539498
+10-20 20:15:42.242  2521  2618 D MobileStatusTracker(0/2): onSignalStrengthsChanged level=4, vendorLevel=3
+10-20 20:15:42.245  2521  2618 D MobileSignalController(0/2): notifyListener: enabled=true, connected=true, dataConnected=true, networkType=LTE (4G), emergencyOnly=false, roaming=false, isDefault=false, dataActivity=, level=3, ca=false, mmWave=false, disabledDataIcon=false, simCard=ETC
+10-20 20:15:42.245  2521  2618 D NetworkController: SignalStrength from intent slotId=0
+10-20 20:15:42.316  1483  1796 W InputDispatcher: Excessive delay in interceptKeyBeforeDispatching; took 89 ms
+10-20 20:15:42.317  1483  1796 I InputDispatcher: Delivering key to (19138): action: 0x0 (0), f=0x0, m=0x41, d=0, '1eb0182'
+10-20 20:15:42.390  5125  5125 I HBD     : b skip onKeyDown as physical keyboard not connected 
+10-20 20:15:42.466 19138 19149 W com.cinemamovel: Cleared Reference was only reachable from finalizer (only reported once)
+10-20 20:15:42.480   543   543 D io_stats: !@ 179,0 r 464672743 5647778978 w 80568767 844554356 d 1258357 33785868 f 0 0 iot 231103744 0 th 0 0 0 pt 0 inp 0 16 2551539.782
+10-20 20:15:42.480   543   543 D io_stats: !@ DiskUsage: /data 90.98 % used (47275 MB/ 51957 MB)
+10-20 20:15:42.480   543   543 D io_stats: !@ MemInfo(KB): total 3867888 free 75420 avail 989404 actv(f) 435444 inactv(f) 578400 dirty 15504 wb 1364 anonpg 1213752 slab 345872
+10-20 20:15:42.485 19138 19149 I com.cinemamovel: Background concurrent copying GC freed 350713(15MB) AllocSpace objects, 18(548KB) LOS objects, 49% free, 7254KB/14MB, paused 165us,101us total 174.681ms
+10-20 20:15:42.492  5125  5125 I HBD     : HoneyBoardService onKeyDown r:261f6c99 consumed:false 102 
+10-20 20:15:42.569  2799  2811 I m.android.phone: Background concurrent copying GC freed 200684(10MB) AllocSpace objects, 48(1632KB) LOS objects, 49% free, 12MB/24MB, paused 162us,165us total 324.266ms
+10-20 20:15:42.575 19138 19138 I ViewRootImpl@52e2b1c[MainActivity]: ViewPostIme key 0
+10-20 20:15:42.613  1483  2471 D NetdEventListenerService: DNS Requested by : 475, 11011
+10-20 20:15:42.614 14839 14902 D TrafficStats: tagSocket(6) with statsTag=0xffffffff, statsUid=-1
+10-20 20:15:42.711  1483  2597 D InputDispatcher: Inject key (19949/2000): action=0, f=0x0, d=-1, time=2551539498791068
+10-20 20:15:42.841  1483  2597 D SingleKeyGesture: reset counter=0 mActiveRule=null Callers(5)=com.android.server.policy.SingleKeyGestureDetector.interceptKeyDown:453 com.android.server.policy.SingleKeyGestureDetector.interceptKey:399 com.android.server.policy.PhoneWindowManager.handleKeyGesture:5028 com.android.server.policy.PhoneWindowManager.interceptKeyBeforeQueueing:4558 com.android.server.wm.InputManagerCallback.interceptKeyBeforeQueueing:156 
+10-20 20:15:42.841  1483  2597 D WindowManager: interceptKeyTq interceptKeyResult=1
+10-20 20:15:42.842  1483  2597 W InputDispatcher: Excessive delay in interceptKeyBeforeQueueing; took 130 ms
+10-20 20:15:42.846  1483  1796 I InputDispatcher: Delivering key to (19138): action: 0x0 (0), f=0x0, m=0x41, d=0, '1eb0182'
+10-20 20:15:42.847  5125  5125 I HBD     : b skip onKeyDown as physical keyboard not connected 
+10-20 20:15:42.848  5125  5125 I HBD     : HoneyBoardService onKeyDown r:09fc483d consumed:false 1 
+10-20 20:15:43.006 19138 19138 I ViewRootImpl@52e2b1c[MainActivity]: setInTouchMode(false), android.view.ViewRootImpl.checkForLeavingTouchModeAndConsume:9383 android.view.ViewRootImpl.-$$Nest$mcheckForLeavingTouchModeAndConsume:0 android.view.ViewRootImpl$EarlyPostImeInputStage.processKeyEvent:7707 android.view.ViewRootImpl$EarlyPostImeInputStage.onProcess:7691 android.view.ViewRootImpl$InputStage.deliver:7213 android.view.ViewRootImpl$InputStage.onDeliverToNext:7270 android.view.ViewRootImpl$InputStage.forward:7236 android.view.ViewRootImpl$AsyncInputStage.forward:7467 android.view.ViewRootImpl$ImeInputStage.onFinishedInputEvent:7676 android.view.inputmethod.InputMethodManager$PendingEvent.run:3897 
+10-20 20:15:43.016  1483  6037 D InputDispatcher: Touch mode switch rejected, caller (pid=0, uid=10976) doesn't own the focused window nor none of the previously interacted window
+10-20 20:15:43.016  8661 18289 W AOSP-MdnsDiscoveryManag: Error while decoding multicast packet (5064): 1 [CONTEXT service_id=168 ]
+10-20 20:15:43.018  8661 18290 I AOSP-MdnsDiscoveryManag: (REDACTED) %s
+10-20 20:15:43.019  8661 18290 I AOSP-MdnsDiscoveryManag: (REDACTED) %s
+10-20 20:15:43.019  8661 18303 I AOSP-MdnsDiscoveryManag: (REDACTED) %s
+10-20 20:15:43.019  8661 18288 I AOSP-MdnsDiscoveryManag: (REDACTED) %s
+10-20 20:15:43.019  8661 18303 I AOSP-MdnsDiscoveryManag: (REDACTED) %s
+10-20 20:15:43.020  8661 18288 I AOSP-MdnsDiscoveryManag: (REDACTED) %s
+10-20 20:15:43.020  8661 18289 W AOSP-MdnsDiscoveryManag: Error while decoding multicast packet (5065): 1 [CONTEXT service_id=168 ]
+10-20 20:15:43.021  8661 18288 I AOSP-MdnsDiscoveryManag: (REDACTED) %s
+10-20 20:15:43.022  8661 18288 I AOSP-MdnsDiscoveryManag: (REDACTED) %s
+10-20 20:15:43.054 12269 12519 W LibevQuicAsyncUDPSocket.h: setTosOrTrafficClass not implemented in LibevQuicAsyncUDPSocket
+10-20 20:15:43.056  1483  2471 D NetdEventListenerService: DNS Requested by : 475, 11013, 4, true
+10-20 20:15:43.072 12269 12519 E MvfstCallbacks.cpp: onConnectionSetupError: error=TransportError: Internal Error, Error on socket write Operation not permitted, 
+10-20 20:15:43.076  1483  2471 D NetdEventListenerService: DNS Requested by : 475, 11013, 4, true
+10-20 20:15:43.088  8661  9716 I AOSP-MdnsDiscoveryManag: (REDACTED) %s
+10-20 20:15:43.089  8661  9716 I AOSP-MdnsDiscoveryManag: (REDACTED) %s
+10-20 20:15:43.090 19138 19138 I ViewRootImpl@52e2b1c[MainActivity]: ViewPostIme key 0
+10-20 20:15:43.090  8661 18289 W AOSP-MdnsDiscoveryManag: Error while decoding multicast packet (5068): 1 [CONTEXT service_id=168 ]
+10-20 20:15:43.091  8661 18289 W AOSP-MdnsDiscoveryManag: Error while decoding multicast packet (5069): 1 [CONTEXT service_id=168 ]
+10-20 20:15:43.092  8661 18289 W AOSP-MdnsDiscoveryManag: Error while decoding multicast packet (5070): 1 [CONTEXT service_id=168 ]
+10-20 20:15:43.094  8661 18289 W AOSP-MdnsDiscoveryManag: Error while decoding multicast packet (5071): 1 [CONTEXT service_id=168 ]
+10-20 20:15:43.200  1483  2597 D InputDispatcher: Inject key (19949/2000): action=1, f=0x0, d=-1, time=2551539498791068
+10-20 20:15:43.200  1483  2597 D WindowManager: interceptKeyTq interceptKeyResult=1
+10-20 20:15:43.201  1483  1796 I InputDispatcher: Delivering key to (19138): action: 0x1 (0), f=0x0, m=0x41, d=0, '1eb0182'
+10-20 20:15:43.217 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:43.217 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:43.223 19138 19138 D InputMethodManager: startInputInner - Id : 0
+10-20 20:15:43.223 19138 19138 I InputMethodManager: startInputInner - mService.startInputOrWindowGainedFocus
+10-20 20:15:43.225  1039  1039 I SurfaceFlinger: SFWD update time=2551540528650068
+10-20 20:15:43.226  1039  1039 I BufferQueueProducer: [com.cinemamovel/com.cinemamovel.MainActivity$_19138#505932](this:0xb400007a1f6f0838,id:-1,api:0,p:-1,c:1039) queueBuffer: fps=5.16 dur=4843.54 max=4078.13 min=16.37
+10-20 20:15:43.227  1483  6037 V InputMethodManagerService: startInputOrWindowGainedFocusInternalLocked: reason=CHECK_FOCUS clientState=56acf32 attribute=android.view.inputmethod.EditorInfo@4e1f67 startInputFlags=VIEW_HAS_FOCUS|IS_TEXT_EDITOR|INITIAL_CONNECTION softInputMode=STATE_UNSPECIFIED|ADJUST_RESIZE windowFlags=#81810100 sameWindowFocused=true
+10-20 20:15:43.228  1483  6037 D InputMethodManagerService: mDesktopModeManager null!
+10-20 20:15:43.228  1483  6037 V InputMethodManagerService: getDisplayIdOfInputMethodWindowToBeAdded: displayId=0
+10-20 20:15:43.228   991  1074 I hwcomposer: [HWCDisplay] [Display_0 (type:1)] fps:5.161910,dur:4843.17,max:4078.78,min:15.64  
+10-20 20:15:43.228  1483  6037 D InputMethodManagerService: isImeSwitcherDisabledPackage : false
+10-20 20:15:43.229  1483  6037 D InputMethodManagerService: shouldShowImeSwitcherLocked : checking vis : 3
+10-20 20:15:43.231  1483  6037 D InputMethodManagerService: checkDisplayOfStartInputAndUpdateKeyboard: displayId=0, mFocusedDisplayId=0
+10-20 20:15:43.232  1483  6037 D InputTransport: Input channel constructed: 'ClientS', fd=776
+10-20 20:15:43.232  1483  6037 D InputTransport: Input channel destroyed: 'ClientS', fd=776
+10-20 20:15:43.246 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:43.246 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:43.251  5125  5125 I HBD     : HoneyBoardService onKeyUp r:fec6e44d consumed:false 6 
+10-20 20:15:43.252 19138 19138 I ViewRootImpl@52e2b1c[MainActivity]: ViewPostIme key 1
+10-20 20:15:43.254  1483  2597 D InputDispatcher: Inject key (19949/2000): action=1, f=0x0, d=-1, time=2551539498791068
+10-20 20:15:43.254  1483  2597 D WindowManager: interceptKeyTq interceptKeyResult=1
+10-20 20:15:43.254  1483  1796 I InputDispatcher: Delivering key to (19138): action: 0x1 (0), f=0x0, m=0x0, d=0, '1eb0182'
+10-20 20:15:43.264  5125  5125 I HBD     : HoneyBoardService onKeyUp r:7e75cfeb consumed:false 8 
+10-20 20:15:43.265 19138 19138 I ViewRootImpl@52e2b1c[MainActivity]: ViewPostIme key 1
+10-20 20:15:43.267  1483  2597 D InputDispatcher: Inject key (19949/2000): action=0, f=0x0, d=-1, time=2551539498791068
+10-20 20:15:43.267  1483  2597 D WindowManager: interceptKeyTq interceptKeyResult=1
+10-20 20:15:43.268  1483  1796 I InputDispatcher: Delivering key to (19138): action: 0x0 (0), f=0x0, m=0x0, d=0, '1eb0182'
+10-20 20:15:43.271  5125  5125 I HBD     : HoneyBoardService onFinishInput 
+10-20 20:15:43.272  5125  5125 I HBD     : a IC have been unbinding,  RemoteInputConnection{idHash=#74fe112}
+10-20 20:15:43.272  5125  5125 I HBD     : HoneyBoardService [PF_CL][onFinishInput]  1 ms 
+10-20 20:15:43.274  5125  5125 I HBD     : HoneyBoardService onInlineSuggestionsResponse 
+10-20 20:15:43.277  5125  5125 I HBD     : HoneyBoardService [IMI] onStartInput - caller pid : 19138 , caller uid : 10976 
+10-20 20:15:43.277  5125  5125 I HBD     : j updateConfigs 
+10-20 20:15:43.278  5125  5125 I HBD     : j isEnabledNightMode : true 
+10-20 20:15:43.278  5125  5125 I HBD     : a IC have been binding, RemoteInputConnection{idHash=#1918199} 
+10-20 20:15:43.278  5125  5125 I HBD     : h [EditorInputType]setPrivateImeOptionsToTable privateImeOptions ( null )
+10-20 20:15:43.278  5125  5125 I HBD     : b incognitoMode : false 
+10-20 20:15:43.279  5125  5125 I HBD     : b [CPS]isPredictionOnByLanguage :false, isForceOff : false, isPredictionOn : true , isOnPref : true 
+10-20 20:15:43.280  5125  5125 I HBD     : h getDefaultInputRange : UNKNOWN 
+10-20 20:15:43.280  5125  5125 I HBD     : h getDefaultInputRange : UNKNOWN 
+10-20 20:15:43.280  5125  5125 I HBD     : h getDefaultInputRange : UNKNOWN 
+10-20 20:15:43.283  5125  5125 I HBD     : b update cached prediction status : true 
+10-20 20:15:43.283  5125  5125 I HBD     : h getDefaultInputRange : UNKNOWN 
+10-20 20:15:43.283  5125  5125 I HBD     : a currentState : 0 
+10-20 20:15:43.283  5125  5125 I HBD     : a [UpdatePolicy] [post] a: 0 cl: 3276809 kit: [0/0] vt: 0 ir: 1 
+10-20 20:15:43.284  5125  5125 I HBD     : a [NRIC] resetNoResponseState 
+10-20 20:15:43.284  5125  5125 I HBD     : b update cached prediction status : true 
+10-20 20:15:43.285  5125  5125 I HBD     : HoneyBoardService [PF_OP][onStartInput]  8 ms 
+10-20 20:15:43.285  5125  5125 I HBD     : b skip onKeyDown as physical keyboard not connected 
+10-20 20:15:43.286  5125  5125 I HBD     : HoneyBoardService onKeyDown r:17ed0540 consumed:false 1 
+10-20 20:15:43.287 19138 19138 I ViewRootImpl@52e2b1c[MainActivity]: ViewPostIme key 0
+10-20 20:15:43.297  1483  2597 D InputDispatcher: Inject key (19949/2000): action=1, f=0x0, d=-1, time=2551539498791068
+10-20 20:15:43.298  1483  2597 D WindowManager: interceptKeyTq interceptKeyResult=1
+10-20 20:15:43.299  1483  1796 I InputDispatcher: Delivering key to (19138): action: 0x1 (0), f=0x0, m=0x0, d=0, '1eb0182'
+10-20 20:15:43.307 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:43.307 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:43.313 30047 30047 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.appsearch' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+10-20 20:15:43.319  5125  5125 I HBD     : HoneyBoardService onKeyUp r:6a3eec2a consumed:false 1 
+10-20 20:15:43.320 19138 19138 I ViewRootImpl@52e2b1c[MainActivity]: ViewPostIme key 1
+10-20 20:15:43.321  1483  2597 D InputDispatcher: Inject key (19949/2000): action=0, f=0x0, d=-1, time=2551539498791068
+10-20 20:15:43.321  1483  2597 D WindowManager: interceptKeyTq interceptKeyResult=1
+10-20 20:15:43.322  1483  1796 I InputDispatcher: Delivering key to (19138): action: 0x0 (0), f=0x0, m=0x0, d=0, '1eb0182'
+10-20 20:15:43.323  5125  5125 I HBD     : b skip onKeyDown as physical keyboard not connected 
+10-20 20:15:43.323  5125  5125 I HBD     : HoneyBoardService onKeyDown r:d39581bc consumed:false 0 
+10-20 20:15:43.324 19138 19138 I ViewRootImpl@52e2b1c[MainActivity]: ViewPostIme key 0
+10-20 20:15:43.337  1483  2597 D InputDispatcher: Inject key (19949/2000): action=1, f=0x0, d=-1, time=2551539498791068
+10-20 20:15:43.337  1483  2597 D WindowManager: interceptKeyTq interceptKeyResult=1
+10-20 20:15:43.338  1483  1796 I InputDispatcher: Delivering key to (19138): action: 0x1 (0), f=0x0, m=0x0, d=0, '1eb0182'
+10-20 20:15:43.345 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:43.346 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:43.347 30047 30047 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.art' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+10-20 20:15:43.348  5125  5125 I HBD     : HoneyBoardService onKeyUp r:3116c8be consumed:false 7 
+10-20 20:15:43.352 19138 19138 I ViewRootImpl@52e2b1c[MainActivity]: ViewPostIme key 1
+10-20 20:15:43.353  1483  2597 D InputDispatcher: Inject key (19949/2000): action=0, f=0x0, d=-1, time=2551539498791068
+10-20 20:15:43.353  1483  2597 D WindowManager: interceptKeyTq interceptKeyResult=1
+10-20 20:15:43.354  1483  1796 I InputDispatcher: Delivering key to (19138): action: 0x0 (0), f=0x0, m=0x0, d=0, '1eb0182'
+10-20 20:15:43.355  5125  5125 I HBD     : b skip onKeyDown as physical keyboard not connected 
+10-20 20:15:43.356  5125  5125 I HBD     : HoneyBoardService onKeyDown r:0f693193 consumed:false 1 
+10-20 20:15:43.357 19138 19138 I ViewRootImpl@52e2b1c[MainActivity]: ViewPostIme key 0
+10-20 20:15:43.370  1483  2597 D InputDispatcher: Inject key (19949/2000): action=1, f=0x0, d=-1, time=2551539498791068
+10-20 20:15:43.370  1483  2597 D WindowManager: interceptKeyTq interceptKeyResult=1
+10-20 20:15:43.371  1483  1796 I InputDispatcher: Delivering key to (19138): action: 0x1 (0), f=0x0, m=0x0, d=0, '1eb0182'
+10-20 20:15:43.376  5125  5125 I HBD     : HoneyBoardService onKeyUp r:92782fe8 consumed:false 1 
+10-20 20:15:43.379 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:43.380 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:43.389 19138 19199 I ReactNativeJS: 'RENDER_DASHBOARD count=', 2
+10-20 20:15:43.461  2521  2521 D SecPowerUI.Notification: showChargingNotice oldChargingType : 11 / currentChargingType : 11, oldChargingTime : 0 / mChargingTime : 0
+10-20 20:15:43.462  2521  2521 D SecPowerUI.Notification: There is no change about charging status, so return!
+10-20 20:15:43.486 19138 19138 I ViewRootImpl@52e2b1c[MainActivity]: ViewPostIme key 1
+10-20 20:15:43.492 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:43.492 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:43.499 19138 19199 I ReactNativeJS: 'RENDER_DASHBOARD count=', 3
+10-20 20:15:43.522  2521  2618 D MobileStatusTracker(0/2): onSignalStrengthsChanged level=4, vendorLevel=3
+10-20 20:15:43.524  2521  2618 D MobileSignalController(0/2): notifyListener: enabled=true, connected=true, dataConnected=true, networkType=LTE (4G), emergencyOnly=false, roaming=false, isDefault=false, dataActivity=, level=3, ca=false, mmWave=false, disabledDataIcon=false, simCard=ETC
+10-20 20:15:43.526  2521  2618 D NetworkController: SignalStrength from intent slotId=0
+10-20 20:15:43.569 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:43.569 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:43.611   963   963 E audit   : type=1400 audit(1761002143.608:1251158): avc:  denied  { write } for  pid=8661 comm="ThreadPoolForeg" name="traced_producer" dev="tmpfs" ino=11170 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:traced_producer_socket:s0 tclass=sock_file permissive=0 SEPF_SM-A037M_12_0001 unfiltered
+10-20 20:15:43.633 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:43.633 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:43.649 30047 30047 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.mediaprovider' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+10-20 20:15:43.718 19138 19962 D skia    : SkJpegCodec::onGetPixels +
+10-20 20:15:43.735 19138 19962 D skia    : SkJpegCodec::onGetPixels -
+10-20 20:15:43.739 30047 30047 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.resolv' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+10-20 20:15:43.751 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:43.751 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:43.774 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:43.774 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:43.786 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:43.787 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:43.800 19138 19964 D skia    : SkJpegCodec::onGetPixels +
+10-20 20:15:43.803 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:43.804 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:43.806 30047 30047 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.media' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+10-20 20:15:43.810 19138 19965 D skia    : SkJpegCodec::onGetPixels +
+10-20 20:15:43.820 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:43.820 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:43.823 19138 19742 D skia    : SkJpegCodec::onGetPixels +
+10-20 20:15:43.824 19138 19964 D skia    : SkJpegCodec::onGetPixels -
+10-20 20:15:43.825  4441  4441 I wpa_supplicant: Heartbeat 918
+10-20 20:15:43.829 19138 19965 D skia    : SkJpegCodec::onGetPixels -
+10-20 20:15:43.835 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:43.835 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:43.844 19138 19742 D skia    : SkJpegCodec::onGetPixels -
+10-20 20:15:43.852 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:43.852 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:43.874 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:43.875 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:43.895 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:43.895 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:43.909 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:43.909 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:43.920 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:43.920 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:43.935 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:43.936 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:43.952 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:43.952 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:43.968 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:43.968 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:43.985 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:43.985 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:44.001 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:44.001 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:44.018 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:44.019 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:44.035 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:44.035 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:44.052 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:44.052 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:44.069 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:44.069 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:44.085 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:44.085 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:44.090  8661 18290 I AOSP-MdnsDiscoveryManag: (REDACTED) %s
+10-20 20:15:44.090  8661 18290 I AOSP-MdnsDiscoveryManag: (REDACTED) %s
+10-20 20:15:44.091  8661 18288 I AOSP-MdnsDiscoveryManag: (REDACTED) %s
+10-20 20:15:44.092  8661  9716 I AOSP-MdnsDiscoveryManag: (REDACTED) %s
+10-20 20:15:44.092  8661 18288 I AOSP-MdnsDiscoveryManag: (REDACTED) %s
+10-20 20:15:44.093  8661  9716 I AOSP-MdnsDiscoveryManag: (REDACTED) %s
+10-20 20:15:44.094  8661 18289 W AOSP-MdnsDiscoveryManag: Error while decoding multicast packet (5078): 1 [CONTEXT service_id=168 ]
+10-20 20:15:44.095  1483  1583 D PowerManagerService: UserActivityStateListenerState: 0
+10-20 20:15:44.095  8661 18289 W AOSP-MdnsDiscoveryManag: Error while decoding multicast packet (5079): 1 [CONTEXT service_id=168 ]
+10-20 20:15:44.103 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:44.103 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:44.119 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:44.119 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:44.140 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:44.140 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:44.140 30047 30047 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.sdkext' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+10-20 20:15:44.151 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:44.151 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:44.168 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:44.168 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:44.176 30047 30047 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.adservices' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+10-20 20:15:44.178 30047 30047 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.tethering' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+10-20 20:15:44.184 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:44.184 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:44.201 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:44.201 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:44.397  1483  2896 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10251; state: DISABLED
+10-20 20:15:44.397  1483  2896 D CompatibilityChangeReporter: Compat change id reported: 177438394; UID 10251; state: DISABLED
+10-20 20:15:44.397  1483  2896 D CompatibilityChangeReporter: Compat change id reported: 135772972; UID 10251; state: DISABLED
+10-20 20:15:44.397  1483  2896 D CompatibilityChangeReporter: Compat change id reported: 135754954; UID 10251; state: ENABLED
+10-20 20:15:44.398  1483  1559 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10251; state: ENABLED
+10-20 20:15:44.416   975   975 D Zygote  : Forked child process 19968
+10-20 20:15:44.418  1483  1559 I ActivityManager: Start proc 19968:com.samsung.android.privacydashboard/u0a251 for content provider {com.samsung.android.privacydashboard/com.samsung.android.privacydashboard.provider.PermissionAccessInformationContentProvider}
+10-20 20:15:44.466 19968 19968 I rivacydashboard: Using CollectorTypeCC GC.
+10-20 20:15:44.473 19968 19968 E rivacydashboard: Not starting debugger since process cannot load the jdwp agent.
+10-20 20:15:44.484   543   543 D io_stats: !@ 179,0 r 464675470 5647820962 w 80568960 844559156 d 1258357 33785868 f 0 0 iot 231105152 0 th 0 0 0 pt 0 inp 0 6 2551541.787
+10-20 20:15:44.484 19968 19968 D ActivityThread: setConscryptValidator
+10-20 20:15:44.484 19968 19968 D ActivityThread: setConscryptValidator - put
+10-20 20:15:44.500  1483  2597 D CompatibilityChangeReporter: Compat change id reported: 168419799; UID 10251; state: DISABLED
+10-20 20:15:44.504  1483  2597 I ActivityManager: Changes in 10251 20 to 5, 0 to 8
+10-20 20:15:44.511 19968 19968 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10251; state: ENABLED
+10-20 20:15:44.513  1483  1568 D BatteryExternalStatsWorker: update stats : update-network-download (6)
+10-20 20:15:44.513  1483  1568 D BatteryExternalStatsWorker: Update Rail Energy data
+10-20 20:15:44.518  1483  1568 D BatteryExternalStatsWorker: Fetch modem data
+10-20 20:15:44.576  2486  2486 I WifiHAL : Get link layer stats
+10-20 20:15:44.576  2486  2486 I WifiHAL : GetLinkStatsCommand::create
+10-20 20:15:44.576  2486  2486 D android.hardware.wifi@1.0-service-lazy: WifiRequest::create vendor command to iface 38, vendor_id=0x1a11, subcmd=0x1200, res=0
+10-20 20:15:44.576  2486  2486 I android.hardware.wifi@1.0-service-lazy: WifiCommand::requestResponse err=-95
+10-20 20:15:44.576  2486  2486 I WifiHAL : wifi_get_link_stats: result=-3
+10-20 20:15:44.577  1483  2363 E WifiVendorHal: getWifiLinkLayerStats_1_5_Internal(l.1179) failed {.code = ERROR_NOT_SUPPORTED, .description = }
+10-20 20:15:44.583  1483  3390 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 543555, isSameBssidAndFreq true
+10-20 20:15:44.584  1483  2437 I SemWifiLinkQualityMonitor: Link Qos query: inf. ms / 0 Mbps
+10-20 20:15:44.615  1483  2597 D InputDispatcher: Inject key (19985/2000): action=0, f=0x0, d=-1, time=2551541918000000
+10-20 20:15:44.615  1483  2597 D WindowManager: interceptKeyTq interceptKeyResult=1
+10-20 20:15:44.616  1483  1796 D PowerManagerService: [api] userActivityFromNative :  (event: 1 flags: 0 displayId: 0) eventTime = 2551541918
+10-20 20:15:44.618  1483  1796 I InputDispatcher: Delivering key to (19138): action: 0x0 (0), f=0x0, m=0x0, d=0, '1eb0182'
+10-20 20:15:44.619 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:44.619 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:44.620  5125  5125 I HBD     : b skip onKeyDown as physical keyboard not connected 
+10-20 20:15:44.624  1039  1039 I BufferQueueProducer: [com.cinemamovel/com.cinemamovel.MainActivity$_19138#505932](this:0xb400007a1f6f0838,id:-1,api:0,p:-1,c:1039) queueBuffer: fps=25.75 dur=1398.07 max=399.70 min=16.41
+10-20 20:15:44.625  5125  5125 I HBD     : HoneyBoardService onKeyDown r:f2da7668 consumed:false 5 
+10-20 20:15:44.626 19138 19138 I ViewRootImpl@52e2b1c[MainActivity]: ViewPostIme key 0
+10-20 20:15:44.626   991  1074 I hwcomposer: [HWCDisplay] [Display_0 (type:1)] fps:25.752903,dur:1397.90,max:400.12,min:16.06  
+10-20 20:15:44.635 19138 19138 I IMM_LC  : hsifw() - flag : 0
+10-20 20:15:44.635 19138 19138 I IMM_LC  : hsifw() - mService.hideSoftInput
+10-20 20:15:44.635 30047 30047 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.cellbroadcast' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+10-20 20:15:44.636  1483  4847 D InputMethodManagerService: hideSoftInput
+10-20 20:15:44.636  1483  4847 V InputMethodManagerService: Client requesting input be hidden
+10-20 20:15:44.636  1483  4847 V InputMethodManagerService: hideCurrentInputLocked : canceled, shouldHideSoftInput=false, mInputShown=false, mImeWindowVis=0
+10-20 20:15:44.636  2521  2618 D MobileStatusTracker(1/1): onSignalStrengthsChanged level=4, vendorLevel=4
+10-20 20:15:44.638  2521  2618 D MobileSignalController(1/1): notifyListener: enabled=true, connected=true, dataConnected=false, networkType=UMTS (3G), emergencyOnly=true, roaming=false, isDefault=false, dataActivity=, level=4, ca=false, mmWave=false, disabledDataIcon=false, simCard=ETC
+10-20 20:15:44.638  2521  2618 D NetworkController: SignalStrength from intent slotId=1
+10-20 20:15:44.643  1483  2471 D NetdEventListenerService: DNS Requested by : 475, 11011
+10-20 20:15:44.644 14839 14902 D TrafficStats: tagSocket(6) with statsTag=0xffffffff, statsUid=-1
+10-20 20:15:44.780  1483  4847 I InputMethodBindingController: setCurrentMethodNotVisible: mVisibleBound=false, mHasConnection=true, caller = com.android.server.inputmethod.InputMethodManagerService.hideCurrentInputLocked:4356 com.android.server.inputmethod.InputMethodManagerService.hideSoftInput:4294 com.android.internal.view.IInputMethodManager$Stub.onTransact:488 com.android.server.inputmethod.InputMethodManagerService.onTransact:2302 android.os.Binder.execTransactInternal:1316 android.os.Binder.execTransact:1280 <bottom of call stack> <bottom of call stack> <bottom of call stack> <bottom of call stack> 
+10-20 20:15:44.782  1483  6037 W TelephonyManager: requestModemActivityInfo: Received an invalid ModemActivityInfo
+10-20 20:15:44.785  1483  2597 D InputDispatcher: Inject key (19985/2000): action=1, f=0x0, d=-1, time=2551541918000000
+10-20 20:15:44.786  1483  2597 D WindowManager: interceptKeyTq interceptKeyResult=1
+10-20 20:15:44.786  1483  6037 W BatteryExternalStatsWorker: error reading modem stats:ERROR_INVALID_INFO_RECEIVED
+10-20 20:15:44.787  1483  1568 D BatteryExternalStatsWorker: mStats lock released
+10-20 20:15:44.787  1483  1568 D BatteryExternalStatsWorker: done updateExternalStatsLocked
+10-20 20:15:44.791 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:44.791 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:44.795  1483  1796 I InputDispatcher: Delivering key to (19138): action: 0x1 (0), f=0x0, m=0x0, d=0, '1eb0182'
+10-20 20:15:44.797  5125  5125 I HBD     : HoneyBoardService onKeyUp r:e491a8da consumed:false 1 
+10-20 20:15:44.798 19138 19138 I ViewRootImpl@52e2b1c[MainActivity]: ViewPostIme key 1
+10-20 20:15:44.799 19138 19138 I IMM_LC  : hsifw() - flag : 0
+10-20 20:15:44.799 19138 19138 I IMM_LC  : hsifw() - mService.hideSoftInput
+10-20 20:15:44.800  1483  4847 D InputMethodManagerService: hideSoftInput
+10-20 20:15:44.800  1483  4847 V InputMethodManagerService: Client requesting input be hidden
+10-20 20:15:44.800  1483  4847 V InputMethodManagerService: hideCurrentInputLocked : canceled, shouldHideSoftInput=false, mInputShown=false, mImeWindowVis=0
+10-20 20:15:44.800  1483  4847 I InputMethodBindingController: setCurrentMethodNotVisible: mVisibleBound=false, mHasConnection=true, caller = com.android.server.inputmethod.InputMethodManagerService.hideCurrentInputLocked:4356 com.android.server.inputmethod.InputMethodManagerService.hideSoftInput:4294 com.android.internal.view.IInputMethodManager$Stub.onTransact:488 com.android.server.inputmethod.InputMethodManagerService.onTransact:2302 android.os.Binder.execTransactInternal:1316 android.os.Binder.execTransact:1280 <bottom of call stack> <bottom of call stack> <bottom of call stack> <bottom of call stack> 
+10-20 20:15:44.805  2521  2618 D MobileStatusTracker(0/2): onSignalStrengthsChanged level=4, vendorLevel=3
+10-20 20:15:44.808  2521  2618 D MobileSignalController(0/2): notifyListener: enabled=true, connected=true, dataConnected=true, networkType=LTE (4G), emergencyOnly=false, roaming=false, isDefault=false, dataActivity=, level=3, ca=false, mmWave=false, disabledDataIcon=false, simCard=ETC
+10-20 20:15:44.815  2521  2618 D NetworkController: SignalStrength from intent slotId=0
+10-20 20:15:44.842 19968 19968 I a       : setConfiguration start
+10-20 20:15:44.844  1483  2896 W Binder  : Outgoing transactions from this process must be FLAG_ONEWAY
+10-20 20:15:44.844  1483  2896 W Binder  : java.lang.Throwable
+10-20 20:15:44.844  1483  2896 W Binder  : 	at android.os.BinderProxy.transact(BinderProxy.java:567)
+10-20 20:15:44.844  1483  2896 W Binder  : 	at android.content.ContentProviderProxy.bulkInsert(ContentProviderNative.java:578)
+10-20 20:15:44.844  1483  2896 W Binder  : 	at android.content.ContentResolver.bulkInsert(ContentResolver.java:2281)
+10-20 20:15:44.844  1483  2896 W Binder  : 	at com.samsung.android.privacydashboard.PermissionAccessInformationWriter.write(PermissionAccessInformationWriter.java:37)
+10-20 20:15:44.844  1483  2896 W Binder  : 	at com.samsung.android.privacydashboard.PermissionAccessInformationController.flush(PermissionAccessInformationController.java:99)
+10-20 20:15:44.844  1483  2896 W Binder  : 	at com.samsung.android.privacydashboard.PermissionAccessInformationController$1.run(PermissionAccessInformationController.java:78)
+10-20 20:15:44.844  1483  2896 W Binder  : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-20 20:15:44.844  1483  2896 W Binder  : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-20 20:15:44.844  1483  2896 W Binder  : 	at java.lang.Thread.run(Thread.java:1012)
+10-20 20:15:44.854  1483  1503 I GenerationRegistry: mBackingStore.isClosed() : false
+10-20 20:15:44.859  1483  2896 I GenerationRegistry: mBackingStore.isClosed() : false
+10-20 20:15:44.927 19968 19984 I PrivacyDashboard: PermissionAccessInformationContentProvider  bulkInsert : 12
+10-20 20:15:44.993   492   492 I lmkd    : 0(delay), 50(swap), 15(freelimit), 0(reentrymode) memory pressure events were skipped after a kill!
+10-20 20:15:45.095  8661 18290 I AOSP-MdnsDiscoveryManag: (REDACTED) %s
+10-20 20:15:45.095  8661 18290 I AOSP-MdnsDiscoveryManag: (REDACTED) %s
+10-20 20:15:45.096  8661 18288 I AOSP-MdnsDiscoveryManag: (REDACTED) %s
+10-20 20:15:45.097  8661  9716 I AOSP-MdnsDiscoveryManag: (REDACTED) %s
+10-20 20:15:45.097  8661 18289 W AOSP-MdnsDiscoveryManag: Error while decoding multicast packet (5084): 1 [CONTEXT service_id=168 ]
+10-20 20:15:45.097  8661  9716 I AOSP-MdnsDiscoveryManag: (REDACTED) %s
+10-20 20:15:45.097  8661 18288 I AOSP-MdnsDiscoveryManag: (REDACTED) %s
+10-20 20:15:45.099  8661 18289 W AOSP-MdnsDiscoveryManag: Error while decoding multicast packet (5085): 1 [CONTEXT service_id=168 ]
+10-20 20:15:45.134 19655 20002 D ProfileInstaller: Skipping profile installation for com.osp.app.signin
+10-20 20:15:45.148 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:45.148 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:45.170  8661  9716 I AOSP-MdnsDiscoveryManag: (REDACTED) %s
+10-20 20:15:45.171  8661  9716 I AOSP-MdnsDiscoveryManag: (REDACTED) %s
+10-20 20:15:45.171  8661  9716 I AOSP-MdnsDiscoveryManag: (REDACTED) %s
+10-20 20:15:45.171  8661  9716 I AOSP-MdnsDiscoveryManag: (REDACTED) %s
+10-20 20:15:45.172  8661  9716 I AOSP-MdnsDiscoveryManag: (REDACTED) %s
+10-20 20:15:45.172  8661  9716 I AOSP-MdnsDiscoveryManag: (REDACTED) %s
+10-20 20:15:45.172  8661  9716 I AOSP-MdnsDiscoveryManag: (REDACTED) %s
+10-20 20:15:45.172  8661  9716 I AOSP-MdnsDiscoveryManag: (REDACTED) %s
+10-20 20:15:45.291  1483  1528 D SensorService: setUidStateForConnection uid= 11011 , ident = 0xb4000077f7759780 , state= 1
+10-20 20:15:45.291  1483  1528 D SensorService: setUidStateForConnection uid= 11011 , ident = 0xb40000781674e740 , state= 1
+10-20 20:15:45.292  1199  1199 E SensorManager: Correct handle(0) maxdelay: 16000000 old: 20000000
+10-20 20:15:45.363 30047 30047 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.tzdata4' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+10-20 20:15:45.435 30047 30047 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.permission' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+10-20 20:15:45.555  1483  4847 E AppOps  : Bad call made by uid 10188. Package "com.google.android.gms" does not belong to uid 10252.
+10-20 20:15:45.558 19204 19471 E GoogleApiManager: Failed to get service from broker. 
+10-20 20:15:45.558 19204 19471 E GoogleApiManager: java.lang.SecurityException: Unknown calling package name 'com.google.android.gms'.
+10-20 20:15:45.558 19204 19471 E GoogleApiManager: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3045)
+10-20 20:15:45.558 19204 19471 E GoogleApiManager: 	at android.os.Parcel.createException(Parcel.java:3029)
+10-20 20:15:45.558 19204 19471 E GoogleApiManager: 	at android.os.Parcel.readException(Parcel.java:3012)
+10-20 20:15:45.558 19204 19471 E GoogleApiManager: 	at android.os.Parcel.readException(Parcel.java:2954)
+10-20 20:15:45.558 19204 19471 E GoogleApiManager: 	at bbue.a(:com.google.android.gms@254031029@25.40.31 (190400-816341114):36)
+10-20 20:15:45.558 19204 19471 E GoogleApiManager: 	at bbsf.z(:com.google.android.gms@254031029@25.40.31 (190400-816341114):143)
+10-20 20:15:45.558 19204 19471 E GoogleApiManager: 	at bayu.run(:com.google.android.gms@254031029@25.40.31 (190400-816341114):42)
+10-20 20:15:45.558 19204 19471 E GoogleApiManager: 	at android.os.Handler.handleCallback(Handler.java:942)
+10-20 20:15:45.558 19204 19471 E GoogleApiManager: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-20 20:15:45.558 19204 19471 E GoogleApiManager: 	at cmwq.mC(:com.google.android.gms@254031029@25.40.31 (190400-816341114):1)
+10-20 20:15:45.558 19204 19471 E GoogleApiManager: 	at cmwq.dispatchMessage(:com.google.android.gms@254031029@25.40.31 (190400-816341114):5)
+10-20 20:15:45.558 19204 19471 E GoogleApiManager: 	at android.os.Looper.loopOnce(Looper.java:226)
+10-20 20:15:45.558 19204 19471 E GoogleApiManager: 	at android.os.Looper.loop(Looper.java:313)
+10-20 20:15:45.558 19204 19471 E GoogleApiManager: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+10-20 20:15:45.647 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:45.647 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:45.656  1039  1039 I BufferQueueProducer: [com.cinemamovel/com.cinemamovel.MainActivity$_19138#505932](this:0xb400007a1f6f0838,id:-1,api:0,p:-1,c:1039) queueBuffer: fps=2.91 dur=1031.72 max=499.40 min=182.88
+10-20 20:15:45.658   991  1074 I hwcomposer: [HWCDisplay] [Display_0 (type:1)] fps:2.908280,dur:1031.54,max:499.51,min:182.57  
+10-20 20:15:45.928  4881  7366 I AppsEdge.Badge: getBadgeIconType 0
+10-20 20:15:45.946  9596 21206 I BadgeProvider: query, [selection] : null
+10-20 20:15:45.954  4881  7366 I AppsEdge.Badge: key=com.android.phone:0 count=1
+10-20 20:15:45.954  4881  7366 I AppsEdge.Badge: key=com.google.android.gms:0 count=1
+10-20 20:15:46.081  2521  2618 D MobileStatusTracker(0/2): onSignalStrengthsChanged level=4, vendorLevel=3
+10-20 20:15:46.083  2521  2618 D MobileSignalController(0/2): notifyListener: enabled=true, connected=true, dataConnected=true, networkType=LTE (4G), emergencyOnly=false, roaming=false, isDefault=false, dataActivity=, level=3, ca=false, mmWave=false, disabledDataIcon=false, simCard=ETC
+10-20 20:15:46.083  2521  2618 D NetworkController: SignalStrength from intent slotId=0
+10-20 20:15:46.145 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:46.146 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:46.183  2799  3039 D PhoneInterfaceManager: setDataEnabledForReason() Reason=1 Pid=1483 App=system
+10-20 20:15:46.188  2799  3039 D PhoneInterfaceManager: setDataEnabledForReason() Reason=1 Pid=1483 App=system
+10-20 20:15:46.292  1205  1205 I thermal_repeater: socket -1
+10-20 20:15:46.489   543   543 D io_stats: !@ 179,0 r 464680460 5647846754 w 80569410 844561060 d 1258357 33785868 f 0 0 iot 231106192 0 th 0 0 0 pt 0 inp 0 0 2551543.792
+10-20 20:15:46.627  1483  2425 I ChimeraAggressivePolicyHandler: executePolicy() - triggerSource: TRIGGER_SOURCE_LMKD
+10-20 20:15:46.629  1483  2425 I ChimeraAggressivePolicyHandler: available memory: 1158808, free memory target: 747520, quit chimera
+10-20 20:15:46.645 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:46.645 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:46.665  1483  2471 D NetdEventListenerService: DNS Requested by : 475, 11011
+10-20 20:15:46.666 14839 14902 D TrafficStats: tagSocket(6) with statsTag=0xffffffff, statsUid=-1
+10-20 20:15:46.674  1483  2457 D WifiConnectivityMonitor.NetworkStatsAnalyzer: Backhaul result - RSSI:-62, CE:21, PE:14, TI:26, PTI:18, TW:34, PTW:36, Tx:2611, Rx:1893, TxS:2574, RxS:1847, RESULT:true, IC:0, ICT:5, WC:0, WCT:5, R:14, RC:0, IE:0, EC:0
+10-20 20:15:46.676  1483  1755 D SensorService: [SO] 0.147 1.437 9.874
+10-20 20:15:46.868  1483  1503 D InputDispatcher: Inject motion (20009/2000): action=0x0, time=2551544171000000, f=0x0, d=0 dsdx=1.000000 dtdx=0.000000
+10-20 20:15:46.869  1483  1796 I InputDispatcher: Delivering touch to (2521): action: 0x4, f=0x0, d=0, 'a9cce9e', t=1 
+10-20 20:15:46.869  1483  1796 I InputDispatcher: Delivering touch to (19138): action: 0x0, f=0x0, d=0, '1eb0182', t=1 
+10-20 20:15:46.869  1483  1796 D PowerManagerService: [api] userActivityFromNative :  (event: 2 flags: 0 displayId: 0) eventTime = 2551544171
+10-20 20:15:46.871  1483  1796 D PowerManagerService: UserActivityStateListenerState: 1
+10-20 20:15:46.872  1483  1528 I GestureDetector: obtain mCurrentDownEvent. id: -750311337 caller: com.android.server.wm.SystemGesturesPointerEventListener.onPointerEvent:203 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:285 
+10-20 20:15:46.872  1483  1528 I GestureDetector: obtain mCurrentDownEvent. id: -750311337 caller: com.android.server.wm.SystemPerformancePointerEventListener.onPointerEvent:89 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:285 
+10-20 20:15:46.874 19138 19138 I ViewRootImpl@52e2b1c[MainActivity]: ViewPostIme pointer 0
+10-20 20:15:46.881  1483  1503 D InputDispatcher: Inject motion (20009/2000): action=0x1, time=2551544171000000, f=0x0, d=0 dsdx=1.000000 dtdx=0.000000
+10-20 20:15:46.882  1483  1796 I InputDispatcher: Delivering touch to (19138): action: 0x1, f=0x0, d=0, '1eb0182', t=1 
+10-20 20:15:46.882 19138 19138 I ViewRootImpl@52e2b1c[MainActivity]: ViewPostIme pointer 1
+10-20 20:15:46.883  1483  1528 I GestureDetector: obtain mCurrentMotionEventRaw. action: 1 id: -248553643
+10-20 20:15:46.883  1483  1528 I GestureDetector: obtain mCurrentMotionEventRaw. action: 1 id: -248553643
+10-20 20:15:46.993 12269 12463 W RealtimeClientManager: Channel state: MqttChannelState{mConnectionState=DISCONNECTED, mDisconnectionReason=null, mLastConnectionMs=3692219623, mLastDisconnectMs=3693234919}
+10-20 20:15:47.145 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:47.145 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:47.154  1039  1039 I BufferQueueProducer: [com.cinemamovel/com.cinemamovel.MainActivity$_19138#505932](this:0xb400007a1f6f0838,id:-1,api:0,p:-1,c:1039) queueBuffer: fps=2.00 dur=1497.90 max=499.39 min=499.18
+10-20 20:15:47.155   991  1074 I hwcomposer: [HWCDisplay] [Display_0 (type:1)] fps:2.002784,dur:1497.91,max:499.88,min:498.99  
+10-20 20:15:47.171  1483  1528 I GestureDetector: handleMessage TAP
+10-20 20:15:47.172  1483  1483 I GestureDetector: handleMessage TAP
+10-20 20:15:47.186  2521  2618 D MobileStatusTracker(1/1): onSignalStrengthsChanged level=4, vendorLevel=4
+10-20 20:15:47.188  2521  2618 D MobileSignalController(1/1): notifyListener: enabled=true, connected=true, dataConnected=false, networkType=UMTS (3G), emergencyOnly=true, roaming=false, isDefault=false, dataActivity=, level=4, ca=false, mmWave=false, disabledDataIcon=false, simCard=ETC
+10-20 20:15:47.188  2521  2618 D NetworkController: SignalStrength from intent slotId=1
+10-20 20:15:47.366  2521  2618 D MobileStatusTracker(0/2): onSignalStrengthsChanged level=4, vendorLevel=3
+10-20 20:15:47.368  2521  2618 D MobileSignalController(0/2): notifyListener: enabled=true, connected=true, dataConnected=true, networkType=LTE (4G), emergencyOnly=false, roaming=false, isDefault=false, dataActivity=, level=3, ca=false, mmWave=false, disabledDataIcon=false, simCard=ETC
+10-20 20:15:47.368  2521  2618 D NetworkController: SignalStrength from intent slotId=0
+10-20 20:15:47.587  2486  2486 I WifiHAL : Get link layer stats
+10-20 20:15:47.587  2486  2486 I WifiHAL : GetLinkStatsCommand::create
+10-20 20:15:47.587  2486  2486 D android.hardware.wifi@1.0-service-lazy: WifiRequest::create vendor command to iface 38, vendor_id=0x1a11, subcmd=0x1200, res=0
+10-20 20:15:47.587  2486  2486 I android.hardware.wifi@1.0-service-lazy: WifiCommand::requestResponse err=-95
+10-20 20:15:47.587  2486  2486 I WifiHAL : wifi_get_link_stats: result=-3
+10-20 20:15:47.588  1483  2363 E WifiVendorHal: getWifiLinkLayerStats_1_5_Internal(l.1179) failed {.code = ERROR_NOT_SUPPORTED, .description = }
+10-20 20:15:47.592  1483  3390 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 543556, isSameBssidAndFreq true
+10-20 20:15:47.593  1483  2437 I SemWifiLinkQualityMonitor: Link Qos query: inf. ms / 0 Mbps
+10-20 20:15:47.644 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:47.645 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:48.144 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:48.144 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:48.492   543   543 D io_stats: !@ 179,0 r 464689930 5647886790 w 80569587 844562844 d 1258357 33785868 f 0 0 iot 231107508 0 th 0 0 0 pt 0 inp 0 15 2551545.795
+10-20 20:15:48.643  2521  2618 D MobileStatusTracker(0/2): onSignalStrengthsChanged level=4, vendorLevel=3
+10-20 20:15:48.646  2521  2618 D MobileSignalController(0/2): notifyListener: enabled=true, connected=true, dataConnected=true, networkType=LTE (4G), emergencyOnly=false, roaming=false, isDefault=false, dataActivity=, level=3, ca=false, mmWave=false, disabledDataIcon=false, simCard=ETC
+10-20 20:15:48.648  2521  2618 D NetworkController: SignalStrength from intent slotId=0
+10-20 20:15:48.666 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:48.666 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:48.685  1039  1039 I BufferQueueProducer: [com.cinemamovel/com.cinemamovel.MainActivity$_19138#505932](this:0xb400007a1f6f0838,id:-1,api:0,p:-1,c:1039) queueBuffer: fps=1.96 dur=1531.35 max=532.78 min=498.66
+10-20 20:15:48.687   991  1074 I hwcomposer: [HWCDisplay] [Display_0 (type:1)] fps:1.959162,dur:1531.27,max:533.16,min:498.28  
+10-20 20:15:48.693  1483  2471 D NetdEventListenerService: DNS Requested by : 475, 11011
+10-20 20:15:48.694 14839 14902 D TrafficStats: tagSocket(6) with statsTag=0xffffffff, statsUid=-1
+10-20 20:15:48.824 11529 11566 I ContactsProvider_EventLog: cp_s: [CONTACT con(156) dat(1626) acc({google(35)=1, google(2)=155, com.google.android.apps.tachyon(10)=4, com.google.android.apps.tachyon(24)=37, com.whatsapp(9)=124}) calls([logtype:100 cnt:1000]) Iso(BR) uId(0) ]
+10-20 20:15:48.824 11529 11566 I ContactsProvider_EventLog: cp_s: [ agr({[2 ,9 ,10]=4, [2 ,9 ,9 ,24]=1, [2 ,9 ,24]=30, [2 ,2]=1, [2]=28, [2 ,24]=3, [35]=1, [2 ,24 ,9]=2, [9 ,2 ,24]=1, [9]=1, [2 ,9]=84}) ]
+10-20 20:15:48.824 11529 11566 I ContactsProvider_EventLog: cp_s: [ cnt({contacts(24507)=4, dialer(24506)=4, acore(11529)=1}) ]
+10-20 20:15:48.824 11529 11566 I ContactsProvider_EventLog: cp_s: [PROFILE ] [SAPROFILE con(1) dat(1) acc({phone(1)=1}) ]
+10-20 20:15:48.824 11529 11566 I ContactsProvider_EventLog: cp_s: [STATE R(F) ]
+10-20 20:15:48.952  1483  1503 D InputDispatcher: Inject motion (20018/2000): action=0x0, time=2551546254000000, f=0x0, d=0 dsdx=1.000000 dtdx=0.000000
+10-20 20:15:48.953  1483  1796 I InputDispatcher: Delivering touch to (2521): action: 0x4, f=0x0, d=0, 'a9cce9e', t=1 
+10-20 20:15:48.953  1483  1796 I InputDispatcher: Delivering touch to (19138): action: 0x0, f=0x0, d=0, '1eb0182', t=1 
+10-20 20:15:48.954  1483  1796 D PowerManagerService: [api] userActivityFromNative :  (event: 2 flags: 0 displayId: 0) eventTime = 2551546254
+10-20 20:15:48.954 19138 19138 I ViewRootImpl@52e2b1c[MainActivity]: ViewPostIme pointer 0
+10-20 20:15:48.954  1483  1528 I GestureDetector: obtain mCurrentDownEvent. id: -520344668 caller: com.android.server.wm.SystemGesturesPointerEventListener.onPointerEvent:203 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:285 
+10-20 20:15:48.954  1483  1528 I GestureDetector: obtain mCurrentDownEvent. id: -520344668 caller: com.android.server.wm.SystemPerformancePointerEventListener.onPointerEvent:89 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:285 
+10-20 20:15:49.015  1483  1503 D InputDispatcher: Inject motion (20018/2000): action=0x1, time=2551546254000000, f=0x0, d=0 dsdx=1.000000 dtdx=0.000000
+10-20 20:15:49.016  1483  1796 I InputDispatcher: Delivering touch to (19138): action: 0x1, f=0x0, d=0, '1eb0182', t=1 
+10-20 20:15:49.016 19138 19138 I ViewRootImpl@52e2b1c[MainActivity]: ViewPostIme pointer 1
+10-20 20:15:49.016  1483  1528 I GestureDetector: obtain mCurrentMotionEventRaw. action: 1 id: -142775513
+10-20 20:15:49.016  1483  1528 I GestureDetector: obtain mCurrentMotionEventRaw. action: 1 id: -142775513
+10-20 20:15:49.041 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:49.041 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:49.076 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:49.076 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:49.114 19138 19199 I ReactNativeJS: ---METRICS_JSON_START---
+10-20 20:15:49.114 19138 19199 I ReactNativeJS: {
+10-20 20:15:49.114 19138 19199 I ReactNativeJS:   "dashboardRenders": 3,
+10-20 20:15:49.114 19138 19199 I ReactNativeJS:   "cardRenders": {
+10-20 20:15:49.114 19138 19199 I ReactNativeJS:     "13494": 2,
+10-20 20:15:49.114 19138 19199 I ReactNativeJS:     "506763": 2,
+10-20 20:15:49.114 19138 19199 I ReactNativeJS:     "575265": 2,
+10-20 20:15:49.114 19138 19199 I ReactNativeJS:     "617126": 1,
+10-20 20:15:49.114 19138 19199 I ReactNativeJS:     "755898": 2,
+10-20 20:15:49.114 19138 19199 I ReactNativeJS:     "803796": 2,
+10-20 20:15:49.114 19138 19199 I ReactNativeJS:     "911430": 1,
+10-20 20:15:49.114 19138 19199 I ReactNativeJS:     "914215": 2,
+10-20 20:15:49.114 19138 19199 I ReactNativeJS:     "960299": 1,
+10-20 20:15:49.114 19138 19199 I ReactNativeJS:     "987400": 2,
+10-20 20:15:49.114 19138 19199 I ReactNativeJS:     "993234": 1,
+10-20 20:15:49.114 19138 19199 I ReactNativeJS:     "1007734": 2,
+10-20 20:15:49.114 19138 19199 I ReactNativeJS:     "1028248": 2,
+10-20 20:15:49.114 19138 19199 I ReactNativeJS:     "1035259": 2,
+10-20 20:15:49.114 19138 19199 I ReactNativeJS:     "1038392": 2,
+10-20 20:15:49.114 19138 19199 I ReactNativeJS:     "1051486": 2,
+10-20 20:15:49.114 19138 19199 I ReactNativeJS:     "1061474": 2,
+10-20 20:15:49.114 19138 19199 I ReactNativeJS:     "1078605": 2,
+10-20 20:15:49.114 19138 19199 I ReactNativeJS:     "1087192": 2,
+10-20 20:15:49.114 19138 19199 I ReactNativeJS:     "1136867": 1,
+10-20 20:15:49.114 19138 19199 I ReactNativeJS:     "1234821": 2,
+10-20 20:15:49.114 19138 19199 I ReactNativeJS:     "1241634": 1,
+10-20 20:15:49.114 19138 19199 I ReactNativeJS:     "1242011": 1,
+10-20 20:15:49.114 19138 19199 I ReactNativeJS:     "1246049": 1,
+10-20 20:15:49.114 19138 19199 I ReactNativeJS:     "1265344": 2,
+10-20 20:15:49.114 19138 19199 I ReactNativeJS:     "1311031": 2,
+10-20 20:15:49.114 19138 19199 I ReactNativeJS:     "1355666": 1,
+10-20 20:15:49.114 19138 19199 I ReactNativeJS:     "1369679": 2,
+10-20 20:15:49.114 19138 19199 I ReactNativeJS:     "1535385": 1
+10-20 20:15:49.114 19138 19199 I ReactNativeJS:   },
+10-20 20:15:49.114 19138 19199 I ReactNativeJS:   "navigationEvents": [
+10-20 20:15:49.114 19138 19199 I ReactNativeJS:     {
+10-20 20:15:49.114 19138 19199 I ReactNativeJS:       "action": "focus_dashboard",
+10-20 20:15:49.114 19138 19199 I ReactNativeJS:       "timestamp": 1761002136818
+10-20 20:15:49.114 19138 19199 I ReactNativeJS:     },
+10-20 20:15:49.114 19138 19199 I ReactNativeJS:     {
+10-20 20:15:49.114 19138 19199 I ReactNativeJS:       "action": "navigate_to_1265344",
+10-20 20:15:49.114 19138 19199 I ReactNativeJS:       "timestamp": 1761002149035
+10-20 20:15:49.114 19138 19199 I ReactNativeJS:     },
+10-20 20:15:49.114 19138 19199 I ReactNativeJS:     {
+10-20 20:15:49.114 19138 19199 I ReactNativeJS:       "action": "leave_dashboard",
+10-20 20:15:49.114 19138 19199 I ReactNativeJS:       "timestamp": 1761002149114
+10-20 20:15:49.114 19138 19199 I ReactNativeJS:     }
+10-20 20:15:49.114 19138 19199 I ReactNativeJS:   ]
+10-20 20:15:49.114 19138 19199 I ReactNativeJS: }
+10-20 20:15:49.114 19138 19199 I ReactNativeJS: ---METRICS_JSON_END---
+10-20 20:15:49.234 19138 19300 D TrafficStats: tagSocket(120) with statsTag=0xffffffff, statsUid=-1
+10-20 20:15:49.236  1483  2471 D NetdEventListenerService: DNS Requested by : 475, 10976
+10-20 20:15:49.254  1483  1528 I GestureDetector: handleMessage TAP
+10-20 20:15:49.255  1483  1483 I GestureDetector: handleMessage TAP
+10-20 20:15:49.271 19138 19138 W [RNScreens]: backTitleVisible prop is not available on Android
+10-20 20:15:49.271 19138 19138 W [RNScreens]: backTitleFontFamily prop is not available on Android
+10-20 20:15:49.271 19138 19138 W [RNScreens]: disableBackButtonMenu prop is not available on Android
+10-20 20:15:49.271 19138 19138 W [RNScreens]: largeTitleFontFamily prop is not available on Android
+10-20 20:15:49.271 19138 19138 W [RNScreens]: largeTitleFontWeight prop is not available on Android
+10-20 20:15:49.271 19138 19138 W [RNScreens]: largeTitleHideShadow prop is not available on Android
+10-20 20:15:49.297 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:49.297 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:49.336 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:49.336 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:49.352 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:49.352 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:49.368 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:49.368 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:49.401 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:49.401 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:49.448 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:49.448 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:49.459 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:49.460 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:49.469 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:49.469 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:49.496 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:49.496 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:49.505 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:49.505 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:49.516 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:49.516 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:49.527 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:49.527 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:49.544 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:49.544 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:49.560 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:49.560 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:49.576 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:49.577 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:49.593 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:49.593 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:49.610 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:49.611 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:49.628 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:49.628 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:49.648 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:49.648 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:49.664 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:49.664 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:49.679 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:49.679 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:49.693 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:49.694 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:49.700  1039  1039 I BufferQueueProducer: [com.cinemamovel/com.cinemamovel.MainActivity$_19138#505932](this:0xb400007a1f6f0838,id:-1,api:0,p:-1,c:1039) queueBuffer: fps=22.65 dur=1015.37 max=366.15 min=16.17
+10-20 20:15:49.703   991  1074 I hwcomposer: [HWCDisplay] [Display_0 (type:1)] fps:22.633945,dur:1016.17,max:365.83,min:16.06  
+10-20 20:15:49.712 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:49.712 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:49.729 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:49.729 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:49.745 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:49.746 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:49.761 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:49.761 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:49.781 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:49.782 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:49.791 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:49.791 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:49.809 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:49.809 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:49.825 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:49.825 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:49.841 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:49.841 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:49.858 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:49.858 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:49.865 19138 19138 I IMM_LC  : closeCurrentInput: mService.hideSoftInput
+10-20 20:15:49.865  1483  6037 D InputMethodManagerService: hideSoftInput
+10-20 20:15:49.865  1483  6037 V InputMethodManagerService: Client requesting input be hidden
+10-20 20:15:49.866  1483  6037 V InputMethodManagerService: hideCurrentInputLocked : canceled, shouldHideSoftInput=false, mInputShown=false, mImeWindowVis=0
+10-20 20:15:49.866  1483  6037 I InputMethodBindingController: setCurrentMethodNotVisible: mVisibleBound=false, mHasConnection=true, caller = com.android.server.inputmethod.InputMethodManagerService.hideCurrentInputLocked:4356 com.android.server.inputmethod.InputMethodManagerService.hideSoftInput:4294 com.android.internal.view.IInputMethodManager$Stub.onTransact:488 com.android.server.inputmethod.InputMethodManagerService.onTransact:2302 android.os.Binder.execTransactInternal:1316 android.os.Binder.execTransact:1280 <bottom of call stack> <bottom of call stack> <bottom of call stack> <bottom of call stack> 
+10-20 20:15:49.877 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:49.877 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:49.879 19138 19138 D ScrollView: initGoToTop
+10-20 20:15:49.892 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:49.892 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:49.898 30047 30047 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.media.swcodec' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+10-20 20:15:49.908 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:49.908 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:49.924 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:49.924 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:49.926  2521  2618 D MobileStatusTracker(0/2): onSignalStrengthsChanged level=4, vendorLevel=3
+10-20 20:15:49.928  2521  2618 D MobileSignalController(0/2): notifyListener: enabled=true, connected=true, dataConnected=true, networkType=LTE (4G), emergencyOnly=false, roaming=false, isDefault=false, dataActivity=, level=3, ca=false, mmWave=false, disabledDataIcon=false, simCard=ETC
+10-20 20:15:49.929  2521  2618 D NetworkController: SignalStrength from intent slotId=0
+10-20 20:15:49.948 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:49.948 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:49.967 14401 14401 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.measurement.START pkg=com.google.android.gms }
+10-20 20:15:49.999 19138 19829 D skia    : SkJpegCodec::onGetPixels +
+10-20 20:15:50.018 19138 19829 D skia    : SkJpegCodec::onGetPixels -
+10-20 20:15:50.040 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:50.040 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:50.061 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:50.062 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:50.074 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:50.074 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:50.090 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:50.090 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:50.106 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:50.106 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:50.123 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:50.123 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:50.140 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:50.140 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:50.158 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:50.158 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:50.175 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:50.175 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:50.191 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:50.191 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:50.208 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:50.208 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:50.225 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:50.225 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:50.242 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:50.242 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:50.257 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:50.257 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:50.274 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:50.274 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:50.290 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:50.290 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:50.307 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:50.307 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:50.324 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:50.324 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:50.342 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:50.342 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:50.495   543   543 D io_stats: !@ 179,0 r 464690572 5647891190 w 80570247 844573724 d 1258357 33785868 f 0 0 iot 231109440 0 th 0 0 0 pt 0 inp 0 1 2551547.798
+10-20 20:15:50.495   543   543 D io_stats: !@ MemInfo(KB): total 3867888 free 95148 avail 1068168 actv(f) 488416 inactv(f) 577304 dirty 4708 wb 0 anonpg 1095256 slab 360188
+10-20 20:15:50.595  2486  2486 I WifiHAL : Get link layer stats
+10-20 20:15:50.595  2486  2486 I WifiHAL : GetLinkStatsCommand::create
+10-20 20:15:50.595  2486  2486 D android.hardware.wifi@1.0-service-lazy: WifiRequest::create vendor command to iface 38, vendor_id=0x1a11, subcmd=0x1200, res=0
+10-20 20:15:50.595  2486  2486 I android.hardware.wifi@1.0-service-lazy: WifiCommand::requestResponse err=-95
+10-20 20:15:50.595  2486  2486 I WifiHAL : wifi_get_link_stats: result=-3
+10-20 20:15:50.596  1483  2363 E WifiVendorHal: getWifiLinkLayerStats_1_5_Internal(l.1179) failed {.code = ERROR_NOT_SUPPORTED, .description = }
+10-20 20:15:50.601  1483  3390 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 543557, isSameBssidAndFreq true
+10-20 20:15:50.604  1483  2437 I SemWifiLinkQualityMonitor: Link Qos query: inf. ms / 0 Mbps
+10-20 20:15:50.720  1483  2471 D NetdEventListenerService: DNS Requested by : 475, 11011
+10-20 20:15:50.721 14839 14902 D TrafficStats: tagSocket(6) with statsTag=0xffffffff, statsUid=-1
+10-20 20:15:50.761 30047 30047 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.adbd' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+10-20 20:15:50.809 30047 30047 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.conscrypt' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+10-20 20:15:50.939  1483  1554 I ActivityManager: Changes in 10251 5 to 15, 8 to 0
+10-20 20:15:50.955 30047 30047 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.neuralnetworks' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+10-20 20:15:51.098  1483  4847 D InputDispatcher: Inject key (20033/2000): action=0, f=0x0, d=-1, time=2551548400000000
+10-20 20:15:51.098  1483  4847 D WindowManager: interceptKeyTq keycode=4 interactive=true keyguardActive=false policyFlags=2b000000
+10-20 20:15:51.100  1483  4847 D PhoneWindowManagerExt: interceptKeyTq code=4 down=true repeatCount=0 displayId=-1 interactive=true
+10-20 20:15:51.100  1483  4847 D WindowManager: interceptKeyTq interceptKeyResult=4
+10-20 20:15:51.100  1483  1796 D PowerManagerService: [api] userActivityFromNative :  (event: 1 flags: 0 displayId: 0) eventTime = 2551548400
+10-20 20:15:51.101  1483  1796 D WindowManager: interceptKeyTi keyCode=4 down=true repeatCount=0 keyguardOn=false canceled=false
+10-20 20:15:51.101  1483  1796 D PhoneWindowManagerExt: interceptKeyTi code=4 down=true repeatCount=0 displayId=-1 interactive=true
+10-20 20:15:51.102  1483  1796 I InputDispatcher: Delivering key to (19138): B action: 0x0 (0), f=0x0, m=0x0, d=0, '1eb0182'
+10-20 20:15:51.104  5125  5125 I HBD     : b skip onKeyDown as physical keyboard not connected 
+10-20 20:15:51.104  5125  5125 I HBD     : HoneyBoardService onKeyDown r:5fa7f730 consumed:false 1 
+10-20 20:15:51.105 19138 19138 I ViewRootImpl@52e2b1c[MainActivity]: ViewPostIme key 0
+10-20 20:15:51.105 19138 19138 D Activity: onKeyDown(KEYCODE_BACK)
+10-20 20:15:51.106  1483  4847 D InputDispatcher: Inject key (20033/2000): action=1, f=0x0, d=-1, time=2551548400000000
+10-20 20:15:51.106  1483  4847 D WindowManager: interceptKeyTq keycode=4 interactive=true keyguardActive=false policyFlags=2b000000
+10-20 20:15:51.106  1483  4847 D PhoneWindowManagerExt: interceptKeyTq code=4 down=false repeatCount=0 displayId=-1 interactive=true
+10-20 20:15:51.106  1483  4847 D WindowManager: interceptKeyTq interceptKeyResult=4
+10-20 20:15:51.107  1483  1796 D WindowManager: interceptKeyTi keyCode=4 down=false repeatCount=0 keyguardOn=false canceled=false
+10-20 20:15:51.107  1483  1796 D PhoneWindowManagerExt: interceptKeyTi code=4 down=false repeatCount=0 displayId=-1 interactive=true
+10-20 20:15:51.107  1483  1796 I InputDispatcher: Delivering key to (19138): B action: 0x1 (0), f=0x0, m=0x0, d=0, '1eb0182'
+10-20 20:15:51.108  5125  5125 I HBD     : HoneyBoardService onKeyUp r:4d49cbaa consumed:false 0 
+10-20 20:15:51.109 19138 19138 I ViewRootImpl@52e2b1c[MainActivity]: ViewPostIme key 1
+10-20 20:15:51.109 19138 19138 D Activity: onKeyUp(KEYCODE_BACK) isTracking()=true isCanceled()=false hasCallback=false
+10-20 20:15:51.118 30047 30047 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.ipsec' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+10-20 20:15:51.184 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:51.184 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:51.199  1039  1039 I BufferQueueProducer: [com.cinemamovel/com.cinemamovel.MainActivity$_19138#505932](this:0xb400007a1f6f0838,id:-1,api:0,p:-1,c:1039) queueBuffer: fps=24.03 dur=1498.21 max=849.02 min=16.30
+10-20 20:15:51.201   991  1074 I hwcomposer: [HWCDisplay] [Display_0 (type:1)] fps:24.034876,dur:1497.82,max:848.88,min:15.92  
+10-20 20:15:51.208  2521  2618 D MobileStatusTracker(0/2): onSignalStrengthsChanged level=4, vendorLevel=3
+10-20 20:15:51.215  2521  2618 D MobileSignalController(0/2): notifyListener: enabled=true, connected=true, dataConnected=true, networkType=LTE (4G), emergencyOnly=false, roaming=false, isDefault=false, dataActivity=, level=3, ca=false, mmWave=false, disabledDataIcon=false, simCard=ETC
+10-20 20:15:51.216  2521  2618 D NetworkController: SignalStrength from intent slotId=0
+10-20 20:15:51.220 30047 30047 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.ondevicepersonalization' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+10-20 20:15:51.268 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:51.268 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:51.277 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:51.277 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:51.293  1205  1205 I thermal_repeater: socket -1
+10-20 20:15:51.295 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:51.296 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:51.313 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:51.313 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:51.330 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:51.330 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:51.341 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:51.341 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:51.358 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:51.358 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:51.375 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:51.375 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:51.391 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:51.391 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:51.396 30047 30047 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.extservices' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+10-20 20:15:51.409 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:51.409 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:51.424 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:51.424 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:51.441 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:51.441 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:51.459 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:51.459 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:51.474 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:51.474 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:51.491 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:51.491 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:51.508 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:51.508 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:51.512 30047 30047 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.os.statsd' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+10-20 20:15:51.525 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:51.525 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:51.541 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:51.541 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:51.558 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:51.558 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:51.574 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:51.574 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:51.591 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:51.591 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:51.607 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:51.607 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:51.625 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:51.626 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:51.640 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:51.640 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:51.661 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:51.661 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:51.678 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:51.678 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:51.691 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:51.691 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:51.707 30047 30047 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.scheduling' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+10-20 20:15:51.708 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:51.708 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:51.724 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:51.724 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:51.740 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:51.740 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:51.756 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:51.757 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:51.770 30047 30047 I Finsky  : [2] App states replicator found 55 unowned apps
+10-20 20:15:51.853  8661 24078 E AuthPII : [RequestTokenManager] getToken() -> BAD_AUTHENTICATION. App: com.android.vending, Service: oauth2:https://www.googleapis.com/auth/googleplay
+10-20 20:15:51.853  8661 24078 E AuthPII : bbhm: Long live credential not available.
+10-20 20:15:51.853  8661 24078 E AuthPII : 	at aedv.a(:com.google.android.gms@254031029@25.40.31 (190400-816341114):1270)
+10-20 20:15:51.853  8661 24078 E AuthPII : 	at aeeb.b(:com.google.android.gms@254031029@25.40.31 (190400-816341114):28)
+10-20 20:15:51.853  8661 24078 E AuthPII : 	at aedz.a(:com.google.android.gms@254031029@25.40.31 (190400-816341114):537)
+10-20 20:15:51.853  8661 24078 E AuthPII : 	at aedy.b(:com.google.android.gms@254031029@25.40.31 (190400-816341114):143)
+10-20 20:15:51.853  8661 24078 E AuthPII : 	at xnm.d(:com.google.android.gms@254031029@25.40.31 (190400-816341114):620)
+10-20 20:15:51.853  8661 24078 E AuthPII : 	at adxf.getAuthToken(:com.google.android.gms@254031029@25.40.31 (190400-816341114):412)
+10-20 20:15:51.853  8661 24078 E AuthPII : 	at android.accounts.AbstractAccountAuthenticator$Transport.getAuthToken(AbstractAccountAuthenticator.java:246)
+10-20 20:15:51.853  8661 24078 E AuthPII : 	at android.accounts.IAccountAuthenticator$Stub.onTransact(IAccountAuthenticator.java:242)
+10-20 20:15:51.853  8661 24078 E AuthPII : 	at android.os.Binder.transact(Binder.java:1200)
+10-20 20:15:51.853  8661 24078 E AuthPII : 	at cdwo.onTransact(:com.google.android.gms@254031029@25.40.31 (190400-816341114):10)
+10-20 20:15:51.853  8661 24078 E AuthPII : 	at android.os.Binder.transact(Binder.java:1200)
+10-20 20:15:51.853  8661 24078 E AuthPII : 	at btgl.onTransact(:com.google.android.gms@254031029@25.40.31 (190400-816341114):161)
+10-20 20:15:51.853  8661 24078 E AuthPII : 	at android.os.Binder.execTransactInternal(Binder.java:1321)
+10-20 20:15:51.853  8661 24078 E AuthPII : 	at android.os.Binder.execTransact(Binder.java:1280)
+10-20 20:15:51.854  8661 24078 E AuthPII : Message is Long live credential not available.
+10-20 20:15:51.854  8661 24078 E AuthPII : bbhm: Long live credential not available.
+10-20 20:15:51.854  8661 24078 E AuthPII : 	at aedv.a(:com.google.android.gms@254031029@25.40.31 (190400-816341114):1270)
+10-20 20:15:51.854  8661 24078 E AuthPII : 	at aeeb.b(:com.google.android.gms@254031029@25.40.31 (190400-816341114):28)
+10-20 20:15:51.854  8661 24078 E AuthPII : 	at aedz.a(:com.google.android.gms@254031029@25.40.31 (190400-816341114):537)
+10-20 20:15:51.854  8661 24078 E AuthPII : 	at aedy.b(:com.google.android.gms@254031029@25.40.31 (190400-816341114):143)
+10-20 20:15:51.854  8661 24078 E AuthPII : 	at xnm.d(:com.google.android.gms@254031029@25.40.31 (190400-816341114):620)
+10-20 20:15:51.854  8661 24078 E AuthPII : 	at adxf.getAuthToken(:com.google.android.gms@254031029@25.40.31 (190400-816341114):412)
+10-20 20:15:51.854  8661 24078 E AuthPII : 	at android.accounts.AbstractAccountAuthenticator$Transport.getAuthToken(AbstractAccountAuthenticator.java:246)
+10-20 20:15:51.854  8661 24078 E AuthPII : 	at android.accounts.IAccountAuthenticator$Stub.onTransact(IAccountAuthenticator.java:242)
+10-20 20:15:51.854  8661 24078 E AuthPII : 	at android.os.Binder.transact(Binder.java:1200)
+10-20 20:15:51.854  8661 24078 E AuthPII : 	at cdwo.onTransact(:com.google.android.gms@254031029@25.40.31 (190400-816341114):10)
+10-20 20:15:51.854  8661 24078 E AuthPII : 	at android.os.Binder.transact(Binder.java:1200)
+10-20 20:15:51.854  8661 24078 E AuthPII : 	at btgl.onTransact(:com.google.android.gms@254031029@25.40.31 (190400-816341114):161)
+10-20 20:15:51.854  8661 24078 E AuthPII : 	at android.os.Binder.execTransactInternal(Binder.java:1321)
+10-20 20:15:51.854  8661 24078 E AuthPII : 	at android.os.Binder.execTransact(Binder.java:1280)
+10-20 20:15:51.879  8661 24078 I Auth    : (REDACTED) [GetToken] GetToken failed for app=%s with userRecoverable status: %s 
+10-20 20:15:51.882  8661 24078 W Auth    : [ChimeraGetToken] exception while trying to fetch auth tokens for app=com.google.android.gsf, scope=oauth2:https://www.googleapis.com/auth/googleplay [CONTEXT service_id=153 ]
+10-20 20:15:51.882  8661 24078 W Auth    : aedu: GetToken failed with status code and recovery intent: BadAuthentication
+10-20 20:15:51.882  8661 24078 W Auth    : 	at aedy.b(:com.google.android.gms@254031029@25.40.31 (190400-816341114):341)
+10-20 20:15:51.882  8661 24078 W Auth    : 	at xnm.d(:com.google.android.gms@254031029@25.40.31 (190400-816341114):620)
+10-20 20:15:51.882  8661 24078 W Auth    : 	at adxf.getAuthToken(:com.google.android.gms@254031029@25.40.31 (190400-816341114):412)
+10-20 20:15:51.882  8661 24078 W Auth    : 	at android.accounts.AbstractAccountAuthenticator$Transport.getAuthToken(AbstractAccountAuthenticator.java:246)
+10-20 20:15:51.882  8661 24078 W Auth    : 	at android.accounts.IAccountAuthenticator$Stub.onTransact(IAccountAuthenticator.java:242)
+10-20 20:15:51.882  8661 24078 W Auth    : 	at android.os.Binder.transact(Binder.java:1200)
+10-20 20:15:51.882  8661 24078 W Auth    : 	at cdwo.onTransact(:com.google.android.gms@254031029@25.40.31 (190400-816341114):10)
+10-20 20:15:51.882  8661 24078 W Auth    : 	at android.os.Binder.transact(Binder.java:1200)
+10-20 20:15:51.882  8661 24078 W Auth    : 	at btgl.onTransact(:com.google.android.gms@254031029@25.40.31 (190400-816341114):161)
+10-20 20:15:51.882  8661 24078 W Auth    : 	at android.os.Binder.execTransactInternal(Binder.java:1321)
+10-20 20:15:51.882  8661 24078 W Auth    : 	at android.os.Binder.execTransact(Binder.java:1280)
+10-20 20:15:51.883  8661 24078 W GLSActivity: [GmsAccountAuthenticatorImpl] error status while fetching token:BadAuthentication
+10-20 20:15:51.898 30047 19913 I Finsky  : [7724] Completed 1 account content syncs with 0 successful.
+10-20 20:15:51.899 30047 30047 I Finsky  : [2] [ContentSync] Installation state replication failed, parameters=Id: 12-1, CT: 1761002124482, Constraints: [{ L: 15000, D: 86400000, C: CHARGING_NONE, I: IDLE_NONE, N: NET_ANY, B: BATTERY_ANY }].
+10-20 20:15:51.899 30047 30047 I Finsky  : [2] [ContentSync] Scheduling replication attempt 0.
+10-20 20:15:51.900 30047 30047 I Finsky  : [2] SCH: jobFinished: 12-1. TimeElapsed: 12235ms.
+10-20 20:15:51.901 30047 30047 I Finsky  : [2] WM::SCH: Logging work end for 12-1
+10-20 20:15:51.908 30047 18820 I Finsky  : [7720] SCH: Attempting to reschedule job: Id: 12-1, Constraints: [{ L: 20000, D: 86400000, C: CHARGING_NONE, I: IDLE_NONE, N: NET_ANY, B: BATTERY_ANY }]
+10-20 20:15:51.919 30047 30100 I Finsky  : [7442] SCH: Scheduling phonesky job Id: 1-1337, CT: 1760964422004, Constraints: [{ L: 43141579, D: 86341579, C: CHARGING_NONE, I: IDLE_NONE, N: NET_ANY, B: BATTERY_ANY }]
+10-20 20:15:51.919 30047 30100 I Finsky  : [7442] SCH: Scheduling phonesky job Id: 34-3111, CT: 1760921465324, Constraints: [{ L: 604800000, D: 2507884180, C: CHARGING_NONE, I: IDLE_NONE, N: NET_ANY, B: BATTERY_ANY }]
+10-20 20:15:51.919 30047 30100 I Finsky  : [7442] SCH: Scheduling phonesky job Id: 34-3112, CT: 1760921465324, Constraints: [{ L: 604800000, D: 2587130866, C: CHARGING_NONE, I: IDLE_NONE, N: NET_ANY, B: BATTERY_ANY }]
+10-20 20:15:51.919 30047 30100 I Finsky  : [7442] SCH: Scheduling phonesky job Id: 34-3114, CT: 1760995803767, Constraints: [{ L: 79199322, D: 1375199322, C: CHARGING_NONE, I: IDLE_NONE, N: NET_ANY, B: BATTERY_ANY }]
+10-20 20:15:51.919 30047 30100 I Finsky  : [7442] SCH: Scheduling phonesky job Id: 34-3116, CT: 1760995804570, Constraints: [{ L: 604800000, D: 2591999334, C: CHARGING_NONE, I: IDLE_NONE, N: NET_ANY, B: BATTERY_ANY }]
+10-20 20:15:51.925 30047 30098 I Finsky  : [7440] SCH: Scheduling 1 system job(s)
+10-20 20:15:51.926 30047 30098 I Finsky  : [7440] SCH: Scheduling system job Id: 9578, L: 5411658, D: 48611658, C: false, I: false, N: 1
+10-20 20:15:51.934 30047 19911 I Finsky  : [7723] SCH: job service finished with id 9571.
+10-20 20:15:51.954  1483  1583 D PowerManagerService: UserActivityStateListenerState: 0
+10-20 20:15:51.974 30047 30081 I Finsky  : [7426] WM::SCH: Logging work initialize for 12-1
+10-20 20:15:51.979 30047 30094 I Finsky  : [7436] SCH: Scheduling phonesky job Id: 12-1, CT: 1761002151909, Constraints: [{ L: 20000, D: 86400000, C: CHARGING_NONE, I: IDLE_NONE, N: NET_ANY, B: BATTERY_ANY }]
+10-20 20:15:51.985 30047 30098 I Finsky  : [7440] SCH: Scheduling 1 system job(s)
+10-20 20:15:51.986 30047 30098 I Finsky  : [7440] SCH: Scheduling system job Id: 9578, L: 19924, D: 48611598, C: false, I: false, N: 1
+10-20 20:15:52.169   570 18907 I keystore2: keystore2::watchdog: Watchdog thread idle -> terminating. Have a great day.
+10-20 20:15:52.208 12269 12519 W LibevQuicAsyncUDPSocket.h: setTosOrTrafficClass not implemented in LibevQuicAsyncUDPSocket
+10-20 20:15:52.212  1483  2471 D NetdEventListenerService: DNS Requested by : 475, 11013, 4, true
+10-20 20:15:52.229 12269 12519 E MvfstCallbacks.cpp: onConnectionSetupError: error=TransportError: Internal Error, Error on socket write Operation not permitted, 
+10-20 20:15:52.235  1483  2471 D NetdEventListenerService: DNS Requested by : 475, 11013, 4, true
+10-20 20:15:52.487  2521  2618 D MobileStatusTracker(0/2): onSignalStrengthsChanged level=4, vendorLevel=3
+10-20 20:15:52.492  2521  2618 D MobileSignalController(0/2): notifyListener: enabled=true, connected=true, dataConnected=true, networkType=LTE (4G), emergencyOnly=false, roaming=false, isDefault=false, dataActivity=, level=3, ca=false, mmWave=false, disabledDataIcon=false, simCard=ETC
+10-20 20:15:52.492  2521  2618 D NetworkController: SignalStrength from intent slotId=0
+10-20 20:15:52.501   543   543 D io_stats: !@ 179,0 r 464692543 5647899894 w 80570273 844573820 d 1258357 33785868 f 0 0 iot 231109824 0 th 0 0 0 pt 0 inp 0 0 2551549.803
+10-20 20:15:52.753  1483  2471 D NetdEventListenerService: DNS Requested by : 475, 11011
+10-20 20:15:52.754 14839 14902 D TrafficStats: tagSocket(6) with statsTag=0xffffffff, statsUid=-1
+10-20 20:15:52.856  1483  2597 I ActivityManager: Killing 18019:com.facebook.system/u0a106 (adj 999): empty #25
+10-20 20:15:52.866  1483  1560 I libprocessgroup: Successfully killed process cgroup uid 10106 pid 18019 in 6ms
+10-20 20:15:52.890   975   975 I Zygote  : Process 18019 exited due to signal 9 (Killed)
+10-20 20:15:52.896   999   999 D IMGMemtrackHAL: hal_get_memory: memtrack cache rebuild was required
+10-20 20:15:52.905  1137  8532 I CameraService: onUidStateChanged: uid=10252, procState is changed. (20 -> 19)
+10-20 20:15:52.934  1045  1056 D ccci_mdinit: (1):monitor_time_update_thread round:143795 ########
+10-20 20:15:53.078 14401 14401 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.backup.GMS_MODULE_RESTORE dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+10-20 20:15:53.182  1483  2597 D InputDispatcher: Inject motion (20044/2000): action=0x0, time=2551550484000000, f=0x0, d=0 dsdx=1.000000 dtdx=0.000000
+10-20 20:15:53.183  1483  1796 I InputDispatcher: Delivering touch to (2521): action: 0x4, f=0x0, d=0, 'a9cce9e', t=1 
+10-20 20:15:53.183  1483  1796 I InputDispatcher: Delivering touch to (19138): action: 0x0, f=0x0, d=0, '1eb0182', t=1 
+10-20 20:15:53.183 19138 19138 I ViewRootImpl@52e2b1c[MainActivity]: ViewPostIme pointer 0
+10-20 20:15:53.183  1483  1796 D PowerManagerService: [api] userActivityFromNative :  (event: 2 flags: 0 displayId: 0) eventTime = 2551550484
+10-20 20:15:53.185  1483  1528 I GestureDetector: obtain mCurrentDownEvent. id: -254154682 caller: com.android.server.wm.SystemGesturesPointerEventListener.onPointerEvent:203 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:285 
+10-20 20:15:53.186  1483  1796 D PowerManagerService: UserActivityStateListenerState: 1
+10-20 20:15:53.186  1483  1528 I GestureDetector: obtain mCurrentDownEvent. id: -254154682 caller: com.android.server.wm.SystemPerformancePointerEventListener.onPointerEvent:89 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:285 
+10-20 20:15:53.196  1483  2597 D InputDispatcher: Inject motion (20044/2000): action=0x1, time=2551550484000000, f=0x0, d=0 dsdx=1.000000 dtdx=0.000000
+10-20 20:15:53.196  1483  1796 I InputDispatcher: Delivering touch to (19138): action: 0x1, f=0x0, d=0, '1eb0182', t=1 
+10-20 20:15:53.197  1483  1528 I GestureDetector: obtain mCurrentMotionEventRaw. action: 1 id: -671323607
+10-20 20:15:53.197  1483  1528 I GestureDetector: obtain mCurrentMotionEventRaw. action: 1 id: -671323607
+10-20 20:15:53.198 19138 19138 I ViewRootImpl@52e2b1c[MainActivity]: ViewPostIme pointer 1
+10-20 20:15:53.226 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:53.226 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:53.230  1039  1039 I BufferQueueProducer: [com.cinemamovel/com.cinemamovel.MainActivity$_19138#505932](this:0xb400007a1f6f0838,id:-1,api:0,p:-1,c:1039) queueBuffer: fps=15.76 dur=2030.89 max=1448.67 min=16.17
+10-20 20:15:53.232   991  1074 I hwcomposer: [HWCDisplay] [Display_0 (type:1)] fps:15.754505,dur:2031.17,max:1449.82,min:15.44  
+10-20 20:15:53.254 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:53.254 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:53.272 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:53.272 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:53.289 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:53.290 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:53.304 19138 19138 W [RNScreens]: backTitleVisible prop is not available on Android
+10-20 20:15:53.304 19138 19138 W [RNScreens]: backTitleFontFamily prop is not available on Android
+10-20 20:15:53.305 19138 19138 W [RNScreens]: disableBackButtonMenu prop is not available on Android
+10-20 20:15:53.305 19138 19138 W [RNScreens]: largeTitleFontFamily prop is not available on Android
+10-20 20:15:53.305 19138 19138 W [RNScreens]: largeTitleFontWeight prop is not available on Android
+10-20 20:15:53.305 19138 19138 W [RNScreens]: largeTitleHideShadow prop is not available on Android
+10-20 20:15:53.313 19138 19199 I ReactNativeJS: ---METRICS_JSON_START---
+10-20 20:15:53.313 19138 19199 I ReactNativeJS: {
+10-20 20:15:53.313 19138 19199 I ReactNativeJS:   "dashboardRenders": 3,
+10-20 20:15:53.313 19138 19199 I ReactNativeJS:   "cardRenders": {
+10-20 20:15:53.313 19138 19199 I ReactNativeJS:     "13494": 2,
+10-20 20:15:53.313 19138 19199 I ReactNativeJS:     "506763": 2,
+10-20 20:15:53.313 19138 19199 I ReactNativeJS:     "575265": 2,
+10-20 20:15:53.313 19138 19199 I ReactNativeJS:     "617126": 1,
+10-20 20:15:53.313 19138 19199 I ReactNativeJS:     "755898": 2,
+10-20 20:15:53.313 19138 19199 I ReactNativeJS:     "803796": 2,
+10-20 20:15:53.313 19138 19199 I ReactNativeJS:     "911430": 1,
+10-20 20:15:53.313 19138 19199 I ReactNativeJS:     "914215": 2,
+10-20 20:15:53.313 19138 19199 I ReactNativeJS:     "960299": 1,
+10-20 20:15:53.313 19138 19199 I ReactNativeJS:     "987400": 2,
+10-20 20:15:53.313 19138 19199 I ReactNativeJS:     "993234": 1,
+10-20 20:15:53.313 19138 19199 I ReactNativeJS:     "1007734": 2,
+10-20 20:15:53.313 19138 19199 I ReactNativeJS:     "1028248": 2,
+10-20 20:15:53.313 19138 19199 I ReactNativeJS:     "1035259": 2,
+10-20 20:15:53.313 19138 19199 I ReactNativeJS:     "1038392": 2,
+10-20 20:15:53.313 19138 19199 I ReactNativeJS:     "1051486": 2,
+10-20 20:15:53.313 19138 19199 I ReactNativeJS:     "1061474": 2,
+10-20 20:15:53.313 19138 19199 I ReactNativeJS:     "1078605": 2,
+10-20 20:15:53.313 19138 19199 I ReactNativeJS:     "1087192": 2,
+10-20 20:15:53.313 19138 19199 I ReactNativeJS:     "1136867": 1,
+10-20 20:15:53.313 19138 19199 I ReactNativeJS:     "1234821": 2,
+10-20 20:15:53.313 19138 19199 I ReactNativeJS:     "1241634": 1,
+10-20 20:15:53.313 19138 19199 I ReactNativeJS:     "1242011": 1,
+10-20 20:15:53.313 19138 19199 I ReactNativeJS:     "1246049": 1,
+10-20 20:15:53.313 19138 19199 I ReactNativeJS:     "1265344": 2,
+10-20 20:15:53.313 19138 19199 I ReactNativeJS:     "1311031": 2,
+10-20 20:15:53.313 19138 19199 I ReactNativeJS:     "1355666": 1,
+10-20 20:15:53.313 19138 19199 I ReactNativeJS:     "1369679": 2,
+10-20 20:15:53.313 19138 19199 I ReactNativeJS:     "1535385": 1
+10-20 20:15:53.313 19138 19199 I ReactNativeJS:   },
+10-20 20:15:53.313 19138 19199 I ReactNativeJS:   "navigationEvents": [
+10-20 20:15:53.313 19138 19199 I ReactNativeJS:     {
+10-20 20:15:53.313 19138 19199 I ReactNativeJS:       "action": "focus_dashboard",
+10-20 20:15:53.313 19138 19199 I ReactNativeJS:       "timestamp": 1761002136818
+10-20 20:15:53.313 19138 19199 I ReactNativeJS:     },
+10-20 20:15:53.313 19138 19199 I ReactNativeJS:     {
+10-20 20:15:53.313 19138 19199 I ReactNativeJS:       "action": "navigate_to_1265344",
+10-20 20:15:53.313 19138 19199 I ReactNativeJS:       "timestamp": 1761002149035
+10-20 20:15:53.313 19138 19199 I ReactNativeJS:     },
+10-20 20:15:53.313 19138 19199 I ReactNativeJS:     {
+10-20 20:15:53.313 19138 19199 I ReactNativeJS:       "action": "leave_dashboard",
+10-20 20:15:53.313 19138 19199 I ReactNativeJS:       "timestamp": 1761002149114
+10-20 20:15:53.313 19138 19199 I ReactNativeJS:     },
+10-20 20:15:53.313 19138 19199 I ReactNativeJS:     {
+10-20 20:15:53.313 19138 19199 I ReactNativeJS:       "action": "focus_dashboard",
+10-20 20:15:53.313 19138 19199 I ReactNativeJS:       "timestamp": 1761002151159
+10-20 20:15:53.313 19138 19199 I ReactNativeJS:     },
+10-20 20:15:53.313 19138 19199 I ReactNativeJS:     {
+10-20 20:15:53.313 19138 19199 I ReactNativeJS:       "action": "navigate_to_1265344",
+10-20 20:15:53.313 19138 19199 I ReactNativeJS:       "timestamp": 1761002153221
+10-20 20:15:53.313 19138 19199 I ReactNativeJS:     },
+10-20 20:15:53.313 19138 19199 I ReactNativeJS:     {
+10-20 20:15:53.313 19138 19199 I ReactNativeJS:       "action": "leave_dashboard",
+10-20 20:15:53.313 19138 19199 I ReactNativeJS:       "timestamp": 1761002153312
+10-20 20:15:53.313 19138 19199 I ReactNativeJS:     }
+10-20 20:15:53.313 19138 19199 I ReactNativeJS:   ]
+10-20 20:15:53.313 19138 19199 I ReactNativeJS: }
+10-20 20:15:53.313 19138 19199 I ReactNativeJS: ---METRICS_JSON_END---
+10-20 20:15:53.313 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:53.313 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:53.329 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:53.329 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:53.353 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:53.353 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:53.388 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:53.388 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:53.401 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:53.401 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:53.413 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:53.413 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:53.416 19138 19138 D ScrollView: initGoToTop
+10-20 20:15:53.486 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:53.486  1483  1528 I GestureDetector: handleMessage TAP
+10-20 20:15:53.486 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:53.486  1483  1483 I GestureDetector: handleMessage TAP
+10-20 20:15:53.495 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:53.495 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:53.518 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:53.519 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:53.529 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:53.529 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:53.550 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:53.550 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:53.561 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:53.561 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:53.582 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:53.582 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:53.598 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:53.598 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:53.604  2486  2486 I WifiHAL : Get link layer stats
+10-20 20:15:53.604  2486  2486 I WifiHAL : GetLinkStatsCommand::create
+10-20 20:15:53.604  2486  2486 D android.hardware.wifi@1.0-service-lazy: WifiRequest::create vendor command to iface 38, vendor_id=0x1a11, subcmd=0x1200, res=0
+10-20 20:15:53.604  2486  2486 I android.hardware.wifi@1.0-service-lazy: WifiCommand::requestResponse err=-95
+10-20 20:15:53.604  2486  2486 I WifiHAL : wifi_get_link_stats: result=-3
+10-20 20:15:53.605  1483  2363 E WifiVendorHal: getWifiLinkLayerStats_1_5_Internal(l.1179) failed {.code = ERROR_NOT_SUPPORTED, .description = }
+10-20 20:15:53.608  1483  3390 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 543558, isSameBssidAndFreq true
+10-20 20:15:53.609  1483  2437 I SemWifiLinkQualityMonitor: Link Qos query: inf. ms / 0 Mbps
+10-20 20:15:53.618 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:53.618 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:53.634 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:53.635 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:53.647 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:53.648 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:53.664 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:53.665 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:53.681 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:53.681 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:53.696 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:53.696 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:53.711 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:53.711 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:53.727 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:53.728 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:53.745 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:53.745 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:53.760  2521  2618 D MobileStatusTracker(0/2): onSignalStrengthsChanged level=4, vendorLevel=3
+10-20 20:15:53.764  2521  2618 D MobileSignalController(0/2): notifyListener: enabled=true, connected=true, dataConnected=true, networkType=LTE (4G), emergencyOnly=false, roaming=false, isDefault=false, dataActivity=, level=3, ca=false, mmWave=false, disabledDataIcon=false, simCard=ETC
+10-20 20:15:53.766  2521  2618 D NetworkController: SignalStrength from intent slotId=0
+10-20 20:15:53.770 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:53.770 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:53.784 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:53.784 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:53.797 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:53.798 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:53.810 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:53.810 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:53.831 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:53.832 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:53.833  4441  4441 I wpa_supplicant: Heartbeat 919
+10-20 20:15:53.842 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:53.842 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:53.858 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:53.859 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:53.931 14401 14401 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.safetynet.service.START pkg=com.google.android.gms }
+10-20 20:15:53.935 14401 14401 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.safebrowsing.SafeBrowsingService.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsBoundBrokerService }
+10-20 20:15:54.057  1483  3333 D CompatibilityChangeReporter: Compat change id reported: 161145287; UID 10252; state: DISABLED
+10-20 20:15:54.066 19204 20048 E FilePhenotypeFlags: Config package com.google.android.gms.clearcut_client#com.bradesco cannot use FILE backing without declarative registration. See go/phenotype-android-integration#phenotype for more information. This will lead to stale flags.
+10-20 20:15:54.505   543   543 D io_stats: !@ 179,0 r 464692635 5647900922 w 80570277 844573836 d 1258357 33785868 f 0 0 iot 231109852 0 th 0 0 0 pt 0 inp 0 0 2551551.808
+10-20 20:15:54.793  1483  2471 D NetdEventListenerService: DNS Requested by : 475, 11011
+10-20 20:15:54.796 14839 14902 D TrafficStats: tagSocket(6) with statsTag=0xffffffff, statsUid=-1
+10-20 20:15:54.879  2521  2618 D MobileStatusTracker(1/1): onSignalStrengthsChanged level=4, vendorLevel=4
+10-20 20:15:54.883  2521  2618 D MobileSignalController(1/1): notifyListener: enabled=true, connected=true, dataConnected=false, networkType=UMTS (3G), emergencyOnly=true, roaming=false, isDefault=false, dataActivity=, level=4, ca=false, mmWave=false, disabledDataIcon=false, simCard=ETC
+10-20 20:15:54.883  2521  2618 D NetworkController: SignalStrength from intent slotId=1
+10-20 20:15:55.043  2521  2618 D MobileStatusTracker(0/2): onSignalStrengthsChanged level=4, vendorLevel=3
+10-20 20:15:55.045  2521  2618 D MobileSignalController(0/2): notifyListener: enabled=true, connected=true, dataConnected=true, networkType=LTE (4G), emergencyOnly=false, roaming=false, isDefault=false, dataActivity=, level=3, ca=false, mmWave=false, disabledDataIcon=false, simCard=ETC
+10-20 20:15:55.046  2521  2618 D NetworkController: SignalStrength from intent slotId=0
+10-20 20:15:55.192  2799  3039 D PhoneInterfaceManager: setDataEnabledForReason() Reason=1 Pid=1483 App=system
+10-20 20:15:55.196  2799  3039 D PhoneInterfaceManager: setDataEnabledForReason() Reason=1 Pid=1483 App=system
+10-20 20:15:55.274  1483  6407 D InputDispatcher: Inject key (20054/2000): action=0, f=0x0, d=-1, time=2551552576000000
+10-20 20:15:55.275  1483  6407 D WindowManager: interceptKeyTq keycode=4 interactive=true keyguardActive=false policyFlags=2b000000
+10-20 20:15:55.276  1483  6407 D PhoneWindowManagerExt: interceptKeyTq code=4 down=true repeatCount=0 displayId=-1 interactive=true
+10-20 20:15:55.276  1483  6407 D WindowManager: interceptKeyTq interceptKeyResult=4
+10-20 20:15:55.276  1483  1796 D PowerManagerService: [api] userActivityFromNative :  (event: 1 flags: 0 displayId: 0) eventTime = 2551552576
+10-20 20:15:55.278  1483  1796 D WindowManager: interceptKeyTi keyCode=4 down=true repeatCount=0 keyguardOn=false canceled=false
+10-20 20:15:55.279  1483  1796 D PhoneWindowManagerExt: interceptKeyTi code=4 down=true repeatCount=0 displayId=-1 interactive=true
+10-20 20:15:55.281  1483  1796 I InputDispatcher: Delivering key to (19138): B action: 0x0 (0), f=0x0, m=0x0, d=0, '1eb0182'
+10-20 20:15:55.281  5125  5125 I HBD     : b skip onKeyDown as physical keyboard not connected 
+10-20 20:15:55.282  5125  5125 I HBD     : HoneyBoardService onKeyDown r:a7247913 consumed:false 1 
+10-20 20:15:55.283 19138 19138 I ViewRootImpl@52e2b1c[MainActivity]: ViewPostIme key 0
+10-20 20:15:55.283 19138 19138 D Activity: onKeyDown(KEYCODE_BACK)
+10-20 20:15:55.284  1483  6407 D InputDispatcher: Inject key (20054/2000): action=1, f=0x0, d=-1, time=2551552576000000
+10-20 20:15:55.284  1483  6407 D WindowManager: interceptKeyTq keycode=4 interactive=true keyguardActive=false policyFlags=2b000000
+10-20 20:15:55.284  1483  6407 D PhoneWindowManagerExt: interceptKeyTq code=4 down=false repeatCount=0 displayId=-1 interactive=true
+10-20 20:15:55.284  1483  6407 D WindowManager: interceptKeyTq interceptKeyResult=4
+10-20 20:15:55.285  1483  1796 D WindowManager: interceptKeyTi keyCode=4 down=false repeatCount=0 keyguardOn=false canceled=false
+10-20 20:15:55.285  1483  1796 D PhoneWindowManagerExt: interceptKeyTi code=4 down=false repeatCount=0 displayId=-1 interactive=true
+10-20 20:15:55.285  1483  1796 I InputDispatcher: Delivering key to (19138): B action: 0x1 (0), f=0x0, m=0x0, d=0, '1eb0182'
+10-20 20:15:55.287  5125  5125 I HBD     : HoneyBoardService onKeyUp r:f8812fda consumed:false 0 
+10-20 20:15:55.288 19138 19138 I ViewRootImpl@52e2b1c[MainActivity]: ViewPostIme key 1
+10-20 20:15:55.288 19138 19138 D Activity: onKeyUp(KEYCODE_BACK) isTracking()=true isCanceled()=false hasCallback=false
+10-20 20:15:55.397 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:55.398 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:55.409  1039  1039 I BufferQueueProducer: [com.cinemamovel/com.cinemamovel.MainActivity$_19138#505932](this:0xb400007a1f6f0838,id:-1,api:0,p:-1,c:1039) queueBuffer: fps=15.60 dur=2179.87 max=1530.95 min=15.98
+10-20 20:15:55.411   991  1074 I hwcomposer: [HWCDisplay] [Display_0 (type:1)] fps:15.600336,dur:2179.44,max:1531.17,min:15.26  
+10-20 20:15:55.477 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:55.477 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:55.485 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:55.485 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:55.505 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:55.505 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:55.522 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:55.522 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:55.538 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:55.538 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:55.553 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:55.553 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:55.569 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:55.569 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:55.586 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:55.586 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:55.603 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:55.603 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:55.619 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:55.620 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:55.636 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:55.636 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:55.653 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:55.653 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:55.672 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:55.672 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:55.686 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:55.686 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:55.703 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:55.703 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:55.720 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:55.720 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:55.738 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:55.738 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:55.753 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:55.754 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:55.770 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:55.770 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:55.785 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:55.786 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:55.801  1014  1059 I libPerfCtl: xgfGetFPS pid:-1 fps:0
+10-20 20:15:55.801  1014  1059 I libPerfCtl: xgfGetFPS ioctl_ret:-1
+10-20 20:15:55.803 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:55.803 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:55.819 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:55.820 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:55.836 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:55.836 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:55.852 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:55.852 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:55.869 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:55.869 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:55.870  1483  1498 I system_server: Background concurrent copying GC freed 419382(22MB) AllocSpace objects, 231(4220KB) LOS objects, 17% free, 110MB/134MB, paused 700us,364us total 694.791ms
+10-20 20:15:55.887 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:55.887 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:55.904 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:55.904 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:55.919 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:55.919 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:55.935 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:55.935 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:55.952 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:55.952 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:55.968 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:55.968 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:56.080  1483  1755 D SensorService: [SO] 0.147 1.457 9.893
+10-20 20:15:56.161  2521  2618 D MobileStatusTracker(1/1): onSignalStrengthsChanged level=4, vendorLevel=4
+10-20 20:15:56.165  2521  2618 D MobileSignalController(1/1): notifyListener: enabled=true, connected=true, dataConnected=false, networkType=UMTS (3G), emergencyOnly=true, roaming=false, isDefault=false, dataActivity=, level=4, ca=false, mmWave=false, disabledDataIcon=false, simCard=ETC
+10-20 20:15:56.165  2521  2618 D NetworkController: SignalStrength from intent slotId=1
+10-20 20:15:56.188  1483  1583 D PowerManagerService: UserActivityStateListenerState: 0
+10-20 20:15:56.294  1205  1205 I thermal_repeater: socket -1
+10-20 20:15:56.329  2521  2618 D MobileStatusTracker(0/2): onSignalStrengthsChanged level=4, vendorLevel=3
+10-20 20:15:56.334  2521  2618 D MobileSignalController(0/2): notifyListener: enabled=true, connected=true, dataConnected=true, networkType=LTE (4G), emergencyOnly=false, roaming=false, isDefault=false, dataActivity=, level=3, ca=false, mmWave=false, disabledDataIcon=false, simCard=ETC
+10-20 20:15:56.336  2521  2618 D NetworkController: SignalStrength from intent slotId=0
+10-20 20:15:56.512   543   543 D io_stats: !@ 179,0 r 464692659 5647901018 w 80570514 844579036 d 1258357 33785868 f 0 0 iot 231110368 0 th 0 0 0 pt 0 inp 0 0 2551553.814
+10-20 20:15:56.614  2486  2486 I WifiHAL : Get link layer stats
+10-20 20:15:56.614  2486  2486 I WifiHAL : GetLinkStatsCommand::create
+10-20 20:15:56.614  2486  2486 D android.hardware.wifi@1.0-service-lazy: WifiRequest::create vendor command to iface 38, vendor_id=0x1a11, subcmd=0x1200, res=0
+10-20 20:15:56.614  2486  2486 I android.hardware.wifi@1.0-service-lazy: WifiCommand::requestResponse err=-95
+10-20 20:15:56.614  2486  2486 I WifiHAL : wifi_get_link_stats: result=-3
+10-20 20:15:56.616  1483  2363 E WifiVendorHal: getWifiLinkLayerStats_1_5_Internal(l.1179) failed {.code = ERROR_NOT_SUPPORTED, .description = }
+10-20 20:15:56.625  1483  3390 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 543559, isSameBssidAndFreq true
+10-20 20:15:56.628  1483  2437 I SemWifiLinkQualityMonitor: Link Qos query: inf. ms / 0 Mbps
+10-20 20:15:56.682  1483  2457 D WifiConnectivityMonitor.NetworkStatsAnalyzer: Backhaul result - RSSI:-62, CE:20, PE:21, TI:24, PTI:26, TW:34, PTW:34, Tx:4440, Rx:2456, TxS:4435, RxS:2456, RESULT:true, IC:0, ICT:5, WC:0, WCT:5, R:0, RC:0, IE:0, EC:0
+10-20 20:15:56.837  1483  2471 D NetdEventListenerService: DNS Requested by : 475, 11011
+10-20 20:15:56.838 14839 14902 D TrafficStats: tagSocket(6) with statsTag=0xffffffff, statsUid=-1
+10-20 20:15:57.364  1483  6407 D InputDispatcher: Inject motion (20064/2000): action=0x0, time=2551554667000000, f=0x0, d=0 dsdx=1.000000 dtdx=0.000000
+10-20 20:15:57.365  1483  1796 I InputDispatcher: Delivering touch to (2521): action: 0x4, f=0x0, d=0, 'a9cce9e', t=1 
+10-20 20:15:57.365  1483  1796 I InputDispatcher: Delivering touch to (19138): action: 0x0, f=0x0, d=0, '1eb0182', t=1 
+10-20 20:15:57.366 19138 19138 I ViewRootImpl@52e2b1c[MainActivity]: ViewPostIme pointer 0
+10-20 20:15:57.366  1483  1796 D PowerManagerService: [api] userActivityFromNative :  (event: 2 flags: 0 displayId: 0) eventTime = 2551554667
+10-20 20:15:57.367  1483  1528 I GestureDetector: obtain mCurrentDownEvent. id: -905682864 caller: com.android.server.wm.SystemGesturesPointerEventListener.onPointerEvent:203 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:285 
+10-20 20:15:57.367  1483  1528 I GestureDetector: obtain mCurrentDownEvent. id: -905682864 caller: com.android.server.wm.SystemPerformancePointerEventListener.onPointerEvent:89 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:285 
+10-20 20:15:57.368  1483  1796 D PowerManagerService: UserActivityStateListenerState: 1
+10-20 20:15:57.373  1483  6407 D InputDispatcher: Inject motion (20064/2000): action=0x1, time=2551554667000000, f=0x0, d=0 dsdx=1.000000 dtdx=0.000000
+10-20 20:15:57.373  1483  1796 I InputDispatcher: Delivering touch to (19138): action: 0x1, f=0x0, d=0, '1eb0182', t=1 
+10-20 20:15:57.374  1483  1528 I GestureDetector: obtain mCurrentMotionEventRaw. action: 1 id: -719875555
+10-20 20:15:57.375  1483  1528 I GestureDetector: obtain mCurrentMotionEventRaw. action: 1 id: -719875555
+10-20 20:15:57.375 19138 19138 I ViewRootImpl@52e2b1c[MainActivity]: ViewPostIme pointer 1
+10-20 20:15:57.402 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:57.402 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:57.407  1039  1039 I BufferQueueProducer: [com.cinemamovel/com.cinemamovel.MainActivity$_19138#505932](this:0xb400007a1f6f0838,id:-1,api:0,p:-1,c:1039) queueBuffer: fps=16.02 dur=1997.71 max=1415.08 min=16.07
+10-20 20:15:57.410   991  1074 I hwcomposer: [HWCDisplay] [Display_0 (type:1)] fps:16.010614,dur:1998.67,max:1416.64,min:15.81  
+10-20 20:15:57.433 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:57.433 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:57.450 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:57.450 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:57.467 19138 19138 W [RNScreens]: backTitleVisible prop is not available on Android
+10-20 20:15:57.467 19138 19138 W [RNScreens]: backTitleFontFamily prop is not available on Android
+10-20 20:15:57.467 19138 19138 W [RNScreens]: disableBackButtonMenu prop is not available on Android
+10-20 20:15:57.467 19138 19138 W [RNScreens]: largeTitleFontFamily prop is not available on Android
+10-20 20:15:57.467 19138 19138 W [RNScreens]: largeTitleFontWeight prop is not available on Android
+10-20 20:15:57.468 19138 19138 W [RNScreens]: largeTitleHideShadow prop is not available on Android
+10-20 20:15:57.478 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:57.478 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:57.480 19138 19199 I ReactNativeJS: ---METRICS_JSON_START---
+10-20 20:15:57.480 19138 19199 I ReactNativeJS: {
+10-20 20:15:57.480 19138 19199 I ReactNativeJS:   "dashboardRenders": 3,
+10-20 20:15:57.480 19138 19199 I ReactNativeJS:   "cardRenders": {
+10-20 20:15:57.480 19138 19199 I ReactNativeJS:     "13494": 2,
+10-20 20:15:57.480 19138 19199 I ReactNativeJS:     "506763": 2,
+10-20 20:15:57.480 19138 19199 I ReactNativeJS:     "575265": 2,
+10-20 20:15:57.480 19138 19199 I ReactNativeJS:     "617126": 1,
+10-20 20:15:57.480 19138 19199 I ReactNativeJS:     "755898": 2,
+10-20 20:15:57.480 19138 19199 I ReactNativeJS:     "803796": 2,
+10-20 20:15:57.480 19138 19199 I ReactNativeJS:     "911430": 1,
+10-20 20:15:57.480 19138 19199 I ReactNativeJS:     "914215": 2,
+10-20 20:15:57.480 19138 19199 I ReactNativeJS:     "960299": 1,
+10-20 20:15:57.480 19138 19199 I ReactNativeJS:     "987400": 2,
+10-20 20:15:57.480 19138 19199 I ReactNativeJS:     "993234": 1,
+10-20 20:15:57.480 19138 19199 I ReactNativeJS:     "1007734": 2,
+10-20 20:15:57.480 19138 19199 I ReactNativeJS:     "1028248": 2,
+10-20 20:15:57.480 19138 19199 I ReactNativeJS:     "1035259": 2,
+10-20 20:15:57.480 19138 19199 I ReactNativeJS:     "1038392": 2,
+10-20 20:15:57.480 19138 19199 I ReactNativeJS:     "1051486": 2,
+10-20 20:15:57.480 19138 19199 I ReactNativeJS:     "1061474": 2,
+10-20 20:15:57.480 19138 19199 I ReactNativeJS:     "1078605": 2,
+10-20 20:15:57.480 19138 19199 I ReactNativeJS:     "1087192": 2,
+10-20 20:15:57.480 19138 19199 I ReactNativeJS:     "1136867": 1,
+10-20 20:15:57.480 19138 19199 I ReactNativeJS:     "1234821": 2,
+10-20 20:15:57.480 19138 19199 I ReactNativeJS:     "1241634": 1,
+10-20 20:15:57.480 19138 19199 I ReactNativeJS:     "1242011": 1,
+10-20 20:15:57.480 19138 19199 I ReactNativeJS:     "1246049": 1,
+10-20 20:15:57.480 19138 19199 I ReactNativeJS:     "1265344": 2,
+10-20 20:15:57.480 19138 19199 I ReactNativeJS:     "1311031": 2,
+10-20 20:15:57.480 19138 19199 I ReactNativeJS:     "1355666": 1,
+10-20 20:15:57.480 19138 19199 I ReactNativeJS:     "1369679": 2,
+10-20 20:15:57.480 19138 19199 I ReactNativeJS:     "1535385": 1
+10-20 20:15:57.480 19138 19199 I ReactNativeJS:   },
+10-20 20:15:57.480 19138 19199 I ReactNativeJS:   "navigationEvents": [
+10-20 20:15:57.480 19138 19199 I ReactNativeJS:     {
+10-20 20:15:57.480 19138 19199 I ReactNativeJS:       "action": "focus_dashboard",
+10-20 20:15:57.480 19138 19199 I ReactNativeJS:       "timestamp": 1761002136818
+10-20 20:15:57.480 19138 19199 I ReactNativeJS:     },
+10-20 20:15:57.480 19138 19199 I ReactNativeJS:     {
+10-20 20:15:57.480 19138 19199 I ReactNativeJS:       "action": "navigate_to_1265344",
+10-20 20:15:57.480 19138 19199 I ReactNativeJS:       "timestamp": 1761002149035
+10-20 20:15:57.480 19138 19199 I ReactNativeJS:     },
+10-20 20:15:57.480 19138 19199 I ReactNativeJS:     {
+10-20 20:15:57.480 19138 19199 I ReactNativeJS:       "action": "leave_dashboard",
+10-20 20:15:57.480 19138 19199 I ReactNativeJS:       "timestamp": 1761002149114
+10-20 20:15:57.480 19138 19199 I ReactNativeJS:     },
+10-20 20:15:57.480 19138 19199 I ReactNativeJS:     {
+10-20 20:15:57.480 19138 19199 I ReactNativeJS:       "action": "focus_dashboard",
+10-20 20:15:57.480 19138 19199 I ReactNativeJS:       "timestamp": 1761002151159
+10-20 20:15:57.480 19138 19199 I ReactNativeJS:     },
+10-20 20:15:57.480 19138 19199 I ReactNativeJS:     {
+10-20 20:15:57.480 19138 19199 I ReactNativeJS:       "action": "navigate_to_1265344",
+10-20 20:15:57.480 19138 19199 I ReactNativeJS:       "timestamp": 1761002153221
+10-20 20:15:57.480 19138 19199 I ReactNativeJS:     },
+10-20 20:15:57.480 19138 19199 I ReactNativeJS:     {
+10-20 20:15:57.480 19138 19199 I ReactNativeJS:       "action": "leave_dashboard",
+10-20 20:15:57.480 19138 19199 I ReactNativeJS:       "timestamp": 1761002153312
+10-20 20:15:57.480 19138 19199 I ReactNativeJS:     },
+10-20 20:15:57.480 19138 19199 I ReactNativeJS:     {
+10-20 20:15:57.480 19138 19199 I ReactNativeJS:       "action": "focus_dashboard",
+10-20 20:15:57.480 19138 19199 I ReactNativeJS:       "timestamp": 1761002155365
+10-20 20:15:57.480 19138 19199 I ReactNativeJS:     },
+10-20 20:15:57.480 19138 19199 I ReactNativeJS:     {
+10-20 20:15:57.480 19138 19199 I ReactNativeJS:       "action": "navigate_to_1265344",
+10-20 20:15:57.480 19138 19199 I ReactNativeJS:       "timestamp": 1761002157397
+10-20 20:15:57.480 19138 19199 I ReactNativeJS:     },
+10-20 20:15:57.480 19138 19199 I ReactNativeJS:     {
+10-20 20:15:57.480 19138 19199 I ReactNativeJS:       "action": "leave_dashboard",
+10-20 20:15:57.480 19138 19199 I ReactNativeJS:       "timestamp": 1761002157479
+10-20 20:15:57.480 19138 19199 I ReactNativeJS:     }
+10-20 20:15:57.480 19138 19199 I ReactNativeJS:   ]
+10-20 20:15:57.480 19138 19199 I ReactNativeJS: }
+10-20 20:15:57.480 19138 19199 I ReactNativeJS: ---METRICS_JSON_END---
+10-20 20:15:57.487 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:57.487 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:57.513 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:57.513 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:57.549 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:57.549 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:57.563 19138 19138 D ScrollView: initGoToTop
+10-20 20:15:57.563 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:57.563 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:57.608  2521  2618 D MobileStatusTracker(0/2): onSignalStrengthsChanged level=4, vendorLevel=3
+10-20 20:15:57.612  2521  2618 D MobileSignalController(0/2): notifyListener: enabled=true, connected=true, dataConnected=true, networkType=LTE (4G), emergencyOnly=false, roaming=false, isDefault=false, dataActivity=, level=3, ca=false, mmWave=false, disabledDataIcon=false, simCard=ETC
+10-20 20:15:57.612  2521  2618 D NetworkController: SignalStrength from intent slotId=0
+10-20 20:15:57.633 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:57.633 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:57.645 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:57.645 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:57.659 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:57.659 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:57.667  1483  1528 I GestureDetector: handleMessage TAP
+10-20 20:15:57.667  1483  1483 I GestureDetector: handleMessage TAP
+10-20 20:15:57.670 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:57.670 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:57.691 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:57.691 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:57.712 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:57.712 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:57.725 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:57.725 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:57.743 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:57.744 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:57.763 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:57.764 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:57.774 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:57.774 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:57.795 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:57.796 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:57.812 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:57.812 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:57.826 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:57.826 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:57.841 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:57.841 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:57.855 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:57.855 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:57.864  1483  6047 D CustomizedBinderCallsStatsInternal: reportCpuUsage() : 5%
+10-20 20:15:57.864  1483  1554 I BinderCallsStats: Collected cpu time : 0us, collected call count : 0 for 60243 ms
+10-20 20:15:57.871 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:57.871 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:57.889 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:57.889 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:57.905 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:57.905 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:57.922 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:57.923 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:57.943 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:57.944 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:57.956 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:57.957 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:57.971 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:57.971 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:57.994 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:57.994 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:58.003 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:58.003 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:58.021 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:58.021 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:58.514   543   543 D io_stats: !@ 179,0 r 464692677 5647901138 w 80570516 844579044 d 1258357 33785868 f 0 0 iot 231110440 0 th 0 0 0 pt 0 inp 0 0 2551555.816
+10-20 20:15:58.670  1483  1544 E Watchdog: !@Sync: 84995 heap: 111 / 134 FD: 885 [2025-10-20 20:15:58.670]
+10-20 20:15:58.876  1483  2471 D NetdEventListenerService: DNS Requested by : 475, 11011
+10-20 20:15:58.878 14839 14902 D TrafficStats: tagSocket(6) with statsTag=0xffffffff, statsUid=-1
+10-20 20:15:58.887  2521  2618 D MobileStatusTracker(0/2): onSignalStrengthsChanged level=4, vendorLevel=3
+10-20 20:15:58.889  2521  2618 D MobileSignalController(0/2): notifyListener: enabled=true, connected=true, dataConnected=true, networkType=LTE (4G), emergencyOnly=false, roaming=false, isDefault=false, dataActivity=, level=3, ca=false, mmWave=false, disabledDataIcon=false, simCard=ETC
+10-20 20:15:58.892  2521  2618 D NetworkController: SignalStrength from intent slotId=0
+10-20 20:15:58.949  1483  6047 I ActivityManager: Killing 14839:br.com.tradepro.promoter/u0a1011 (adj 999): empty #25
+10-20 20:15:58.959  1483  1560 I libprocessgroup: Successfully killed process cgroup uid 11011 pid 14839 in 7ms
+10-20 20:15:59.034   975   975 I Zygote  : Process 14839 exited due to signal 9 (Killed)
+10-20 20:15:59.038  1483  3333 D InputMethodManagerService: removeClient
+10-20 20:15:59.039  1199  1199 E SensorManager: Correct handle(0) maxdelay: 16000000 old: 20000000
+10-20 20:15:59.040  1483  3333 D SensorService: Calling activate off
+10-20 20:15:59.040  1199  1199 E SensorManager: Correct handle(0) maxdelay: 16000000 old: 20000000
+10-20 20:15:59.041  1483  3333 D SensorService: Calling activate off
+10-20 20:15:59.117   999   999 D IMGMemtrackHAL: hal_get_memory: memtrack cache rebuild was required
+10-20 20:15:59.448  1483  6407 D InputDispatcher: Inject key (20074/2000): action=0, f=0x0, d=-1, time=2551556750000000
+10-20 20:15:59.448  1483  6407 D WindowManager: interceptKeyTq keycode=4 interactive=true keyguardActive=false policyFlags=2b000000
+10-20 20:15:59.448  1483  6407 D PhoneWindowManagerExt: interceptKeyTq code=4 down=true repeatCount=0 displayId=-1 interactive=true
+10-20 20:15:59.448  1483  6407 D WindowManager: interceptKeyTq interceptKeyResult=4
+10-20 20:15:59.448  1483  1796 D PowerManagerService: [api] userActivityFromNative :  (event: 1 flags: 0 displayId: 0) eventTime = 2551556750
+10-20 20:15:59.449  1483  1796 D WindowManager: interceptKeyTi keyCode=4 down=true repeatCount=0 keyguardOn=false canceled=false
+10-20 20:15:59.450  1483  1796 D PhoneWindowManagerExt: interceptKeyTi code=4 down=true repeatCount=0 displayId=-1 interactive=true
+10-20 20:15:59.451  1483  1796 I InputDispatcher: Delivering key to (19138): B action: 0x0 (0), f=0x0, m=0x0, d=0, '1eb0182'
+10-20 20:15:59.454  5125  5125 I HBD     : b skip onKeyDown as physical keyboard not connected 
+10-20 20:15:59.456  5125  5125 I HBD     : HoneyBoardService onKeyDown r:32dfdb5c consumed:false 2 
+10-20 20:15:59.458 19138 19138 I ViewRootImpl@52e2b1c[MainActivity]: ViewPostIme key 0
+10-20 20:15:59.459 19138 19138 D Activity: onKeyDown(KEYCODE_BACK)
+10-20 20:15:59.460  1483  6407 D InputDispatcher: Inject key (20074/2000): action=1, f=0x0, d=-1, time=2551556750000000
+10-20 20:15:59.460  1483  6407 D WindowManager: interceptKeyTq keycode=4 interactive=true keyguardActive=false policyFlags=2b000000
+10-20 20:15:59.461  1483  6407 D PhoneWindowManagerExt: interceptKeyTq code=4 down=false repeatCount=0 displayId=-1 interactive=true
+10-20 20:15:59.461  1483  6407 D WindowManager: interceptKeyTq interceptKeyResult=4
+10-20 20:15:59.461  1483  1796 D WindowManager: interceptKeyTi keyCode=4 down=false repeatCount=0 keyguardOn=false canceled=false
+10-20 20:15:59.461  1483  1796 D PhoneWindowManagerExt: interceptKeyTi code=4 down=false repeatCount=0 displayId=-1 interactive=true
+10-20 20:15:59.462  1483  1796 I InputDispatcher: Delivering key to (19138): B action: 0x1 (0), f=0x0, m=0x0, d=0, '1eb0182'
+10-20 20:15:59.464  5125  5125 I HBD     : HoneyBoardService onKeyUp r:45f9789b consumed:false 1 
+10-20 20:15:59.466 19138 19138 I ViewRootImpl@52e2b1c[MainActivity]: ViewPostIme key 1
+10-20 20:15:59.466 19138 19138 D Activity: onKeyUp(KEYCODE_BACK) isTracking()=true isCanceled()=false hasCallback=false
+10-20 20:15:59.477 10272 10342 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=8b9fbde0-8739-4e68-932a-71be06df99da, tags={ com.whatsapp.messaging.xmpp.XmppLifecycleWorker } ]
+10-20 20:15:59.485 10272 10272 D WM-Processor: JGD 8b9fbde0-8739-4e68-932a-71be06df99da executed; reschedule = false
+10-20 20:15:59.485 10272 10272 D WM-GreedyScheduler: Stopping tracking for WorkGenerationalId(workSpecId=8b9fbde0-8739-4e68-932a-71be06df99da, generation=0)
+10-20 20:15:59.486 10272 10272 D WM-SystemJobService: 8b9fbde0-8739-4e68-932a-71be06df99da executed on JobScheduler
+10-20 20:15:59.492  1483  2597 I ActivityManager: Changes in 10250 8 to 10, 8 to 0
+10-20 20:15:59.495  1483  1571 E AppOps  : evalMode() Foreground mode : uid - 10250, op - 27, capability - 0
+10-20 20:15:59.495  1483  1571 E AppOps  : evalMode() Foreground mode : uid - 10250, op - 26, capability - 0
+10-20 20:15:59.495  1483  1571 E AppOps  : evalMode() Foreground mode : uid - 10250, op - 1, capability - 0
+10-20 20:15:59.496 23059 23073 I dvns    : (REDACTED) appOpsListener %s %s
+10-20 20:15:59.497 23059 23073 I dvns    : (REDACTED) Ignoring irrelevant audio permission changes for package %s
+10-20 20:15:59.503 10272 10342 D WM-GreedyScheduler: Cancelling work ID 8b9fbde0-8739-4e68-932a-71be06df99da
+10-20 20:15:59.512 10272 10342 D WM-NetworkStateTracker: Unregistering network callback
+10-20 20:15:59.518 10272 10342 D ConnectivityManager: StackLog: [android.net.ConnectivityManager.unregisterNetworkCallback(ConnectivityManager.java:5076)] [X.HRq.A04(:20)] [X.K1j.invoke(:27)] [X.2l8.A00(:98)] [X.3EF.invokeSuspend(:10)] [X.0vz.resumeWith(:8)] [X.0wP.run(:98)] [X.HIQ.run(:2)] [java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)] [java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)] [java.lang.Thread.run(Thread.java:1012)]
+10-20 20:15:59.519  1483  2385 D ConnectivityService:  Removing from current network [475 WIFI], leaving 141 requests.
+10-20 20:15:59.550 19138 19150 D InputTransport: Input channel destroyed: 'ClientS', fd=127
+10-20 20:15:59.590 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:59.590 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:59.603  1039  1039 I BufferQueueProducer: [com.cinemamovel/com.cinemamovel.MainActivity$_19138#505932](this:0xb400007a1f6f0838,id:-1,api:0,p:-1,c:1039) queueBuffer: fps=15.03 dur=2195.57 max=1563.23 min=15.79
+10-20 20:15:59.605   991  1074 I hwcomposer: [HWCDisplay] [Display_0 (type:1)] fps:15.036904,dur:2194.60,max:1563.28,min:15.65  
+10-20 20:15:59.628  2486  2486 I WifiHAL : Get link layer stats
+10-20 20:15:59.628  2486  2486 I WifiHAL : GetLinkStatsCommand::create
+10-20 20:15:59.628  2486  2486 D android.hardware.wifi@1.0-service-lazy: WifiRequest::create vendor command to iface 38, vendor_id=0x1a11, subcmd=0x1200, res=0
+10-20 20:15:59.628  2486  2486 I android.hardware.wifi@1.0-service-lazy: WifiCommand::requestResponse err=-95
+10-20 20:15:59.628  2486  2486 I WifiHAL : wifi_get_link_stats: result=-3
+10-20 20:15:59.629  1483  2363 E WifiVendorHal: getWifiLinkLayerStats_1_5_Internal(l.1179) failed {.code = ERROR_NOT_SUPPORTED, .description = }
+10-20 20:15:59.634  1483  3390 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 543560, isSameBssidAndFreq true
+10-20 20:15:59.636  1483  2437 I SemWifiLinkQualityMonitor: Link Qos query: inf. ms / 0 Mbps
+10-20 20:15:59.667 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:59.667 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:59.676 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:59.676 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:59.684 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:59.684 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:59.699 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:59.699 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:59.720 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:59.720 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:59.736 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:59.736 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:59.750 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:59.750 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:59.766 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:59.766 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:59.783 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:59.783 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:59.800 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:59.800 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:59.816 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:59.816 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:59.833 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:59.833 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:59.852 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:59.852 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:59.866 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:59.866 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:59.884 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:59.884 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:59.899 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:59.900 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:59.916 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:59.917 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:59.934 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:59.934 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:59.950 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:59.950 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:59.963  1483  6047 I ActivityManager: Killing 17969:com.facebook.appmanager/u0a146 (adj 999): empty #25
+10-20 20:15:59.973 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:59.973 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:15:59.983  1483  1560 I libprocessgroup: Successfully killed process cgroup uid 10146 pid 17969 in 17ms
+10-20 20:15:59.985 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:15:59.985 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:16:00.001 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:16:00.002 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:16:00.004  2521  2521 D KeyguardUpdateMonitor: received broadcast android.intent.action.TIME_TICK
+10-20 20:16:00.004  2521  2521 D KeyguardUpdateMonitor: handleTimeUpdate
+10-20 20:16:00.010  2521  3090 D QSClockBellTower: onReceive(android.intent.action.TIME_TICK) mTimeZoneString:null
+10-20 20:16:00.011  2521  2521 D FaceWidgetPagesController: onTimeChanged()
+10-20 20:16:00.018 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:16:00.018 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:16:00.032  2521  2521 D QSClockBellTower: He is ready to ring the bell. (((QSClockBellSound - TimeText:20:16, TimeContentDescription:20:16, DateText:seg., 20 de outubro, ShortDateText:seg., 20 de out., Demo:false, QuickStar-Second(false|12:34:56))))
+10-20 20:16:00.035 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:16:00.035 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:16:00.038   975   975 I Zygote  : Process 17969 exited due to signal 9 (Killed)
+10-20 20:16:00.040  2521  2521 D QSClockIndicatorView: Home Indicator status_bar_clock 20:16 notifyTimeChanged(QSClockBellSound - TimeText:20:16, TimeContentDescription:20:16, DateText:seg., 20 de outubro, ShortDateText:seg., 20 de out., Demo:false, QuickStar-Second(false|12:34:56)) ClockVisibleByPolicy:true, ClockVisibleByUser:true, visible?true, parent:android.widget.LinearLayout{46b63c0 V.E...... ......ID 0,0-66,37 #7f0b04f0 app:id/left_clock_container}
+10-20 20:16:00.042  2521  2521 D QSClockBellTower: Everyone heard the bell. run(currentTime:1761002160029,   getTime():Mon Oct 20 20:16:00 GMT-03:00 2025,   getTimeZone():libcore.util.ZoneInfo[mDstSavings=0,mUseDst=false,mDelegate=[id="America/Sao_Paulo",mRawOffset=-10800000,mEarliestRawOffset=-11188000,transitions=92]])
+10-20 20:16:00.054 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:16:00.054 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:16:00.066 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:16:00.066 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:16:00.073  2521  2521 I FaceWidgetPositionAlgorithm: getClockContainerHeight() supplier = 193, bottom margin = 0, real height = 238
+10-20 20:16:00.075  2521  2521 I FaceWidgetPositionAlgorithm: getClockContainerHeight() supplier = 193, bottom margin = 45, real height = 238
+10-20 20:16:00.075  2521  2521 I FaceWidgetPositionAlgorithm: getMediaContainerHeight() height = 326 container Visibility = 8, isValid = false, mIsDozing = false, fraction = 1.0, source = 0, target = 0
+10-20 20:16:00.075  2521  2521 I FaceWidgetPositionAlgorithm: getMediaContainerHeight() supplier = 0
+10-20 20:16:00.081  2521  2521 V QsExpandAnimator: setQsExpansionPosition 0.0
+10-20 20:16:00.083 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:16:00.083 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:16:00.100  2521  2521 V QsExpandAnimator: updateAnimators
+10-20 20:16:00.100  2521  2521 V QsExpandAnimator: clearAnimationState 
+10-20 20:16:00.100 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:16:00.100 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:16:00.102  2521  2521 V QsExpandAnimator: updateViews
+10-20 20:16:00.107  2521  2521 V QsExpandAnimator: updateTileAnimator
+10-20 20:16:00.109  2521  2521 V QsExpandAnimator: updateHeaderAnimator
+10-20 20:16:00.109  2521  2521 V QsExpandAnimator: updateBarAnimator
+10-20 20:16:00.110  2521  2521 V QsExpandAnimator: setQsExpansionPosition 0.0
+10-20 20:16:00.110  2521  2521 V QsExpandAnimator: onAnimationAtStart
+10-20 20:16:00.114  2521  2605 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:16:00.114  2521  2605 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:16:00.115 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:16:00.115 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:16:00.120  1039  1039 I BufferQueueProducer: [StatusBar$_2521#94](this:0xb400007a3dae1838,id:-1,api:0,p:-1,c:1039) queueBuffer: fps=0.04 dur=24600.14 max=24600.14 min=24600.14
+10-20 20:16:00.132 19138 19180 E IMGMapper: set:488 set: Unset optional value from type SMPTE2086
+10-20 20:16:00.132 19138 19180 E IMGMapper: set:488 set: Unset optional value from type CTA861_3
+10-20 20:16:00.369  1483  1583 D PowerManagerService: UserActivityStateListenerState: 0
+10-20 20:16:00.515   543   543 D io_stats: !@ 179,0 r 464692786 5647902178 w 80570531 844579284 d 1258357 33785868 f 0 0 iot 231110512 0 th 0 0 0 pt 0 inp 0 0 2551557.818
+10-20 20:16:00.590  8661  8661 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.libs.gmscorelogger.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentDirectBootAwareApiService }
+10-20 20:16:00.957 10272 10341 D WM-SystemJobScheduler: Scheduling work ID 71e2b97b-ef5b-4973-aeea-4d2d7386f8d6Job ID 668345
+10-20 20:16:00.966  1483  3333 I ActivityManager: Changes in 10250 19 to 8, 0 to 8
+10-20 20:16:00.970 23059 23073 I dvns    : (REDACTED) appOpsListener %s %s
+10-20 20:16:00.970  1483  1571 E AppOps  : evalMode() Foreground mode : uid - 10250, op - 27, capability - 8
+10-20 20:16:00.970 23059 23073 I dvns    : (REDACTED) Ignoring irrelevant audio permission changes for package %s
+10-20 20:16:00.970  1483  1571 E AppOps  : evalMode() Foreground mode : uid - 10250, op - 26, capability - 8
+10-20 20:16:00.971  1483  1571 E AppOps  : evalMode() Foreground mode : uid - 10250, op - 1, capability - 8
+10-20 20:16:00.983 10272 10341 D WM-GreedyScheduler: Starting tracking for 71e2b97b-ef5b-4973-aeea-4d2d7386f8d6
+10-20 20:16:00.987 10272 10272 D WM-SystemJobService: onStartJob for WorkGenerationalId(workSpecId=71e2b97b-ef5b-4973-aeea-4d2d7386f8d6, generation=0)
+10-20 20:16:00.990 10272 10341 D WM-ConstraintTracker: HRq: initial state = NetworkState(isConnected=true, isValidated=true, isMetered=false, isNotRoaming=true)
+10-20 20:16:00.990 10272 10341 D WM-NetworkStateTracker: Registering network callback
+10-20 20:16:00.991 10272 10341 D ConnectivityManager: StackLog: [android.net.ConnectivityManager.sendRequestForNetwork(ConnectivityManager.java:4402)] [android.net.ConnectivityManager.registerDefaultNetworkCallbackForUid(ConnectivityManager.java:4966)] [android.net.ConnectivityManager.registerDefaultNetworkCallback(ConnectivityManager.java:4933)] [android.net.ConnectivityManager.registerDefaultNetworkCallback(ConnectivityManager.java:4907)] [X.HRq.A03(:20)] [androidx.work.impl.constraints.controllers.BaseConstraintController$track$1.invokeSuspend(:81)] [androidx.work.impl.constraints.controllers.BaseConstraintController$track$1.invoke(:8)] [X.48O.A00(:2)] [X.48M.A00(:52)] [X.3TF.invokeSuspend(:26)] [X.0vz.resumeWith(:8)] [X.0wP.run(:89)] [X.HIQ.run(:2)] [java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)] [java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)] [java.lang.Thread.run(Thread.java:1012)]
+10-20 20:16:00.993  1483  6037 D ConnectivityService: requestNetwork for uid/pid:10250/10272 activeRequest: null callbackRequest: 165264 [NetworkRequest [ REQUEST id=165265, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10250 RequestorUid: 10250 RequestorPkg: com.whatsapp UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+10-20 20:16:00.995  1483  2385 D ConnectivityService:    accepting network in place of null for NetworkRequest [ REQUEST id=165265, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10250 RequestorUid: 10250 RequestorPkg: com.whatsapp UnderlyingNetworks: Null] ]
+10-20 20:16:00.997 10272 10526 D WM-NetworkStateTracker: Network capabilities changed: [ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED&NOT_VCN_MANAGED LinkUpBandwidth>=12000Kbps LinkDnBandwidth>=30000Kbps TransportInfo: <SSID: <unknown ssid>, BSSID: 02:00:00:00:00:00, MAC: 02:00:00:00:00:00, IP: /10.0.0.112, Security type: 2, Supplicant state: COMPLETED, Wi-Fi standard: 4, RSSI: -62, Link speed: 65Mbps, Tx Link speed: 65Mbps, Max Supported Tx Link speed: 72Mbps, Rx Link speed: 58Mbps, Max Supported Rx Link speed: 72Mbps, Frequency: 2437MHz, Net ID: -1, Metered hint: false, score: 60, isUsable: true, CarrierMerged: false, SubscriptionId: -1, IsPrimary: -1, Trusted: true, Restricted: false, Ephemeral: false, OEM paid: false, OEM private: false, OSU AP: false, FQDN: <none>, Provider friendly name: <none>, Requesting package name: <none><none>MLO Information: , AP MLD Address: <none>, AP MLO Link Id: <none>, AP MLO Affiliated links: <none>> SignalStrength: -62 UnderlyingNetworks: Null]
+10-20 20:16:00.999  1483  2363 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=165265, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10250 RequestorUid: 10250 RequestorPkg: com.whatsapp UnderlyingNetworks: Null] ]
+10-20 20:16:01.000 10272 10324 D WM-Processor: JGD: processing WorkGenerationalId(workSpecId=71e2b97b-ef5b-4973-aeea-4d2d7386f8d6, generation=0)
+10-20 20:16:01.001  1483  2363 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=165265, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10250 RequestorUid: 10250 RequestorPkg: com.whatsapp UnderlyingNetworks: Null] ]
+10-20 20:16:01.002  1483  2363 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=165265, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10250 RequestorUid: 10250 RequestorPkg: com.whatsapp UnderlyingNetworks: Null] ]
+10-20 20:16:01.002  1483  2363 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=165265, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10250 RequestorUid: 10250 RequestorPkg: com.whatsapp UnderlyingNetworks: Null] ]
+10-20 20:16:01.004  1483  2385 D ConnectivityService: Rematched networks [computed 1ms] [applied 4ms] [issued 6]
+10-20 20:16:01.005  1483  2385 D ConnectivityService: NetworkReassignment :
+10-20 20:16:01.005  1483  2385 D ConnectivityService:   165265 : null → 475
+10-20 20:16:01.009 10272 10272 D WM-WorkerWrapper: Starting work for com.whatsapp.messaging.xmpp.XmppLifecycleWorker
+10-20 20:16:01.009 10272 10340 D WM-GreedyScheduler: Constraints met: Scheduling work ID WorkGenerationalId(workSpecId=71e2b97b-ef5b-4973-aeea-4d2d7386f8d6, generation=0)
+10-20 20:16:01.012 10272 10340 D WM-Processor: Work WorkGenerationalId(workSpecId=71e2b97b-ef5b-4973-aeea-4d2d7386f8d6, generation=0) is already enqueued for processing
+10-20 20:16:01.030   963   963 E audit   : type=1400 audit(1761002161.028:1251159): avc:  denied  { write } for  pid=14401 comm="ThreadPoolForeg" name="traced_producer" dev="tmpfs" ino=11170 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:traced_producer_socket:s0 tclass=sock_file permissive=0 SEPF_SM-A037M_12_0001 unfiltered
+10-20 20:16:01.295  1205  1205 I thermal_repeater: socket -1
+10-20 20:16:01.450  2521  2618 D MobileStatusTracker(0/2): onSignalStrengthsChanged level=4, vendorLevel=3
+10-20 20:16:01.453  2521  2618 D MobileSignalController(0/2): notifyListener: enabled=true, connected=true, dataConnected=true, networkType=LTE (4G), emergencyOnly=false, roaming=false, isDefault=false, dataActivity=, level=3, ca=false, mmWave=false, disabledDataIcon=false, simCard=ETC
+10-20 20:16:01.455  2521  2618 D NetworkController: SignalStrength from intent slotId=0
+10-20 20:16:02.272 12269 12527 E MQTTBypassDGWStreamGroupConnection.cpp: connect failed. Callbacks terminated before ack received
+10-20 20:16:02.281 12269 12347 E MQTTBypassDGWStreamGroupCallbacks.cpp: onStreamGroupError StreamGroupNetworkRequest request cancelled: max retries reached; last err (TransientError domain: MNSSecureTCP code: 1 detail: SecureTCP connection establish timeout)
+10-20 20:16:02.282 12269 12347 W MQTTBypassDGWStreamGroupConnection.cpp: Restarting due to reason: StreamError
+10-20 20:16:02.516   543   543 D io_stats: !@ 179,0 r 464693022 5647903542 w 80570575 844579696 d 1258357 33785868 f 0 0 iot 231110640 0 th 0 0 0 pt 0 inp 0 0 2551559.819
+10-20 20:16:02.641  2486  2486 I WifiHAL : Get link layer stats
+10-20 20:16:02.641  2486  2486 I WifiHAL : GetLinkStatsCommand::create
+10-20 20:16:02.641  2486  2486 D android.hardware.wifi@1.0-service-lazy: WifiRequest::create vendor command to iface 38, vendor_id=0x1a11, subcmd=0x1200, res=0
+10-20 20:16:02.641  2486  2486 I android.hardware.wifi@1.0-service-lazy: WifiCommand::requestResponse err=-95
+10-20 20:16:02.642  2486  2486 I WifiHAL : wifi_get_link_stats: result=-3
+10-20 20:16:02.643  1483  2363 E WifiVendorHal: getWifiLinkLayerStats_1_5_Internal(l.1179) failed {.code = ERROR_NOT_SUPPORTED, .description = }
+10-20 20:16:02.653  1483  3390 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 543561, isSameBssidAndFreq true
+10-20 20:16:02.655  1483  2437 I SemWifiLinkQualityMonitor: Link Qos query: inf. ms / 0 Mbps
+10-20 20:16:02.729  2521  2618 D MobileStatusTracker(0/2): onSignalStrengthsChanged level=4, vendorLevel=3
+10-20 20:16:02.733  2521  2618 D MobileSignalController(0/2): notifyListener: enabled=true, connected=true, dataConnected=true, networkType=LTE (4G), emergencyOnly=false, roaming=false, isDefault=false, dataActivity=, level=3, ca=false, mmWave=false, disabledDataIcon=false, simCard=ETC
+10-20 20:16:02.733  2521  2618 D NetworkController: SignalStrength from intent slotId=0
+10-20 20:16:03.297 12269 12519 W LibevQuicAsyncUDPSocket.h: setTosOrTrafficClass not implemented in LibevQuicAsyncUDPSocket
+10-20 20:16:03.301  1483  2471 D NetdEventListenerService: DNS Requested by : 475, 11013, 4, true
+10-20 20:16:03.316 12269 12519 E MvfstCallbacks.cpp: onConnectionSetupError: error=TransportError: Internal Error, Error on socket write Operation not permitted, 
+10-20 20:16:03.321  1483  2471 D NetdEventListenerService: DNS Requested by : 475, 11013, 4, true
+10-20 20:16:03.841  4441  4441 I wpa_supplicant: Heartbeat 920
+10-20 20:16:04.000  2521  2618 D MobileStatusTracker(0/2): onSignalStrengthsChanged level=4, vendorLevel=3
+10-20 20:16:04.001  2521  2618 D MobileSignalController(0/2): notifyListener: enabled=true, connected=true, dataConnected=true, networkType=LTE (4G), emergencyOnly=false, roaming=false, isDefault=false, dataActivity=, level=3, ca=false, mmWave=false, disabledDataIcon=false, simCard=ETC
+10-20 20:16:04.002  2521  2618 D NetworkController: SignalStrength from intent slotId=0
+10-20 20:16:04.161 10272 20086 D TrafficStats: tagSocket(131) with statsTag=0x7, statsUid=-1
+10-20 20:16:04.351  4725 27434 W MediaProvider: isAppCloneUserPair for user 0: false
+10-20 20:16:04.384  1483  6407 D SyncManager: userId - 0 auto - true
+10-20 20:16:04.423  1483  6407 D CompatibilityChangeReporter: Compat change id reported: 161145287; UID 10188; state: DISABLED
+10-20 20:16:04.458  8661 18870 I NetworkScheduler.Stats: (REDACTED) Task %s/%s started execution. cause:%s exec_start_elapsed_seconds: %s
+10-20 20:16:04.476  4725  9598 W MediaProvider: isAppCloneUserPair for user 0: false
+10-20 20:16:04.485  8661 19960 I NetworkScheduler.Stats: (REDACTED) Task %s/%s finished executing. cause:%s result: %s elapsed_millis: %s uptime_millis: %s exec_start_elapsed_seconds: %s
+10-20 20:16:04.502  1483  6407 D SyncManager: userId - 0 auto - true
+10-20 20:16:04.517   543   543 D io_stats: !@ 179,0 r 464695533 5647917458 w 80570727 844580636 d 1258357 33785868 f 0 0 iot 231111240 0 th 0 0 0 pt 0 inp 0 5 2551561.820

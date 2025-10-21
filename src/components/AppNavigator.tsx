@@ -8,9 +8,11 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { View, Text, StyleSheet } from 'react-native';
 
-import DashboardScreen from '../screens/DashboardScreen';
+//import DashboardScreen from '../screens/DashboardScreen';
 import MovieDetailsScreen from '../screens/MovieDetailsScreen';
 import { getFocusedRouteNameFromRoute } from '@react-navigation/native';
+//import DashboardBaseline from '../screens/DashboardBaseline';
+import DashboardWithHooks from '../screens/DashboardWithHooks';
 
 type RootStackParamList = {
   Dashboard: undefined;
@@ -26,7 +28,7 @@ function DashboardStack() {
     <Stack.Navigator screenOptions={{ headerShown: false }}>
       <Stack.Screen
         name="Dashboard"
-        component={DashboardScreen}
+        component={DashboardWithHooks}
         options={{ title: 'Dashboard' }}
       />
       <Stack.Screen

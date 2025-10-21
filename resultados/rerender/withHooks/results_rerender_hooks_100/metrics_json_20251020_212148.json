@@ -30,39 +30,39 @@
   "navigationEvents": [
     {
       "action": "focus_dashboard",
-      "timestamp": 1760495601533
+      "timestamp": 1761006113360
     },
     {
       "action": "navigate_to_1265344",
-      "timestamp": 1760495613474
+      "timestamp": 1761006124158
     },
     {
       "action": "leave_dashboard",
-      "timestamp": 1760495613554
+      "timestamp": 1761006124228
     },
     {
       "action": "focus_dashboard",
-      "timestamp": 1760495615592
+      "timestamp": 1761006126285
     },
     {
       "action": "navigate_to_1265344",
-      "timestamp": 1760495617664
+      "timestamp": 1761006128333
     },
     {
       "action": "leave_dashboard",
-      "timestamp": 1760495617746
+      "timestamp": 1761006128414
     },
     {
       "action": "focus_dashboard",
-      "timestamp": 1760495619790
+      "timestamp": 1761006130456
     },
     {
       "action": "navigate_to_1265344",
-      "timestamp": 1760495621803
+      "timestamp": 1761006132494
     },
     {
       "action": "leave_dashboard",
-      "timestamp": 1760495621857
+      "timestamp": 1761006132577
     }
   ]
 }

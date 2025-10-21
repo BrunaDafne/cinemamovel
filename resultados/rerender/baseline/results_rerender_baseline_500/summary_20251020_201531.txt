@@ -1,10 +1,10 @@
 📊 RESUMO DE RERENDERIZAÇÕES
-Arquivo JSON: ./results_rerender/metrics_json_20251014_233317.json
+Arquivo JSON: ./results_rerender/metrics_json_20251020_201531.json
 
 Dashboard renders: 3
-Cards distintos renderizados: 25
-Total de renders em cards: 44
-Média de renders por card: 1.76
+Cards distintos renderizados: 29
+Total de renders em cards: 48
+Média de renders por card: 1.66
 
 Top cards por número de renders:
   - id=13494 => 2 renders
@@ -30,14 +30,14 @@ Top cards por número de renders:
 
 Eventos de navegação (count): 9
 Últimos eventos (acao @ timestamp):
-   focus_dashboard @ 1760495601533
-   navigate_to_1265344 @ 1760495613474
-   leave_dashboard @ 1760495613554
-   focus_dashboard @ 1760495615592
-   navigate_to_1265344 @ 1760495617664
-   leave_dashboard @ 1760495617746
-   focus_dashboard @ 1760495619790
-   navigate_to_1265344 @ 1760495621803
-   leave_dashboard @ 1760495621857
+   focus_dashboard @ 1761002136818
+   navigate_to_1265344 @ 1761002149035
+   leave_dashboard @ 1761002149114
+   focus_dashboard @ 1761002151159
+   navigate_to_1265344 @ 1761002153221
+   leave_dashboard @ 1761002153312
+   focus_dashboard @ 1761002155365
+   navigate_to_1265344 @ 1761002157397
+   leave_dashboard @ 1761002157479
 
 JSON final salvo em: ./results_rerender/metrics_raw_json_saved.json

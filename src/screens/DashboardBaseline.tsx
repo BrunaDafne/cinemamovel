@@ -1,5 +1,5 @@
-// DashboardInstrumented.tsx
-import React, { useEffect, useState, useMemo, useRef } from 'react';
+// DashboardBaselinePlain.tsx
+import React, { useEffect, useState, useRef } from 'react';
 import {
   View,
   Text,
@@ -13,6 +13,8 @@ import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { RootStackParamList } from '../navigation';
 import { imageUrl, genreMap, filtrosGeneros } from '../constants/api';
 import moviespreJson from '../data/moviespre.json';
+import movies500 from '../data/movies.json';
+import moviesproJson from '../data/moviespro.json';
 
 // ==================== MÉTRICAS (in-memory) ====================
 const renderStats = {
@@ -37,7 +39,7 @@ const logMetrics = () => {
 type Props = NativeStackScreenProps<RootStackParamList, 'Dashboard'>;
 
 export default function DashboardBaseline({ navigation }: Props) {
-  const [movies, setMovies] = useState<any[]>(moviespreJson);
+  const [movies, setMovies] = useState<any[]>(moviesproJson);
   const [search, setSearch] = useState('');
   const [filter, setFilter] = useState<
     'Todos' | 'Ação' | 'Drama' | 'Ficção Científica' | 'Suspense'
@@ -49,21 +51,18 @@ export default function DashboardBaseline({ navigation }: Props) {
   renderStats.dashboardRenders++;
 
   useEffect(() => {
-    // só log opcional rápido para ver no console
+    // log opcional para ver no console quantas vezes a tela renderizou
     console.log('RENDER_DASHBOARD count=', renderStats.dashboardRenders);
-  });
+  }); // sem deps -> executa após cada render
 
-  const filteredMovies = useMemo(() => {
-    return movies?.filter(m => {
-      const title = m.title || m.name || '';
-      const matchSearch = title.toLowerCase().includes(search.toLowerCase());
-      const genreName = m.genre_ids?.length
-        ? genreMap[m.genre_ids[0]]
-        : 'Outros';
-      const matchFilter = filter === 'Todos' || genreName === filter;
-      return matchSearch && matchFilter;
-    });
-  }, [search, filter, movies]);
+  // --- SEM useMemo: calculamos filteredMovies direto no render ---
+  const filteredMovies = (movies || []).filter(m => {
+    const title = m.title || m.name || '';
+    const matchSearch = title.toLowerCase().includes(search.toLowerCase());
+    const genreName = m.genre_ids?.length ? genreMap[m.genre_ids[0]] : 'Outros';
+    const matchFilter = filter === 'Todos' || genreName === filter;
+    return matchSearch && matchFilter;
+  });
 
   const renderItem = ({ item }: any) => {
     // contabiliza renderizações de cada card individualmente
