@@ -11,6 +11,7 @@ import { View, Text, StyleSheet } from 'react-native';
 import DashboardScreen from '../screens/DashboardScreen';
 import MovieDetailsScreen from '../screens/MovieDetailsScreen';
 import { getFocusedRouteNameFromRoute } from '@react-navigation/native';
+import DashboardBaseline from '../screens/DashboardBaseline';
 
 type RootStackParamList = {
   Dashboard: undefined;
@@ -26,7 +27,7 @@ function DashboardStack() {
     <Stack.Navigator screenOptions={{ headerShown: false }}>
       <Stack.Screen
         name="Dashboard"
-        component={DashboardScreen}
+        component={DashboardBaseline}
         options={{ title: 'Dashboard' }}
       />
       <Stack.Screen
