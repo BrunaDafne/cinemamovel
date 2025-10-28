@@ -1,0 +1,25 @@
+{
+  "screenRenders": 6,
+  "componentRenders": {
+    "Loader": 3,
+    "Poster": 3,
+    "InfoBlock": 3,
+    "Genres": 3,
+    "Overview": 3,
+    "ActionButtons": 3
+  },
+  "interactionEvents": [
+    {
+      "action": "component_unmounted_logged",
+      "timestamp": 1761570402033
+    },
+    {
+      "action": "component_unmounted_logged",
+      "timestamp": 1761570409498
+    },
+    {
+      "action": "component_unmounted_logged",
+      "timestamp": 1761570416943
+    }
+  ]
+}

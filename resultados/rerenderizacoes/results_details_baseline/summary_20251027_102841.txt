@@ -1,0 +1,32 @@
+📊 RESUMO - DETAILS RERENDERS
+Arquivo JSON: ./results_details/metrics_json_20251027_102841.json
+
+Screen renders: 15
+Componentes distintos contados: 6
+Total de renders em componentes: 63
+Média de renders por componente: 10.50
+
+Top components por número de renders:
+  - Poster => 12 renders
+  - InfoBlock => 12 renders
+  - Genres => 12 renders
+  - Overview => 12 renders
+  - ActionButtons => 12 renders
+  - Loader => 3 renders
+
+Eventos de interação (count): 12
+Últimos eventos (acao @ timestamp):
+  toggle_favorite @ 1761571733243
+  set_rating_3 @ 1761571734326
+  toggle_overview @ 1761571735430
+  component_unmounted_logged @ 1761571736588
+  toggle_favorite @ 1761571740734
+  set_rating_3 @ 1761571741813
+  toggle_overview @ 1761571742895
+  component_unmounted_logged @ 1761571744027
+  toggle_favorite @ 1761571748190
+  set_rating_3 @ 1761571749290
+  toggle_overview @ 1761571750371
+  component_unmounted_logged @ 1761571751489
+
+JSON final salvo em: ./results_details/metrics_details_saved.json

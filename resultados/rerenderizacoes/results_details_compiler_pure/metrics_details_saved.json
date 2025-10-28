@@ -1,0 +1,62 @@
+{
+  "screenRenders": 15,
+  "componentRenders": {
+    "Loader": 3,
+    "MovieDetailsPure": 12,
+    "Poster": 3,
+    "InfoBlock": 12,
+    "RatingBlock": 12,
+    "Overview": 12,
+    "Genres": 3
+  },
+  "interactionEvents": [
+    {
+      "action": "toggle_favorite",
+      "timestamp": 1761607611651
+    },
+    {
+      "action": "set_rating_3",
+      "timestamp": 1761607612732
+    },
+    {
+      "action": "toggle_overview",
+      "timestamp": 1761607613827
+    },
+    {
+      "action": "component_unmounted_logged",
+      "timestamp": 1761607615132
+    },
+    {
+      "action": "toggle_favorite",
+      "timestamp": 1761607619287
+    },
+    {
+      "action": "set_rating_3",
+      "timestamp": 1761607620368
+    },
+    {
+      "action": "toggle_overview",
+      "timestamp": 1761607621456
+    },
+    {
+      "action": "component_unmounted_logged",
+      "timestamp": 1761607622586
+    },
+    {
+      "action": "toggle_favorite",
+      "timestamp": 1761607626746
+    },
+    {
+      "action": "set_rating_3",
+      "timestamp": 1761607627829
+    },
+    {
+      "action": "toggle_overview",
+      "timestamp": 1761607628923
+    },
+    {
+      "action": "component_unmounted_logged",
+      "timestamp": 1761607630046
+    }
+  ]
+}

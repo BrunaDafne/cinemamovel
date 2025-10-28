@@ -1,0 +1,61 @@
+{
+  "screenRenders": 15,
+  "componentRenders": {
+    "Loader": 3,
+    "Poster": 3,
+    "InfoBlock": 12,
+    "RatingBlock": 12,
+    "Overview": 12,
+    "Genres": 3
+  },
+  "interactionEvents": [
+    {
+      "action": "toggle_favorite",
+      "timestamp": 1761581164725
+    },
+    {
+      "action": "set_rating_3",
+      "timestamp": 1761581165805
+    },
+    {
+      "action": "toggle_overview",
+      "timestamp": 1761581166894
+    },
+    {
+      "action": "component_unmounted_logged",
+      "timestamp": 1761581168044
+    },
+    {
+      "action": "toggle_favorite",
+      "timestamp": 1761581172181
+    },
+    {
+      "action": "set_rating_3",
+      "timestamp": 1761581173280
+    },
+    {
+      "action": "toggle_overview",
+      "timestamp": 1761581174360
+    },
+    {
+      "action": "component_unmounted_logged",
+      "timestamp": 1761581175509
+    },
+    {
+      "action": "toggle_favorite",
+      "timestamp": 1761581179655
+    },
+    {
+      "action": "set_rating_3",
+      "timestamp": 1761581180753
+    },
+    {
+      "action": "toggle_overview",
+      "timestamp": 1761581181836
+    },
+    {
+      "action": "component_unmounted_logged",
+      "timestamp": 1761581182981
+    }
+  ]
+}

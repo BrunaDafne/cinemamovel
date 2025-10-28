@@ -1,0 +1,61 @@
+{
+  "screenRenders": 15,
+  "componentRenders": {
+    "Loader": 3,
+    "Poster": 12,
+    "InfoBlock": 12,
+    "Genres": 12,
+    "Overview": 12,
+    "ActionButtons": 12
+  },
+  "interactionEvents": [
+    {
+      "action": "toggle_favorite",
+      "timestamp": 1761571733243
+    },
+    {
+      "action": "set_rating_3",
+      "timestamp": 1761571734326
+    },
+    {
+      "action": "toggle_overview",
+      "timestamp": 1761571735430
+    },
+    {
+      "action": "component_unmounted_logged",
+      "timestamp": 1761571736588
+    },
+    {
+      "action": "toggle_favorite",
+      "timestamp": 1761571740734
+    },
+    {
+      "action": "set_rating_3",
+      "timestamp": 1761571741813
+    },
+    {
+      "action": "toggle_overview",
+      "timestamp": 1761571742895
+    },
+    {
+      "action": "component_unmounted_logged",
+      "timestamp": 1761571744027
+    },
+    {
+      "action": "toggle_favorite",
+      "timestamp": 1761571748190
+    },
+    {
+      "action": "set_rating_3",
+      "timestamp": 1761571749290
+    },
+    {
+      "action": "toggle_overview",
+      "timestamp": 1761571750371
+    },
+    {
+      "action": "component_unmounted_logged",
+      "timestamp": 1761571751489
+    }
+  ]
+}
