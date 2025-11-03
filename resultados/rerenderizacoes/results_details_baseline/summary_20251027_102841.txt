@@ -1,4 +1,4 @@
-📊 RESUMO - DETAILS RERENDERS
+RESUMO - DETAILS RERENDERS
 Arquivo JSON: ./results_details/metrics_json_20251027_102841.json
 
 Screen renders: 15

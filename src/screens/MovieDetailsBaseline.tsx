@@ -39,9 +39,8 @@ export default function MovieDetailsBaseline({ route, navigation }: Props) {
   const [movie, setMovie] = useState<any | null>(null);
   const [loading, setLoading] = useState(true);
 
-  // UI states que vamos testar (mudam a renderização)
   const [favorite, setFavorite] = useState(false);
-  const [rating, setRating] = useState(0); // 0..5
+  const [rating, setRating] = useState(0);
   const [overviewExpanded, setOverviewExpanded] = useState(false);
 
   const didLogRef = useRef(false);
