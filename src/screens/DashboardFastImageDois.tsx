@@ -1,4 +1,4 @@
-// DashboardFastImage.tsx
+// DashboardFastImage.tsx (otimizado para testes com FastImage)
 import React, { useEffect, useState, useMemo } from 'react';
 import {
   View,
@@ -13,8 +13,10 @@ import FastImage from 'react-native-fast-image';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { RootStackParamList } from '../navigation';
 import { API_KEY, BASE_URL } from '@env';
-import { imageUrl, genreMap, filtrosGeneros } from '../constants/api';
+import { genreMap, filtrosGeneros } from '../constants/api';
 import moviespreJson from '../data/moviespre.json';
+import moviesJson from '../data/movies.json';
+import moviesproJson from '../data/moviespro.json';
 
 type Props = NativeStackScreenProps<RootStackParamList, 'Dashboard'>;
 
@@ -28,6 +30,7 @@ const renderStats = {
 
 const imageTimers: Record<number, number> = {};
 
+// IMPORTANT: markers must match the script's awk exactly
 const logMetrics = () => {
   try {
     const data = JSON.stringify(renderStats, null, 2);
@@ -40,20 +43,29 @@ const logMetrics = () => {
 };
 // -------------------------------------------------------
 
-export default function DashboardFastImage({ navigation }: Props) {
-  const [movies, setMovies] = useState<any[]>(moviespreJson);
+/**
+ * Helper: constrói URL redimensionada do TMDB.
+ * Usamos w300 (tamanho adequado para o card) para reduzir download/decoding.
+ */
+const tmdbSized = (posterPath?: string | null, size = 'w300') => {
+  if (!posterPath) return null;
+  return `https://image.tmdb.org/t/p/${size}${posterPath}`;
+};
+
+export default function DashboardFastImageDois({ navigation }: Props) {
+  const [movies, setMovies] = useState<any[]>(moviesproJson);
   const [loading, setLoading] = useState(false);
   const [search, setSearch] = useState('');
   const [filter, setFilter] = useState<
     'Todos' | 'Ação' | 'Drama' | 'Ficção Científica' | 'Suspense'
   >('Todos');
 
-  // ✅ Incrementa métricas de renderização da tela
+  // incrementa contador de renders da tela (mantido para métricas)
   useEffect(() => {
     renderStats.dashboardRenders++;
   });
 
-  // ---------- Fetchers (mantidos iguais ao baseline) ----------
+  // ---------- Fetchers (mesma assinatura do baseline) ----------
   async function fetchPopularMovies(pages = 1) {
     try {
       setLoading(true);
@@ -105,7 +117,7 @@ export default function DashboardFastImage({ navigation }: Props) {
     });
   }, [search, filter, movies]);
 
-  // Listener de navegação + dump de métricas
+  // Listener de navegação + dump de métricas (mantido)
   useEffect(() => {
     const unsubFocus = navigation.addListener('focus', () => {
       renderStats.navigationEvents.push({
@@ -131,14 +143,38 @@ export default function DashboardFastImage({ navigation }: Props) {
     };
   }, [navigation]);
 
-  // ✅ Adiciona auto-log se o usuário não sair da tela (garante métrica no logcat)
+  // Auto-log: garante que haverá um bloco no logcat caso o script apenas deslize
   useEffect(() => {
     const timer = setTimeout(() => {
       console.log('[auto-dump]');
       logMetrics();
-    }, 15000);
+    }, 8000); // 8s é suficiente para preload + swipes (ajuste se necessário)
     return () => clearTimeout(timer);
-  }, []);
+  }, [movies]);
+
+  // Preload das primeiras N imagens para "warm cache" (FastImage)
+  useEffect(() => {
+    // só preload se tivermos filmes
+    if (!movies || movies.length === 0) return;
+
+    // escolher quantas pré-carregar (visíveis no window initial)
+    const PRELOAD_COUNT = 20; // ajustável
+    const toPreload = movies
+      .slice(0, PRELOAD_COUNT)
+      .map(m => tmdbSized(m.poster_path))
+      .filter(Boolean)
+      .map(uri => ({ uri }));
+
+    if (toPreload.length > 0) {
+      try {
+        FastImage.preload(toPreload);
+      } catch (e) {
+        // não falhar o app por causa do preload
+        console.warn('FastImage.preload falhou:', e);
+      }
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [movies]);
 
   const renderItem = ({ item }: any) => {
     renderStats.cardRenders[item.id] =
@@ -148,9 +184,7 @@ export default function DashboardFastImage({ navigation }: Props) {
     const genreName = item.genre_ids?.length
       ? genreMap[item.genre_ids[0]]
       : 'Outros';
-    const uri = item.poster_path
-      ? `${imageUrl}${item.poster_path}`
-      : 'https://via.placeholder.com/200x300';
+    const sizedUri = tmdbSized(item.poster_path, 'w300') || 'https://via.placeholder.com/200x300';
 
     return (
       <TouchableOpacity
@@ -166,14 +200,28 @@ export default function DashboardFastImage({ navigation }: Props) {
         <FastImage
           resizeMode={FastImage.resizeMode.cover}
           style={styles.poster}
-          source={{ uri }}
+          source={{
+            uri: sizedUri,
+            // prioridade e cache: ajudam a priorizar visualmente e a cachear
+            priority: FastImage.priority.normal,
+            cache: FastImage.cacheControl.immutable,
+          }}
           onLoadStart={() => {
-            imageTimers[item.id] = Date.now();
+            try {
+              imageTimers[item.id] = Date.now();
+            } catch {}
           }}
           onLoadEnd={() => {
-            const start = imageTimers[item.id] || Date.now();
-            const duration = Date.now() - start;
-            renderStats.imageLoads.push({ id: item.id, durationMs: duration });
+            try {
+              const start = imageTimers[item.id] || Date.now();
+              const duration = Date.now() - start;
+              renderStats.imageLoads.push({ id: item.id, durationMs: duration });
+            } catch {}
+          }}
+          onError={e => {
+            // opcional: log para entender erros de fetch/decodificação
+            // não atrapalha o fluxo de métricas
+            // console.warn('FastImage error', e.nativeEvent);
           }}
         />
         <Text style={styles.title} numberOfLines={1}>
@@ -187,7 +235,7 @@ export default function DashboardFastImage({ navigation }: Props) {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.header}>🎬 Catálogo de Filmes</Text>
+      <Text style={styles.header}>🎬 Catálogo de Filmes F2</Text>
       <TextInput
         placeholder="Pesquisar filmes..."
         style={styles.search}
@@ -236,7 +284,7 @@ export default function DashboardFastImage({ navigation }: Props) {
   );
 }
 
-// ----------------- Estilos -----------------
+// ----------------- Estilos (mantidos iguais) -----------------
 const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: '#fff', padding: 10 },
   header: { fontSize: 22, fontWeight: 'bold', marginBottom: 10 },

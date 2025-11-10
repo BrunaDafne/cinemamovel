@@ -1,5 +1,5 @@
 // DashboardBaseline.tsx
-import React, { useEffect, useState, useMemo, useRef } from 'react';
+import React, { useEffect, useState, useMemo } from 'react';
 import {
   View,
   Text,
@@ -28,7 +28,8 @@ const renderStats = {
 
 const imageTimers: Record<number, number> = {}; // temporário: id -> start ms
 
-const logMetrics = () => {
+// IMPORTANT: markers must match the script's awk exactly
+const logMetrics = (label = 'auto') => {
   try {
     const data = JSON.stringify(renderStats, null, 2);
     console.log('---IMG_METRICS_START---');
@@ -103,50 +104,76 @@ export default function DashboardBaseline({ navigation }: Props) {
     //fetchPopularMovies(); // desativado por padrão
   }, []);
 
-  // Log metrics quando sair da tela (assim o script captura)
+  // Log metrics: focus/blur and periodic emitter while mounted
   useEffect(() => {
     const unsubFocus = navigation.addListener('focus', () => {
-      renderStats.navigationEvents.push({ action: 'focus_dashboard', timestamp: Date.now() });
+      renderStats.navigationEvents.push({
+        action: 'focus_dashboard',
+        timestamp: Date.now(),
+      });
     });
     const unsubBlur = navigation.addListener('blur', () => {
-      renderStats.navigationEvents.push({ action: 'leave_dashboard', timestamp: Date.now() });
-      logMetrics();
+      renderStats.navigationEvents.push({
+        action: 'leave_dashboard',
+        timestamp: Date.now(),
+      });
+      // log imediato ao perder foco (capturado pelo script se o script navega)
+      logMetrics('on_blur');
     });
+
+    // periodic logger: garante que haverá um bloco no log enquanto o script faz swipes
+    const interval = setInterval(() => {
+      try {
+        logMetrics('periodic');
+      } catch {}
+    }, 4000); // a cada 4s
+
     return () => {
-      try { logMetrics(); } catch {}
+      try {
+        logMetrics('on_unmount');
+      } catch {}
+      clearInterval(interval);
       unsubFocus();
       unsubBlur();
     };
   }, [navigation]);
 
   const renderItem = ({ item }: any) => {
-    // contabiliza renderizações de cada card individualmente
-    renderStats.cardRenders[item.id] = (renderStats.cardRenders[item.id] || 0) + 1;
+    renderStats.cardRenders[item.id] =
+      (renderStats.cardRenders[item.id] || 0) + 1;
 
     const title = item.title || item.name;
-    const genreName = item.genre_ids?.length ? genreMap[item.genre_ids[0]] : 'Outros';
+    const genreName = item.genre_ids?.length
+      ? genreMap[item.genre_ids[0]]
+      : 'Outros';
     return (
       <TouchableOpacity
         style={styles.card}
         onPress={() => {
-          renderStats.navigationEvents.push({ action: `navigate_to_${item.id}`, timestamp: Date.now() });
+          renderStats.navigationEvents.push({
+            action: `navigate_to_${item.id}`,
+            timestamp: Date.now(),
+          });
           navigation.navigate('MovieDetails', { movieId: item.id });
         }}
       >
         <Image
           source={{
-            uri: item.poster_path ? `${imageUrl}${item.poster_path}` : 'https://via.placeholder.com/200x300',
+            uri: item.poster_path
+              ? `${imageUrl}${item.poster_path}`
+              : 'https://via.placeholder.com/200x300',
           }}
           style={styles.poster}
           onLoadStart={() => {
-            try { imageTimers[item.id] = Date.now(); } catch {}
+            imageTimers[item.id] = Date.now();
           }}
           onLoadEnd={() => {
-            try {
-              const start = imageTimers[item.id] || Date.now();
-              const duration = Date.now() - start;
-              renderStats.imageLoads.push({ id: item.id, durationMs: duration });
-            } catch {}
+            const start = imageTimers[item.id] || Date.now();
+            const duration = Date.now() - start;
+            renderStats.imageLoads.push({
+              id: item.id,
+              durationMs: duration,
+            });
           }}
         />
         <Text style={styles.title} numberOfLines={1}>
@@ -177,7 +204,9 @@ export default function DashboardBaseline({ navigation }: Props) {
             style={[styles.filterBtn, filter === g && styles.filterBtnActive]}
             onPress={() => setFilter(g as any)}
           >
-            <Text style={filter === g ? styles.filterTextActive : styles.filterText}>
+            <Text
+              style={filter === g ? styles.filterTextActive : styles.filterText}
+            >
               {g}
             </Text>
           </TouchableOpacity>
@@ -185,7 +214,11 @@ export default function DashboardBaseline({ navigation }: Props) {
       </View>
 
       {loading ? (
-        <ActivityIndicator size="large" color="#000" style={{ marginTop: 50 }} />
+        <ActivityIndicator
+          size="large"
+          color="#000"
+          style={{ marginTop: 50 }}
+        />
       ) : (
         <FlatList
           data={filteredMovies}

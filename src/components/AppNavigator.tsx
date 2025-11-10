@@ -12,6 +12,9 @@ import DashboardScreen from '../screens/DashboardScreen';
 import MovieDetailsScreen from '../screens/MovieDetailsScreen';
 import { getFocusedRouteNameFromRoute } from '@react-navigation/native';
 import DashboardBaseline from '../screens/DashboardBaseline';
+import DashboardFastImage from '../screens/DashboardFastImage';
+import DashboardBaselineDois from '../screens/DashboardBaselineDois';
+import DashboardFastImageDois from '../screens/DashboardFastImageDois';
 
 type RootStackParamList = {
   Dashboard: undefined;
@@ -27,7 +30,7 @@ function DashboardStack() {
     <Stack.Navigator screenOptions={{ headerShown: false }}>
       <Stack.Screen
         name="Dashboard"
-        component={DashboardBaseline}
+        component={DashboardFastImageDois}
         options={{ title: 'Dashboard' }}
       />
       <Stack.Screen

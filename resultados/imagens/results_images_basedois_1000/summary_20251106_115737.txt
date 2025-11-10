@@ -1,0 +1,31 @@
+📊 IMAGE LOADING SUMMARY
+JSON: ./results_images/metrics_json_20251106_115737.json
+
+Dashboard renders: 1
+Distinct cards rendered: 88
+Total card render events (sum): 1942
+
+Image load events: 71
+Images with valid durations: 71
+Average image load (ms): 316.9
+Median image load (ms): 302.0
+95th percentile (ms): 615.0
+Max image load (ms): 926
+
+Top 10 slowest images:
+  id: 1188808 dur(ms): 926
+  id: 987400 dur(ms): 845
+  id: 1038392 dur(ms): 725
+  id: 755898 dur(ms): 709
+  id: 1382406 dur(ms): 615
+  id: 1151334 dur(ms): 615
+  id: 1265344 dur(ms): 582
+  id: 1011477 dur(ms): 568
+  id: 974397 dur(ms): 568
+  id: 1071585 dur(ms): 568
+
+Navigation events count: 1
+Last navigation events:
+  focus_dashboard @ 1762441061502
+
+Raw JSON saved to: ./results_images/metrics_raw_json_saved.json

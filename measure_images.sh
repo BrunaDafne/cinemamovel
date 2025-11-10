@@ -18,7 +18,7 @@ adb shell pm clear "$PKG" >/dev/null || true
 echo "Starting app..."
 adb shell am start -W "$PKG/$ACTIVITY" >/dev/null || true
 
-WAIT_AFTER_START=6
+WAIT_AFTER_START=10
 echo "Waiting $WAIT_AFTER_START s for app to load..."
 sleep $WAIT_AFTER_START
 
@@ -38,7 +38,7 @@ for i in $(seq 1 $SWIPES); do
 done
 
 # wait a bit for remaining loads
-FINAL_WAIT=2
+FINAL_WAIT=6
 echo "Waiting $FINAL_WAIT s for final image loads..."
 sleep $FINAL_WAIT
 
