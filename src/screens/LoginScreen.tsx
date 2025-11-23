@@ -108,9 +108,6 @@ export default function LoginScreen({ navigation }: Props) {
       ) : (
         <Button title="Entrar" onPress={onLogin} />
       )}
-      <Text style={s.hint}>
-        Modo de experimento: {JSON.stringify(EXPERIMENTS)}
-      </Text>
     </View>
   );
 }

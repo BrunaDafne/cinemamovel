@@ -15,6 +15,7 @@ import DashboardBaseline from '../screens/DashboardBaseline';
 import DashboardFastImage from '../screens/DashboardFastImage';
 import DashboardBaselineDois from '../screens/DashboardBaselineDois';
 import DashboardFastImageDois from '../screens/DashboardFastImageDois';
+import MovieDetailsBaseline from '../screens/MovieDetailsBaseline';
 
 type RootStackParamList = {
   Dashboard: undefined;
@@ -30,7 +31,7 @@ function DashboardStack() {
     <Stack.Navigator screenOptions={{ headerShown: false }}>
       <Stack.Screen
         name="Dashboard"
-        component={DashboardFastImageDois}
+        component={DashboardScreen}
         options={{ title: 'Dashboard' }}
       />
       <Stack.Screen
